@@ -9,42 +9,27 @@ p {
     color: #555;
 }
 
-/* Todos los párrafos contenidos en #primero */
-
-#primero p {
-    color: #336699;
-}
-
 /* Todos los enlaces la pagina */
 
 a {
     color: #CC3300;
 }
 
-/* Los elementos "em" contenidos en #primero */
-
-em #primero{
-    background: #FFFFCC;
-    padding: .1em;
-}
-
-/* Todos los elementos "em" de clase "especial" en toda la pagina */
-
-em.especial {
-    background: #FFCC99;
-    border: 1px solid #FF9900;
-    padding: .1em;
-}
-
-/* Elementos "span" contenidos en .normal */
-
-.normal span {
-    font-weight: bold;
-}
-
-img {
+.gridContenedor {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% ;
-  grid-template-rows: 20% 20% 20% ;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 5px;
+  border:3px solid black;
+  text-align: center;
+  background-color:#e4d49c ;
+  figure {
+    border:3px solid #04044c;
+    text-align: center;
+    padding: 10px;
+    background-color:#d8b3c2 ;
+  }
 
 }
+
+
