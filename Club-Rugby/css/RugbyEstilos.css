@@ -1,18 +1,22 @@
 /* Todos los elementos de la pagina */
 * {
-    font: 1em/1.3 Arial, Helvetica, sans-serif;
+  font: 1em/1.3 Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 /* Todos los parrafos de la pagina */
 
 p {
-    color: #555;
+  color: #f80000;
 }
 
 /* Todos los enlaces la pagina */
 
 a {
-    color: #CC3300;
+  color: #CC3300;
 }
 
 .gridContenedor {
@@ -20,16 +24,70 @@ a {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
   grid-gap: 5px;
-  border:3px solid black;
+  border: 3px solid black;
   text-align: center;
-  background-color:#e4d49c ;
+  background-color: #e4d49c;
+
   figure {
-    border:3px solid #04044c;
+    border: 3px solid #04044c;
     text-align: center;
     padding: 10px;
-    background-color:#d8b3c2 ;
+    background-color: #d8b3c2;
   }
-
 }
 
+/*-Navegación-*/
+.navigation {
+  display: block;
+  width: auto;
+}
 
+.mainmenu {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(255, 104, 104);
+  width: auto;
+}
+
+.mainmenu li {
+  position: relative;
+}
+
+.mainmenu a {
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.mainmenu a:hover {
+  background-color: #fffa93;
+}
+
+/* Ocultar el submenu por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: #9a9a9a;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.submenu li {
+  margin-right: 0;
+}
+
+.submenu a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* Mostrar submenu al pasar el ratón */
+.mainmenu li:hover .submenu {
+  display: block;
+}
+
+/*Fin Navegación*/
