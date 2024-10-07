@@ -40,11 +40,12 @@ a {
 .navigation {
   display: block;
   width: auto;
+  text-align: center;
 }
 
 .mainmenu {
   list-style-type: none;
-  display: flex;
+  display: inline-block;
   justify-content: flex-start;
   background-color: rgb(255, 104, 104);
   width: auto;
