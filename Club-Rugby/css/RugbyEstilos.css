@@ -10,6 +10,11 @@
   list-style: none;
 }
 
+html {
+  margin-left:2%;
+  margin-right:2%;
+}
+
 /* Todos los parrafos de la pagina */
 
 p {
@@ -44,7 +49,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ;
   padding: 10px;
   background-color: #04044c;
   position: relative;
@@ -53,16 +57,17 @@ a {
 .encabezado img {
   margin-right: 10px;
   /* Espacio entre el logotipo y el h1 */
-  max-width: 300px;
+  max-width: 150px;
   /* Ajusta el tamaño del logotipo */
 }
 
 .encabezado h1 {
   font-size: 64px;
+  font-weight: bold;
   margin: 0;
   position: absolute;
-  left: 40%;
-  color: #e4d49c;
+  left: 41%;
+  color: #c63946;
 }
 
 /*Fin header*/
@@ -72,14 +77,14 @@ a {
 .navigation {
   display: block;
   width: 100%;
-  text-align: center;
+  align-items: center;
 }
 
 .mainmenu {
   list-style-type: none;
   display: flex;
-  justify-content: flex-start;
-  background-color: rgb(255, 104, 104);
+  justify-content: center;
+  background-color: #c63946;
 }
 
 .mainmenu li {
@@ -91,10 +96,11 @@ a {
   padding: 15px 20px;
   text-decoration: none;
   display: block;
+  font-weight: bold;
 }
 
 .mainmenu a:hover {
-  background-color: #fffa93;
+  background-color: #f5d97e;
 }
 
 /* Ocultar el submenu por defecto */
@@ -103,7 +109,7 @@ a {
   position: absolute;
   top: 100%;
   left: 0px;
-  background-color: #9a9a9a;
+  background-color: #c63946;
   list-style-type: none;
   padding: 0px;
 }
@@ -124,15 +130,56 @@ a {
 
 /*Fin Navegación*/
 
+/*Banner*/
+
 #banner {
   text-align: center;
-  background-color: #f5d97e; /* Color de fondo similar al de la imagen */
-  padding: 20px; /* Añade un poco de espacio alrededor si lo deseas */
+  background-color: #f5d97e; /* Color de fondo */
+  padding: 22px; /* espacio */
+  margin-bottom: 20px;
+  border-bottom: 5px outset rgb(255, 255, 255);
 }
 
 #banner img {
-  display: inline-block; /* Asegura que se comporte como un bloque */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: inline-block; /*bloque */
+  margin: auto; /* Centra la imagen horizontalmente */
   max-width: 100%; /* Ajusta la imagen para que no exceda el ancho */
-  height: 250px; /* Mantiene la proporción de la imagen */
+  height: 200px; /* "ya no"proporción de la imagen */
 }
+
+/*---Fin Banner---*/
+
+/*Main Presentación*/
+
+.main {
+  margin-top: 15px;
+}
+
+/*---Fin Main---*/
+
+/* Section Article Noticia */
+.noticias article{
+  display: inline-block;
+  width: 32%;
+  text-align: justify;
+  padding: 10px;
+}
+.noticias h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #c63946;
+
+}
+.noticias img {
+  width: 45%;
+  height: 40%;
+
+}
+
+/*--- Fin Section Article Noticia ---*/
+
+
+/*Footer*/
+
+/*--- Fin Footer---*/
