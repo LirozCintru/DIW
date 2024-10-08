@@ -1,8 +1,11 @@
 /* Todos los elementos de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
-  font: 1em/1.3 Arial, Helvetica, sans-serif;
-  padding: 0px;
-  margin: 0px;
+  font: 1em/1.5 'Noto Sans Myanmar';
+  font-family: 'Noto Sans Myanmar';
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   list-style: none;
 }
@@ -16,13 +19,13 @@ p {
 /* Todos los enlaces la pagina */
 
 a {
-  color: #CC3300;
+  color: #ff4102;
 }
 
 .gridContenedor {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 5px;
   border: 3px solid black;
   text-align: center;
@@ -36,19 +39,47 @@ a {
   }
 }
 
+/*header*/
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ;
+  padding: 10px;
+  background-color: #04044c;
+  position: relative;
+}
+
+.encabezado img {
+  margin-right: 10px;
+  /* Espacio entre el logotipo y el h1 */
+  max-width: 300px;
+  /* Ajusta el tamaño del logotipo */
+}
+
+.encabezado h1 {
+  font-size: 64px;
+  margin: 0;
+  position: absolute;
+  left: 40%;
+  color: #e4d49c;
+}
+
+/*Fin header*/
+
+
 /*-Navegación-*/
 .navigation {
   display: block;
-  width: auto;
+  width: 100%;
   text-align: center;
 }
 
 .mainmenu {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
   justify-content: flex-start;
   background-color: rgb(255, 104, 104);
-  width: auto;
 }
 
 .mainmenu li {
@@ -92,3 +123,16 @@ a {
 }
 
 /*Fin Navegación*/
+
+#banner {
+  text-align: center;
+  background-color: #f5d97e; /* Color de fondo similar al de la imagen */
+  padding: 20px; /* Añade un poco de espacio alrededor si lo deseas */
+}
+
+#banner img {
+  display: inline-block; /* Asegura que se comporte como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 100%; /* Ajusta la imagen para que no exceda el ancho */
+  height: 250px; /* Mantiene la proporción de la imagen */
+}
