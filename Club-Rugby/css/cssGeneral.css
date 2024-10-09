@@ -16,12 +16,12 @@ main section article {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
-    transition: transform 0.3s; /*Efecto elevar general en todas hojas*/
 }
 
 section article:hover {
-    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 15px;
 }
+
 /*----------*/
 
 /* Estilo imagen texto imagen de los articulos */
@@ -34,7 +34,8 @@ section article:hover {
 .imagenes img {
     max-width: 15%;
     height: auto;
-    border-radius: 16px;/* Bordes redondeados */
+    border-radius: 16px;
+    /* Bordes redondeados */
 }
 
 .imagenes p {
@@ -47,12 +48,17 @@ section article:hover {
 /*---------------Fin imagenes*/
 
 /*Imagencontactos*/
-.imagencontacto{
-    border-bottom: 5px solid #d8b3c2; /* Línea abajo imagen */
-    max-width: 100%; /* Limita el ancho al contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 16px; /* Bordes redondeados (opcional) */
+.imagencontacto {
+    border-bottom: 5px solid #d8b3c2;
+    /* Línea abajo imagen */
+    max-width: 100%;
+    /* Limita el ancho al contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 16px;
+    /* Bordes redondeados (opcional) */
 }
+
 /*-----------Fin imagencontactos*/
 
 /*Cosas que se repiten de los main, letra, color, h2,h3*/
@@ -77,6 +83,7 @@ h3 {
     margin: 15px 10px 10px 10px;
     color: #d40c24;
 }
+
 /*-----------*/
 
 /*Fecha de los proximos partidos*/

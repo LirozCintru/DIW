@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.navigation {
+    display: block;
+    width: auto;
+}
+
+.mainmenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(255, 104, 104);
+    width: auto;
+}
+
+.mainmenu li {
+    position: relative;
+}
+
+.mainmenu a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.mainmenu a:hover {
+    background-color: #fffa93;
+}
+
+/* Ocultar el submenu por defecto */
+.submenu {
+    display: none;
+    position: relative;
+    top: 100%;
+    left:0px;
+    background-color: #9a9a9a;
+    list-style-type: none;
+    padding:0px;
+}
+
+.submenu li {
+    margin-right: 0;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Mostrar submenu al pasar el ratÃ³n */
+.mainmenu li:hover .submenu{
+    display: block;
+}

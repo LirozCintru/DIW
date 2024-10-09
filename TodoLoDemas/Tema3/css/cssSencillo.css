@@ -1,0 +1,67 @@
+/* Todos los elementos de la pagina */
+
+/* teal, red, blue, orange, purple, olive, fuchsia y green.*/
+
+h1#titulo {
+    color:teal;
+}
+
+h2#subtitulo {
+    color:blue;
+}
+
+strong {
+    color:red;
+}
+
+.destacado {
+    color:orange;
+}
+
+.especial  {
+    color:purple;
+}
+
+a{
+    color:red;
+    em{
+        color: blue;
+    }
+}
+
+caption {
+    color:blue;
+}
+
+table, th,td{
+    border-collapse: collapse;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+table 
+{
+    th.especial {
+        color: orange;
+    }
+    th{
+        color:red;
+    }
+    td {
+        color: green;
+    }
+    td strong{
+        color:orange;
+    }
+}
+div#adicional
+{
+    color: olive;
+    #especial
+    {
+    color: fuchsia;
+    }
+    a{
+        color: green;
+    }
+}

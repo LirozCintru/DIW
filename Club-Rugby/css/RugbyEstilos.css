@@ -34,7 +34,6 @@ h1 {
 } 
 
 
-
 /*header*/
 .encabezado {
   /*display: flex;
@@ -88,9 +87,12 @@ h1 {
 
 .mainmenu {
   list-style-type: none;
+  background-color: #c63946;
+
   display: flex;
   justify-content: center;
-  background-color: #c63946;
+  margin: 0% auto;
+  gap:50px;
 }
 
 .mainmenu li {
@@ -103,6 +105,7 @@ h1 {
   text-decoration: none;
   display: block;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .mainmenu a:hover {
@@ -162,7 +165,7 @@ h1 {
 
 .main {
   background-color: #fdecc8;
-  padding: 20px;
+  padding: 20px ;
   margin: 10px auto; /* Centra el main y espacio alrededor */
   max-width: 1350px;/* ancho máximo contenido */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -172,10 +175,14 @@ h1 {
 /* Estilo para las secciones dentro del main */
 .main section {
   margin-bottom: 10px; /* Espacio entre las secciones */
-  padding: 15px;/* Relleno interno */
+  padding: 20px;/* Relleno interno */
   background-color: #fff; 
   border-radius: 5px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;}
+
+.main div{
+  margin: 20px;
+}
 
 .main section h2{font-size: 32px;}
 .main section h3{font-size: 24px;}
@@ -200,10 +207,10 @@ h1 {
 .noticias {
   display: flex;
   /*especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas*/
-  /*flex-wrap: nowrap; o wrap */
+  /*flex-wrap: wrap; o nowrap*/
   justify-content: space-between; /* Espacio uniforme entre artículos */
   margin: 20px auto;
-  max-width: 85%;
+  max-width: 90%;
 }
 
 /* Estilo para cada artículo */
@@ -211,10 +218,13 @@ h1 {
   background-color: #fff; /* Fondo noticias */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition:box-shadow 0.5s ease; 
+  
   overflow: hidden; /* Oculta contenido que sobrepase el contenedor */
   width: 32%; /* Ajusta el tamaño de cada artículo al 32% del ancho del contenedor */
   text-align: justify; /* Alinea texto  */
-  transition:box-shadow 0.5s ease;
+  
+  padding: 0 10px;
 }
 
 .noticias article:hover {
@@ -233,7 +243,7 @@ h1 {
   width: 100%; /*ocupa todo el ancho del artículo */
   height: auto; /* Mantiene la proporción de la imagen */
   display: block;
-  border-bottom: 3px solid #d8b3c2; /* Línea abajo imagen */
+  border-bottom: 5px solid #d8b3c2; /* Línea abajo imagen */
 }
 
 .noticias .fecha {

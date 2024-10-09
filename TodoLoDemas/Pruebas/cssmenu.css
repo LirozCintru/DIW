@@ -1,0 +1,56 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    width: 200px; /* Definir un ancho para el menú */
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #444;
+}
+
+/* Ocultar el submenu por defecto */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Submenú aparece a la derecha */
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    width: 200px; /* Igualar el ancho */
+}
+
+.submenu a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Mostrar submenu al pasar el ratón */
+.menu li:hover .submenu {
+    display: block;
+}
