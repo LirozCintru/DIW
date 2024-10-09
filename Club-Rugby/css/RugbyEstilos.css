@@ -153,6 +153,7 @@ h1 {
   margin: auto; /* Centra la imagen horizontalmente */
   max-width: 100%; /* Ajusta la imagen para que no exceda el ancho */
   height: 200px; /* "ya no" proporción de la imagen */
+
 }
 
 /*---Fin Banner---*/

@@ -6,7 +6,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 85%;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 
 main section article {
@@ -14,34 +14,53 @@ main section article {
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
+    transition: transform 0.3s; /*Efecto elevar general en todas hojas*/
 }
+
+section article:hover {
+    transform: translateY(-10px);
+}
+/*----------*/
 
 /* Estilo imagen texto imagen de los articulos */
 .imagenes {
-    display: flex; 
-    justify-content: space-around; 
-    margin-top: 10px; }
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
 
 .imagenes img {
     max-width: 15%;
-    height: auto; 
-    border-radius: 16px; /* Bordes redondeados */
+    height: auto;
+    border-radius: 16px;/* Bordes redondeados */
 }
 
 .imagenes p {
     max-width: 25%;
-    height: auto; 
+    height: auto;
     padding: 10px;
     margin: 0px 15px;
 }
+
 /*---------------Fin imagenes*/
+
+/*Imagencontactos*/
+.imagencontacto{
+    border-bottom: 5px solid #d8b3c2; /* Línea abajo imagen */
+    max-width: 100%; /* Limita el ancho al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 16px; /* Bordes redondeados (opcional) */
+}
+/*-----------Fin imagencontactos*/
+
+/*Cosas que se repiten de los main, letra, color, h2,h3*/
 
 main section article p {
     font-size: 16px;
     line-height: 1.7;
-        color: #333;
+    color: #333;
 }
 
 main h2 {
@@ -52,12 +71,13 @@ main h3 {
     font-size: 24px;
 }
 
-main h2,h3 
-{
+main h2,
+h3 {
     font-weight: bold;
     margin: 15px 10px 10px 10px;
     color: #d40c24;
 }
+/*-----------*/
 
 /*Fecha de los proximos partidos*/
 
@@ -68,33 +88,86 @@ main h2,h3
     color: #a5654c;
     font-weight: bold;
     font-style: italic;
-  }
+}
 
-  /* logo patrocinadores*/
+/*----------*/
+
+/* logo patrocinadores*/
 
 .logo {
-    max-width: 20%; /* Ajusta la imagen al ancho del contenedor */
-            height: auto; /* Mantiene las proporciones de la imagen */
-            margin: 20px 0; /* Espacio superior e inferior */
-  }
+    max-width: 20%;
+    /* Ajusta la imagen al ancho del contenedor */
+    height: auto;
+    /* Mantiene las proporciones de la imagen */
+    margin: 20px 0;
+    /* Espacio superior e inferior */
+}
 
-  /*organigrama imagen*/
-  .organigrama {
+/*----------*/
+
+/*organigrama imagen*/
+.organigrama {
     text-align: center;
-    margin-top: 10px; 
-  }
+    margin-top: 10px;
+}
 
-  .organigrama img {
+.organigrama img {
     max-width: 85%;
-    height: auto; 
-    border: 3px solid #fdecc8; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    height: auto;
+    border: 3px solid #fdecc8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-  }
+}
+
+/*----------*/
+
+/* Socios and Jugadores Section */
+
+.tituloEspecial h2 {
+    text-align: center;
+}
+
+.socios {
+    display: flex;
+    flex-wrap: wrap;
+    /*Para que salte linea en pantalla pequeñas*/
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 85%;
+    gap: 20px;
+    /*Espacio articulos!*/
+}
+
+.socios article {
+    flex: 1 1 calc(33.33% - 20px);
+    /*1/3 del ancho por articulo*/
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.socios article:hover {
+    transform: translateY(-10px);
+}
+
+.socios article img {
+    width: 60%;
+    /*ocupa todo el ancho del artículo */
+    height: auto;
+    /* proporción */
+    border-bottom: 3px solid #d8b3c2;
+    /* Línea abajo imagen */
+    border-radius: 16px;
+}
+
+/*----------*/
 
 
-  /*Footer*/
+/*Footer*/
 
 footer {
     text-align: center;
@@ -102,8 +175,8 @@ footer {
     background-color: #04044c;
     color: #fdecc8;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
     position: relative;
-  }
-  
-  /*--- Fin Footer---*/
+}
+
+/*--- Fin Footer---*/
