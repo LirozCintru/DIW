@@ -1,0 +1,24 @@
+.gridContenedor {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 5px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: #04044c;
+  }
+  .gridContenedor figure {
+    border: 3px solid #fdecc8;
+    text-align: center;
+    padding: 10px;
+    background-color: #d8b3c2;
+  }
+
+  .gridContenedor img {
+    width: 100%; /* ancho del contenedor */
+    height: auto; /*relación de aspecto imágenes */
+    max-height: 250px; /* altura máxima  */
+    object-fit:contain; /* imágenes cubren el área del contenedor */
+    display: block;
+    margin: 0 auto;
+}

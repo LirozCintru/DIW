@@ -4,59 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/RugbyEstilos.css">
+    <link rel="stylesheet" href="../../css/cssGeneral.css">
+    <title>proximosPartidos</title>
 </head>
 
 <body>
-    <header>
+    <header class="encabezado">
         <a href="../../home.html">
-            <img width="300" height="150" align="left" src="../../img/logo.png"
-                alt="Logotipo del club de rugby con forma de escudo" />
+            <img src="../../img/logo.png" alt="Logotipo oficial del club de rugby con forma de escudo" />
         </a>
         <h1>R.C.Osasuna</h1>
     </header>
+
+    <nav class="navigation">
+        <ul class="mainmenu">
+            <li><a href="">Calendario</a>
+                <ul class="submenu">
+                    <li><a href="proximosPartidos.html">Proximos Partidos</a></li>
+                    <li><a href="resultados.html">Resultados</a></li>
+                </ul>
+            </li>
+            <li> <a href="../PlantillaSocios.html">Plantilla/Socios</a></li>
+            <li><a href="../galeria.html"> Galería</a></li>
+            <li><a href="">Sobre Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="../SobreNosotros/historia.html">Historia</a></li>
+                    <li><a href="../SobreNosotros/ornigrama.html">Organigrama</a></li>
+                    <li><a href="../SobreNosotros/patrocinadores.html">Patrocinadores</a></li>
+                </ul>
+            </li>
+            <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
     <div id="banner">
         <img src="../../img/banner.png"
             alt="Banner del club de rugby con el nombre del club en colores rojos y amarillos" />
     </div>
 
-    <nav>
-        <ul>
-            <li>Calendario</li>
-            <ul>
-                <li><a href="proximosPartidos.html">Proximos Partidos</a></li>
-                <li><a href="resultados.html">Resultados</a></li>
-            </ul>
-            <li> <a href="../PlantillaSocios.html">Plantilla/Socios</a></li>
-            <li><a href="../galeria.html"> Galería</a></li>
-            <li>Sobre Nosotros</li>
-            <ul>
-                <li><a href="../SobreNosotros/historia.html">Historia</a></li>
-                <li><a href="../SobreNosotros/ornigrama.html">Organigrama</a></li>
-                <li><a href="../SobreNosotros/patrocinadores.html">Patrocinadores</a></li>
-            </ul>
-            <li><a href="../contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
     <main>
         <h2>Próximos Partidos - Liga Norte de Rugby 2024</h2>
-
         <section>
             <article>
                 <div>
                     <h3>
                         R.C. Osasuna Rugby vs. Dragones de Irún
                     </h3>
-                    <p>Fecha: Sábado, 5 de octubre, 16:00<br>
-                        Estadio: Estadio El Sadar Rugby Field, Pamplona<br>
-                        Descripción: El R.C. Osasuna se enfrenta a un fuerte equipo de los Dragones de Irún en lo que
-                        promete ser un encuentro lleno de intensidad y estrategia.
-                    </p>
-                </div>
-                <div>
-                    <img src="../../img/Noticias/noticia1.jpg" alt="Imagen de prueba para la noticia" />
+                    <p class="fecha">Fecha: Sábado, 5 de octubre, 16:00</p>
+                    <div class="imagenes">
+                        <img src="../../img/calendario/logoGrande.png" alt="Escudo del R.C. Osasuna Rugby" />
+                        <p> Estadio: Estadio El Sadar Rugby Field, Pamplona<br>
+                            Descripción: El R.C. Osasuna se enfrenta a un fuerte equipo de los Dragones de Irún en lo
+                            que
+                            promete ser un encuentro lleno de intensidad y estrategia.
+                        </p>
+                        <img src="../../img/calendario/logo1.webp" alt="Escudo del equipo Dragones de Irún" />
+                    </div>
                 </div>
             </article>
         </section>
@@ -67,33 +71,17 @@
                     <h3>
                         Vikingos de Vitoria vs. R.C. Osasuna Rugby
                     </h3>
-                    <p>Fecha: Domingo, 13 de octubre, 17:00<br>
-                        Estadio: Valhalla Rugby Park, Vitoria<br>
-                        Descripción: El partido destacado de la jornada. Los Vikingos buscan revancha tras el empate
-                        anterior, mientras que el R.C. Osasuna quiere consolidar su posición en la parte alta de la
-                        clasificación.
-                    </p>
-                </div>
-                <div>
-                    <img src="../../img/Noticias/noticia1.jpg" alt="Imagen de prueba para la noticia" />
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <div>
-                    <h3>
-                        Dragones de Aoiz vs. R.C. Osasuna Rugby
-                    </h3>
-                    <p>Fecha: Domingo, 17 de noviembre, 16:30<br>
-                        Estadio: Foso de Dragones, Aoiz<br>
-                        Descripción: Los Dragones, expertos en jugar en su fortaleza, intentarán asaltar al equipo
-                        osasunista en un duelo que cerrará esta fase de la liga.
-                    </p>
-                </div>
-                <div>
-                    <img src="../../img/Noticias/noticia1.jpg" alt="Imagen de prueba para la noticia" />
+                    <p class="fecha">Fecha: Domingo, 13 de octubre, 17:00
+                    <p>
+                    <div class="imagenes">
+                        <img src="../../img/calendario/logo2.webp" alt="Escudo de los Vikingos de Vitoria" />
+                        <p> Estadio: Valhalla Rugby Park, Vitoria<br>
+                            Descripción: El partido destacado de la jornada. Los Vikingos buscan revancha tras el empate
+                            anterior, mientras que el R.C. Osasuna quiere consolidar su posición en la parte alta de la
+                            clasificación.
+                        </p>
+                        <img src="../../img/calendario/logoGrande.png" alt="Escudo del R.C. Osasuna Rugby" />
+                    </div>
                 </div>
             </article>
         </section>
@@ -102,23 +90,46 @@
             <article>
                 <div>
                     <h3>
-                        Toros de Tudela vs. Buitres de Bilbao
-                        </h3>
-                        <p>Fecha: Viernes, 11 de octubre, 18:30<br>
-                            Estadio: Plaza del Rugby, Tudela <br>
-                            Descripción: Un enfrentamiento de poder a poder entre dos equipos que buscan ascender posiciones en la liga.
-                            Los Toros necesitan una victoria para salir de la parte baja de la tabla. </p>
+                        Dragones de Aoiz vs. R.C. Osasuna Rugby</h3>
+                    <p class="fecha">Fecha: Domingo, 17 de noviembre, 16:30</p>
+                    <div class="imagenes">
+                        <img src="../../img/calendario/logo3.png" alt="Escudo del equipo  Dragones de Aoiz" />
+                        <p> Estadio: Foso de Dragones, Aoiz<br>
+                            Descripción: Los Dragones, expertos en jugar en su fortaleza, intentarán asaltar al equipo
+                            osasunista en un duelo que cerrará esta fase de la liga.
+                        </p>
+                        <img src="../../img/calendario/logoGrande.png" alt="Escudo del R.C. Osasuna Rugby"" />
+                    </div>
                 </div>
-                <div>
-                    <img src="../../img/Noticias/noticia1.jpg" alt="Imagen de prueba para la noticia" />
-                </div>
+
             </article>
         </section>
 
+        <section>
+            <article>
+                <div>
+                    <h3>
+                        Toros de Tudela vs. Buitres de Bilbao</h3>
+                    <p class="fecha">Fecha: Viernes, 11 de octubre, 18:30</p>
 
-        <footer>
-            &#169; Rugby Club Osasuna, Todos los derechos reservados
-        </footer>
+                    <div class="imagenes">
+                        <img src="../../img/calendario/logo4.png" alt="Escudo del equipo  Toros de Tudela" />
+
+                        <p> Estadio: Plaza del Rugby, Tudela <br>
+                            Descripción: Un enfrentamiento de poder a poder entre dos equipos que buscan ascender
+                            posiciones en la liga.
+                            Los Toros necesitan una victoria para salir de la parte baja de la tabla.
+                        </p>
+                        <img src="../../img/calendario/logo5.png" alt="Escudo del equipo Buitres de Bilbao" />
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        &#169; Rugby Club Osasuna, Todos los derechos reservados
+    </footer>
 
 </body>
 

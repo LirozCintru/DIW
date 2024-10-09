@@ -5,41 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/RugbyEstilos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/gridContenedor.css">
+    <title>Galería</title>
 </head>
 
 <body>
-    <header>
+    <header class="encabezado">
         <a href="../home.html">
-            <img width="300" height="150" align="left" src="../img/logo.png"
-                alt="Logotipo del club de rugby con forma de escudo" />
+            <img src="../img/logo.png" alt="Logotipo oficial del club de rugby con forma de escudo" />
         </a>
         <h1>R.C.Osasuna</h1>
     </header>
 
-    <div id="banner">
-        <img src="../img/banner.png"
-            alt="Banner del club de rugby con el nombre del club en colores rojos y amarillos" />
-    </div>
-
     <nav class="navigation">
         <ul class="mainmenu">
-            <li><a href="">Calendario</a></li>
-            <ul class="submenu">
-                <li><a href="paginas/Calendario/proximosPartidos.html">Proximos Partidos</a></li>
-                <li><a href="paginas/Calendario/resultados.html">Resultados</a></li>
-            </ul>
-            <li> <a href="paginas/PlantillaSocios.html">Plantilla/Socios</a></li>
-            <li><a href="paginas/galeria.html"> Galería</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
-            <ul class="submenu">
-                <li><a href="paginas/SobreNosotros/historia.html">Historia</a></li>
-                <li><a href="paginas/SobreNosotros/ornigrama.html">Organigrama</a></li>
-                <li><a href="paginas/SobreNosotros/patrocinadores.html">Patrocinadores</a></li>
-            </ul>
-            <li><a href="paginas/contacto.html">Contacto</a></li>
+            <li><a href="">Calendario</a>
+                <ul class="submenu">
+                    <li><a href="Calendario/proximosPartidos.html">Proximos Partidos</a></li>
+                    <li><a href="Calendario/resultados.html">Resultados</a></li>
+                </ul>
+            </li>
+            <li> <a href="PlantillaSocios.html">Plantilla/Socios</a></li>
+            <li><a href="galeria.html"> Galería</a></li>
+            <li><a href="">Sobre Nosotros</a>
+                <ul class="submenu">
+                    <li><a href="SobreNosotros/historia.html">Historia</a></li>
+                    <li><a href="SobreNosotros/ornigrama.html">Organigrama</a></li>
+                    <li><a href="SobreNosotros/patrocinadores.html">Patrocinadores</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+
+    <div id="banner">
+        <img src="../img/banner.png" alt="Banner del club de rugby con el nombre del club en colores rojos y amarillos" />
+    </div>
 
     <main>
         <div class="gridContenedor">

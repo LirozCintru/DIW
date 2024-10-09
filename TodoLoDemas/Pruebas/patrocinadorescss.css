@@ -1,0 +1,37 @@
+/* Estilo de la sección de patrocinadores */
+.patrocinadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustar el número de columnas */
+    gap: 20px; /* Espacio entre los patrocinadores */
+    padding: 20px; /* Espacio interno */
+    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.patrocinador {
+    background-color: #d8b3c2; /* Color de fondo del patrocinador */
+    border: 3px solid #fdecc8; /* Borde alrededor del patrocinador */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espacio interno */
+    transition: transform 0.3s; /* Efecto de transición para el hover */
+}
+
+.patrocinador img {
+    max-width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantener proporciones */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.patrocinador:hover {
+    transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+}
+
+.patrocinador h3 {
+    color: #04044c; /* Color del título del patrocinador */
+    margin: 10px 0; /* Espacio superior e inferior */
+}
+
+.patrocinador p {
+    color: #333; /* Color del texto de la descripción */
+}
