@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/*Barra Arriba Instagram*/
+#barra {
+    background-color: white;
+    border-bottom: 1px rgb(141, 141, 141) groove;
+    border-top: 1px rgb(141, 141, 141) groove;
+    margin-top: 10px;
+    padding: 5px;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+#iconoInsta {
+    border-right: 2px black solid;
+    padding: 20px;
+
+    float: left;
+    margin: 0px 10px 0px 470px;
+    width: 90px;
+}
+
+#nombreLogoInsta {
+    width: 150px;
+    float: left;
+    margin-right: 15%;
+
+    margin: 5px 0px 0px 10px;
+}
+
+#lupaBusqueda {
+    color: aquamarine;
+    float: left;
+    margin: 35px 10px 20px 400px;
+    width: 20px;
+    position: static;
+}
+
+#buscar {
+    text-align: center;
+    margin: 35px 10px 20px 0px;
+    float: left;
+    width: 10%;
+    height: 20px;
+    position: static;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/**-----Fin Barra Arriba Instagram----*/
+/*Contenido*/
+#publicacionEntera {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 40px 350px;
+    padding: 1px;
+
+    width: 60%;
+
+
+}
+
+
+/*Imagen Izquierda*/
+
+
+#imagenPublicacion {
+
+    width: 60%;
+    height: 60%;
+    float: left;
+
+}
+
+#imagen {
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+/*----Fin Imagen Izquierda*----/
+
+/*Imagen Derecha*/
+.contenidoPublicacion {
+    width: 30%;
+    height: 60%;
+    float: left;
+    height: auto;
+}
+
+.usuario {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    clear: both;
+}
+
+#fotoPerfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nombreUsuario {
+    float: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#verificado {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 12px 5px 0;
+}
+
+/*----Fin Imagen Derecha*----/
