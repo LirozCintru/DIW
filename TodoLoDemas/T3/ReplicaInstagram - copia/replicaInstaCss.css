@@ -26,7 +26,7 @@ body {
     padding: 20px;
 
     float: left;
-    margin: 0px 10px 0px 470px;
+    margin: 0px 10px 0px 20%;
     width: 90px;
 }
 
@@ -41,7 +41,7 @@ body {
 #lupaBusqueda {
     color: aquamarine;
     float: left;
-    margin: 35px 10px 20px 400px;
+    margin: 35px 10px 20px 25%;
     width: 20px;
     position: static;
 }
@@ -61,69 +61,84 @@ body {
 /*Contenido*/
 #publicacionEntera {
     width: 60%;
-    height: 60%;
+    height: 70%;
     background-color: white;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    margin: 40px 350px;
-    padding: 1px;
-
-    width: 60%;
-
-
+    margin: 40px 20% 40px 20%;
+    overflow:hidden;
 }
-
-
 /*Imagen Izquierda*/
 
-
 #imagenPublicacion {
-
     width: 60%;
-    height: 60%;
     float: left;
-
 }
 
 #imagen {
     width: 100%;
-
-    border-radius: 10px;
+    height: 100%;
 }
 
 /*----Fin Imagen Izquierda*----/
 
 /*Imagen Derecha*/
-.contenidoPublicacion {
-    width: 30%;
-    height: 60%;
-    float: left;
+#contenidoPublicacion {
+    width: 40%;
     height: auto;
+    float: left;
+    /* border: 2px solid #ff0000; */
 }
 
-.usuario {
-    margin-left: 10px;
+#usuario{
     width: 100%;
-    margin-bottom: 10px;
-    padding: 30px;
+    height: 100%;
+    margin: 0px 0px 15px 0px;
+    border: 2px solid #f0f0f0;
+    float: left;
+    
 }
 
-#fotoPerfil {
+.fotoPerfil {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 2px solid rgb(255, 92, 255);
+    margin: 15px 10px 0px 10px;
+
+    float: left;
 }
 
-#nombreUsuario {
+.username {
     font-weight: bold;
-    margin-right: 5px;
+    /* display: inline-block; */
+    margin: 20px 0px 10px 5px;
+
+    float: left;
 }
 
-#verificado {
+.verificado {
+    /* display: inline-block; */
+    margin: 20px 0px 0px 0px;
     width: 15px;
     height: 15px;
-    top: 2px;
+
+    float: left;
+}
+#ubicacion {
+    /* display: inline-block; */
+    margin-top: 10px;
+    float: left;
+    margin: 0px 0px 0px 5px;
+}
+
+/*  ContenidoTexto */
+#contenidoTexto {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border: 2px solid #ff0000;
 }
 
 /*----Fin Imagen Derecha*----/
