@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/*Barra Arriba Instagram*/
+#barra {
+    background-color: white;
+    border-bottom: 1px rgb(141, 141, 141) groove;
+    border-top: 1px rgb(141, 141, 141) groove;
+    margin-top: 5x;
+    padding: 5px;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+#iconoInsta {
+    border-right: 2px black solid;
+    padding: 15px;
+
+    float: left;
+    margin: 0px 10px 0px 20%;
+    width: 90px;
+}
+
+#nombreLogoInsta {
+    width: 150px;
+    float: left;
+    margin-right: 15%;
+
+    margin: 5px 0px 0px 10px;
+}
+
+#lupaBusqueda {
+    color: aquamarine;
+    float: left;
+    margin: 35px 10px 20px 25%;
+    width: 20px;
+    position: static;
+}
+
+#buscar {
+    text-align: center;
+    margin: 35px 10px 20px 0px;
+    float: left;
+    width: 10%;
+    height: 20px;
+    position: static;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/**-----Fin Barra Arriba Instagram----*/
+/*Contenido*/
+#publicacionEntera {
+    width: 52%;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 20% 40px 20%;
+    overflow: hidden;
+
+
+}
+
+/*Imagen Izquierda*/
+
+#imagenPublicacion {
+    width: 58%;
+    float: left;
+    height: auto;
+
+
+}
+
+#imagen {
+    width: 100%;
+    display: block;
+}
+
+/*----Fin Imagen Izquierda*----/
+
+/*Imagen Derecha*/
+#contenidoPublicacion {
+    width: 42%;
+    display: inline-block;
+
+    /* border: 2px solid #ff0000;  */
+}
+
+#usuario {
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+    padding: 3% 0px;
+    border: 1px solid #f0f0f0;
+    float: left;
+
+}
+
+.fotoPerfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    border: 2px solid rgb(255, 92, 255);
+    margin: 5px 10px 0px 10px;
+
+    float: left;
+}
+
+.username {
+    font-weight: bold;
+    display: inline-block;
+    margin: 7px 0px 0px 5px;
+}
+
+.verificado {
+    display: inline-block;
+    /* al lado del username */
+    margin: 0 0 0 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.punto {
+    display: inline-block;
+    width: 1%;
+    margin: 0px 1px 5px 1px;
+}
+
+.follow {
+    display: inline-block;
+    color: rgb(0, 145, 255);
+    font-weight: bold;
+
+}
+
+.menu {
+    float: right;
+    width: 6%;
+    /* margin-left: auto; */
+
+    margin: 6px 10px 0 0;
+}
+
+
+#ubicacion {
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    color: gray;
+}
+
+/*  ContenidoTexto mensajes*/
+#mensajes {
+    width: 100%;
+    padding-top: 6%;
+    border-bottom: 1px solid #f0f0f0;
+    float: left;
+}
+
+.comentario {
+    display: inline-block;
+    width: 70%;
+    margin-left: 5px;
+}
+
+.usernameComentario {
+    font-weight: bold;
+    text-align: justify;
+
+}
+
+.fecha {
+    display: inline-block;
+    font-size: 12px;
+    color: #bdbdbd;
+    margin-top: 10px;
+}
+
+.botonmas {
+    display: block;
+    width: 12%;
+    margin: 8% auto;
+}
+
+.comentario2 {
+    display: inline-block;
+    width: 70%;
+    margin-left: 5px;
+    padding-bottom: 5%;
+}
+
+/*---Fin ContenidoTexto mensajes----*/
+
+/*Botones acciones*/
+
+#interacionPost {
+    border-bottom: #f0f0f0 1px solid;
+    border-top: #f0f0f0 1px solid;
+    float: left;
+    padding-bottom: 5%;
+
+}
+
+#interacionPost img {
+    width: 6%;
+
+}
+
+.like,
+.comment,
+.share {
+    margin: 3% 0px 0px 12px;
+}
+
+.save {
+    float: right;
+    margin: 3% 25px 0px 12px;
+
+}
+
+.numerolikes {
+    display: block;
+    margin: 6px 0px 0px 17px;
+    font-weight: bold;
+}
+
+.fechaPost {
+    margin: 8px 0px 0px 18px;
+    font-size: 12px;
+    color: #bdbdbd;
+}
+
+
+/*Fin botones acciones*/
+
+/*Iniciar Sesión*/
+
+.iniciarsesion {
+    float: left;
+}
+
+.iniciarsesion a {
+    text-decoration: none;
+
+}
+
+.textoSesion {
+    margin: 5px 0px 0px 18px;
+    color: #bdbdbd;
+    padding-top: 10px;
+}
+
+
+/*--Fin Iniciar Sesión---*/
+
+/*----Fin Imagen Derecha----*/
