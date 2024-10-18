@@ -205,7 +205,7 @@ body {
     border-bottom: #f0f0f0 1px solid;
     border-top: #f0f0f0 1px solid;
     float: left;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 
 }
 
@@ -217,12 +217,12 @@ body {
 .like,
 .comment,
 .share {
-    margin: 3% 0px 0px 12px;
+    margin: 4% 0px 0px 12px;
 }
 
 .save {
     float: right;
-    margin: 3% 25px 0px 12px;
+    margin: 4% 25px 0px 12px;
 
 }
 
@@ -253,7 +253,7 @@ body {
 }
 
 .textoSesion {
-    margin: 5px 0px 0px 18px;
+    margin: 3px 0px 5px 18px;
     color: #bdbdbd;
     padding-top: 10px;
 }
