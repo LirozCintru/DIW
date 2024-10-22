@@ -16,7 +16,7 @@ article {
     width: 140px;
     height: 100px;
     background-color: aliceblue;
-    display: inline;
+    display: block;
 
 }
 .datos-productos{
