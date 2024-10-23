@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="stylesheet" href="hallowencss.css">
 
     <title>Document</title>
-   
+
 </head>
+
 <body>
 
     <header id="encabezado">
-    <p>Terror en la Sala</p>
+        <p>Terror en la Sala</p>
     </header>
-  
+
     <nav class="navigation">
         <ul class="menu">
-            <li><a href="#presentación">La Sala</a></li> 
-            <li><a href="#galeria">Galeria</a></li> 
-            <li><a href="#formulario">Reserva</a></li> 
+            <li><a href="#presentación">La Sala</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#formulario">Reserva</a></li>
         </ul>
     </nav>
 
@@ -40,9 +42,97 @@
 
     <section id="formulario">
         <article>
+            <fieldset>
+                <form action="/action_page.php">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+                    <br>
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos...">
+                    <br>
+                    <label for="lname">DNI</label>
+                    <input type="text" id="dni" name="lastname" placeholder="Your last name..">
+            </fieldset>
+
+            <fieldset>
+                <form action="/action_page.php">
+                    <label for="fname">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono...">
+                    <br>
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email...">
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <select id="opcion" name="opcion">
+                        <option value="au">Pack 1</option>
+                        <option value="ca">Pack 2</option>
+                        <option value="usa">Pack 3</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select a maintenance drone:</legend>
+
+                <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked />
+                    <label for="huey">Huey</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey" />
+                    <label for="dewey">Dewey</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="louie" name="drone" value="louie" />
+                    <label for="louie">Louie</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose your monster's features:</legend>
+
+                <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">Scales</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="horns" name="horns" />
+                    <label for="horns">Horns</label>
+                </div>
+            </fieldset>
+
+            <form method="post" action="/send/">
+                <div>
+                    Nombre: <input name="nickname">
+                </div>
+                <textarea name="text" cols="40" rows="10"
+                    placeholder="Comentarios para la reserva... Poner que no se pueda hacer resize: none;"></textarea>
+            </form>
+
+
+            <input type="reset" value="Reset">
+            <input type="submit" id="boton1"></button>
+
+            <script>g
+                document.getElementById('boton1').onclick = function () {
+                    alert('Reserva realizada');
+                }
+            </script>
+
 
         </article>
     </section>
 
+<footer>
+
+
+</footer>
+
 </body>
+
 </html>
