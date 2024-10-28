@@ -68,6 +68,22 @@ a {
   position: relative;
 }
 
+/*Body*/
+body {
+  background-color: black;
+}
+
+/*Texto Presentacion*/
+#presentación{
+  background-color: #a8812c;
+  padding: 20px ;
+  margin: 20px auto; 
+  max-width: 1350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  
+}
+
 /* Imagenes (3 bloques, imagen texto)*/
 
 #galeria {
@@ -77,25 +93,30 @@ a {
   margin: 20px auto;
   max-width: 100%;
   color: white;
+
+
+  background-color: #a8812c;
+  padding: 5px ;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
 }
 
 /* Estilo para cada artículo */
 #galeria article {
-  background-color: #2e2e2e;
-  /* Fondo noticias */
-  border-radius: 10px;
-  /* Bordes redondeados */
+  background-color: #2e2e2e;/* Fondo noticias */
+  border-radius: 5px;/* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s ease;
 
-  overflow: hidden;
-  /* Oculta contenido que sobrepase el contenedor */
-  width: 32%;
-  /* Ajusta el tamaño de cada artículo al 32% del ancho del contenedor */
-  text-align: justify;
-  /* Alinea texto  */
+  overflow: hidden;/* Oculta contenido que sobrepase el contenedor */
+  width: 32%;/* Ajusta el tamaño de cada artículo al 32% del ancho del contenedor */
+  text-align: justify;/* Alinea texto  */
 
-  padding: 0 10px;
+  margin: 10px 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
 }
 
 #galeria article:hover {
@@ -126,4 +147,10 @@ a {
   width: 45%;
   margin: 5px;
   border: 3px solid #ffd000;
+}
+
+/**/
+#formulario{
+  background-color: white;
+  padding: 50px;
 }
