@@ -27,22 +27,38 @@
 
     <main>
         <div id="presentación">
-            <h1>Doble sesión de cine para amantes del terror</h1>
-            <p>Acompañanos la noche del 31 de Octubre a una de las 3 sesiones dobles en Cines 7
-                infantes para disfrutar una noche de terror</p>
-            <p>Elige el pack que más te attere, prepara el outfit más aterrador que tengas y recibiras un cubo de
-                palomitas de forma
-                gratuita
-            </p>
-            <p>Estamos en C. Siete Infantes de Lara, 19, 26007 Logroño, La Rioja la entrada es para mayores de 18 años
-            </p>
+                <h1 class="tituloSecion">¡Prepárate para una noche de puro terror en la pantalla!</h1>
+                <p>
+                    Este 31 de octubre, te invitamos a una experiencia cinematográfica que desafiará tus nervios y
+                    pondrá a prueba tu valentía.
+                    Sumérgete en una atmósfera única en los Cines 7 Infantes, donde hemos preparado una <strong>doble
+                        sesión especial</strong> que hará que tu piel se erice.
+                </p>
+                <p>
+                    Elige entre tres <strong>packs de películas</strong> cuidadosamente seleccionados para los amantes
+                    del horror, desde los clásicos que redefinieron el género hasta el terror más intenso y sangriento.
+                    Además, si vienes vestido para la ocasión, recibirás un cubo de palomitas gratis.
+                </p>
+                <p>
+                    ¡No te pierdas la oportunidad de pasar una noche inolvidable en la que la ficción y el miedo se
+                    combinan en un solo lugar!
+                </p>
+                <ul>
+                    <li><strong>Lugar</strong>: Cines 7 Infantes, C. Siete Infantes de Lara, 19, 26007 Logroño, La
+                        Rioja</li>
+                    <li><strong>Edad mínima</strong>: 18 años</li>
+                    <li><strong>Incluye palomitas para quienes vengan disfrazados</strong></li>
+                </ul>
+                <p>
+                    Reserva tu asiento… si te atreves. ¡La noche más escalofriante del año te espera!
+                </p>
         </div>
     </main>
 
     <section id="galeria">
 
         <article>
-            <h1>Las clasicos</h1>
+            <h1 class="tituloSecion">Los clasicos</h1>
             <div class="pack">
                 <div class="imagen">
                     <img src="img/peli1.jpg" alt="">
@@ -57,14 +73,14 @@
                     <img src="img/peli2.jpg" alt="">
                 </div>
                 <div class="informacion">
-                    <h3>Mini titulo prueba</h3>
+                    <h3 class="tituloPeli">Mini titulo prueba</h3>
                     <p> Texto prueba</p>
                 </div>
             </div>
         </article>
 
         <article>
-            <h1>Terror con Ñ</h1>
+            <h1 class="tituloSecion">Terror con Ñ</h1>
             <div class="pack">
                 <div class="imagen">
                     <img src="img/peli3.jpg" alt="">
@@ -86,7 +102,7 @@
         </article>
 
         <article>
-            <h1>Las Sangrientas</h1>
+            <h1 class="tituloSecion">Las Sangrientas</h1>
             <div class="pack">
                 <div class="imagen">
                     <img src="img/peli5.jpg" alt="">
@@ -111,95 +127,83 @@
 
     <section id="formulario">
         <article>
-            <fieldset>
-                <form action="/action_page.php">
-                    <label for="fname">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre...">
+            <form action="/send/" method="post">
+                <!-- Datos personales -->
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
                     <br>
-                    <label for="lname">Apellidos</label>
-                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos...">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos..." required>
                     <br>
-                    <label for="lname">DNI</label>
-                    <input type="text" id="dni" name="lastname" placeholder="Your last name..">
-            </fieldset>
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni" placeholder="DNI..." required>
+                </fieldset>
 
-            <fieldset>
-                <form action="/action_page.php">
-                    <label for="fname">Teléfono</label>
-                    <input type="text" id="telefono" name="telefono" placeholder="Teléfono...">
+                <!-- Datos de contacto -->
+                <fieldset>
+                    <legend>Datos de Contacto</legend>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono..." required>
                     <br>
-                    <label for="lname">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email...">
-            </fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email..." required>
+                </fieldset>
 
-            <fieldset>
-                <div>
-                    <select id="opcion" name="opcion">
-                        <option value="au">Pack 1</option>
-                        <option value="ca">Pack 2</option>
-                        <option value="usa">Pack 3</option>
+                <!-- Opciones de reserva -->
+                <fieldset>
+                    <legend>Opciones de Reserva</legend>
+                    <label for="opcion">Elige un pack:</label>
+                    <select id="opcion" name="opcion" required>
+                        <option value="pack1">Pack 1</option>
+                        <option value="pack2">Pack 2</option>
+                        <option value="pack3">Pack 3</option>
                     </select>
-                </div>
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Select a maintenance drone:</legend>
+                <!-- Preguntas adicionales -->
+                <fieldset>
+                    <legend>Información Adicional</legend>
+                    <div>
+                        <input type="radio" id="opcion1" name="drone" value="opcion1" checked>
+                        <label for="opcion1">Opción 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="opcion2" name="drone" value="opcion2">
+                        <label for="opcion2">Opción 2</label>
+                    </div>
+                    <br>
+                    <input type="checkbox" id="opcion_adicional1" name="opcion_adicional1">
+                    <label for="opcion_adicional1">Opción adicional 1</label>
+                    <br>
+                    <input type="checkbox" id="opcion_adicional2" name="opcion_adicional2">
+                    <label for="opcion_adicional2">Opción adicional 2</label>
+                </fieldset>
 
-                <div>
-                    <input type="radio" id="huey" name="drone" value="huey" checked />
-                    <label for="huey">Huey</label>
-                </div>
+                <!-- Comentarios -->
+                <fieldset>
+                    <legend>Comentarios</legend>
+                    <textarea name="comentarios" cols="40" rows="5" placeholder="Comentarios adicionales..."
+                        style="resize: none;"></textarea>
+                </fieldset>
 
-                <div>
-                    <input type="radio" id="dewey" name="drone" value="dewey" />
-                    <label for="dewey">Dewey</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="louie" name="drone" value="louie" />
-                    <label for="louie">Louie</label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Choose your monster's features:</legend>
-
-                <div>
-                    <input type="checkbox" id="scales" name="scales" checked />
-                    <label for="scales">Scales</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="horns" name="horns" />
-                    <label for="horns">Horns</label>
-                </div>
-            </fieldset>
-
-            <form method="post" action="/send/">
-                <div>
-                    Nombre: <input name="nickname">
-                </div>
-                <textarea name="text" cols="40" rows="10"
-                    placeholder="Comentarios para la reserva... Poner que no se pueda hacer resize: none;"></textarea>
+                <!-- Botones -->
+                <input type="reset" value="Reset">
+                <input type="button" id="boton1" value="Reservar">
             </form>
-
-
-            <input type="reset" value="Reset">
-            <input type="submit" id="boton1"></button>
 
             <script>
                 document.getElementById('boton1').onclick = function () {
                     alert('Reserva realizada');
                 }
             </script>
-
-
         </article>
     </section>
 
     <footer>
-
-
+        <p>Javier Liroz Trincado</p>
+        <a href="guia_estilos.html">Guía de Estilos</a>
     </footer>
 
 </body>
