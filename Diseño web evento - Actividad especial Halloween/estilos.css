@@ -283,8 +283,8 @@ button {
 
 .textHover{
     margin-top: 10px;
-    border: 5px solid #ec0000;
     box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+    border: 2px solid #ec0000;
 }
 
 .radio {
