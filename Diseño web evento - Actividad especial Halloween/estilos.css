@@ -1,3 +1,13 @@
+@font-face {
+    font-family: AnotherDanger;
+    src: url(fonts/another_danger/Another\ Danger\ -\ Demo.otf);
+}
+
+@font-face {
+    font-family: TwistedHalloween;
+    src: url(fonts/twisted_halloween/TwistedHalloween_PERSONAL_USE_ONLY.otf);
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -20,7 +30,7 @@ h2 {
     width: 100px;
     height: 30px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 20px;
     border: 1px solid #ccc;
 }
 
@@ -31,6 +41,7 @@ h2 {
 }
 
 .section {
+    text-align: justify;
     padding: 15px;
     background: white;
     border-radius: 5px;
@@ -42,4 +53,57 @@ footer {
     text-align: center;
     font-size: 14px;
     color: #777;
+}
+
+/*Halloween*/
+
+.h1halloween {
+    font-family: TwistedHalloween;
+    font-size: 46px;
+
+}
+
+.h2halloween {
+    font-family: TwistedHalloween;
+    font-size: 26px;
+}
+
+.h3halloween {
+    font-family: TwistedHalloween;
+    font-size: 20px;
+}
+
+.headerHalloween {
+    font-family: AnotherDanger;
+    font-size: 68px;
+}
+
+.aHalloween {
+    text-decoration: underline;
+    color: #a10684;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.aHalloween:hover {
+    color: #e99f00;
+}
+
+button {
+    background-color: #a10684;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-family: TwistedHalloween;
+    letter-spacing: 2px;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #ff0000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía de Estilos</title>
     <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos -->
 </head>
+
 <body>
 
     <h1>Guía de Estilos</h1>
@@ -13,12 +15,21 @@
         <div class="section">
             <h2>Paleta de Colores</h2>
             <div>
-                <div class="color-sample" style="background-color: #cb0000;"></div> #cb0000 (Rojo oscuro)<br>
-                <div class="color-sample" style="background-color: #a10684;"></div> #a10684 (Rosa)<br>
-                <div class="color-sample" style="background-color: #da71d7;"></div> #da71d7 (Rosa claro)<br>
-                <div class="color-sample" style="background-color: #444;"></div> #444 (Gris oscuro)<br>
-                <div class="color-sample" style="background-color: #530b00;"></div> #530b00 (Marrón oscuro)<br>
-                <div class="color-sample" style="background-color: #e99f00;"></div> #e99f00 (Amarillo)
+                <div class="color-sample" style="background-color: #cb0000;"></div> #cb0000<br>
+                <div class="color-sample" style="background-color: #b90000;"></div> #b90000<br>
+                <div class="color-sample" style="background-color: #ff0000;"></div> #ff0000<br>
+                <div class="color-sample" style="background-color: #a10684;"></div> #a10684<br>
+                <div class="color-sample" style="background-color: #da71d7;"></div> #da71d7<br>
+                <div class="color-sample" style="background-color: #444;"></div> #444<br>
+                <div class="color-sample" style="background-color: #530b00;"></div> #530b00<br>
+                <div class="color-sample" style="background-color: #e99f00;"></div> #e99f00<br>
+                <div class="color-sample" style="background-color: #000000;"></div> #000000<br>
+                <div class="color-sample" style="background-color: #8b0000;"></div> #8b0000<br>
+                <div class="color-sample" style="background-color: #dd00b5;"></div> #dd00b5<br>
+                <div class="color-sample" style="background-color: #2a009e;"></div> #2a009e<br>
+                <div class="color-sample" style="background-color: #ffffff;"></div> #ffffff<br>
+                <div class="color-sample" style="background-color: #2e2e2e;"></div> #2e2e2e<br>
+                <div class="color-sample" style="background-color: #530b00;"></div> #530b00<br>
             </div>
         </div>
 
@@ -26,43 +37,75 @@
             <h2>Fuentes Usadas</h2>
             <h3>Cabeceras</h3>
             <p><strong>Nombre:</strong> TwistedHalloween<br>
-            <strong>Tamaño:</strong> 46px (h1), 26px (h2)<br>
-            <strong>Formato:</strong> Normal, con sombra de texto</p>
+                <strong>Tamaño:</strong> 46px (h1), 26px (h2), 20 (h3)<br>
+                <strong>Formato:</strong> Normal
+            </p>
+            <div class="ejemplosH">
+                <h1 class="h1halloween">Ejemplo</h1>
+                <h2 class="h2halloween">Ejemplo</h2>
+                <h3 class="h3halloween">Ejemplo</h3>
+            </div>
+
 
             <h3>Body</h3>
             <p><strong>Nombre:</strong> Arial, sans-serif<br>
-            <strong>Tamaño:</strong> 16px<br>
-            <strong>Formato:</strong> Normal</p>
+                <strong>Tamaño:</strong> 16<br>
+                <strong>Formato:</strong> Normal
+            </p>
 
-            <h3>Enlaces</h3>
+            <h3>Header</h3>
             <p><strong>Nombre:</strong> Arial, sans-serif<br>
-            <strong>Tamaño:</strong> 16px<br>
-            <strong>Formato:</strong> Negrita</p>
+                <strong>Tamaño:</strong> 68px<br>
+                <strong>Formato:</strong> Normal
+            </p>
+
+            <div class="ejemplosHeader">
+                <h1 class="headerHalloween">Ejemplo</h1>
+            </div>
+
         </div>
 
         <div class="section">
             <h2>Estilo de Enlaces</h2>
-            <p>Color: #a10684 (Rosa)<br>
-            Efecto hover: cambia a #ec0000 (Rojo) con una transición suave.</p>
+            <p>Color: #a10684 <br>
+                Formato: Subrayado<br>
+                Efecto hover: cambia a #e99f00 con una transición suave.</p>
+
+            <a class="aHalloween" href="hojaDeEstilo.html">Guía de Estilos</a>
         </div>
 
         <div class="section">
             <h2>Estilo de Formulario</h2>
             <h3>Inputs</h3>
             <p>Color de fondo: #444;<br>
-            Color del texto: #ffffff;<br>
-            Borde: 2px sólido #da71d7ce;<br>
-            Tamaño: 50% del contenedor, con 12px de padding.</p>
+                Color del texto: #ffffff;<br>
+                Borde: 2px sólido #da71d7ce;<br>
+                Tamaño: 50% del contenedor, con 12px de padding.</p>
+
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
 
             <h3>Botones</h3>
             <p>Color de fondo: #a10684;<br>
-            Color del texto: blanco;<br>
-            Padding: 12px 20px;<br>
-            Borde: ninguno;<br>
-            Efecto hover: cambia a #ec0000 (Rojo) con una sombra.</p>
+                Color del texto: blanco;<br>
+                Padding: 12px 20px;<br>
+                Borde: ninguno;<br>
+                Efecto hover: cambia a #ec0000 (Rojo) con una sombra.</p>
+
+                <button type="reset" value="Reset">Reset</button>
 
             <h3>Radio/Checkbox/Select</h3>
-            <p>Estilo básico, con fondo #444 y texto en blanco. Se añaden bordes y efectos de enfoque en los elementos seleccionables.</p>
+            <p>Estilo básico, con fondo #444 y texto en blanco. Se añaden bordes y efectos de enfoque en los elementos
+                seleccionables.</p>
+            <textarea name="comentarios" cols="40" rows="5" placeholder="Comentarios adicionales..."
+                style="resize: none;"></textarea>
+            <div class="adicional">
+                <label for="socio-cine">Socio del cine</label>
+                <input type="radio" id="opcion-socio-cine" name="opcionInfo" value="socioCine">
+            </div>
+            <div class="adicional">
+                <label for="movilidadReducida">Persona de movilidad reducida</label>
+                <input type="checkbox" id="movilidadReducida" name="movilidadReducida">
+            </div>
         </div>
     </div>
 
@@ -71,4 +114,5 @@
     </footer>
 
 </body>
+
 </html>
