@@ -15,6 +15,10 @@
     src: url(fonts/twisted_halloween/TwistedHalloween_PERSONAL_USE_ONLY.otf);
 }
 
+.enlace a{
+    color: #cb0000;
+}
+
 h1 {
     font-size: 32px;
     color: #cb0000;
@@ -50,17 +54,16 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* Asegura que los grupos usen todo el ancho */
     margin: 10px;
 }
 
 .colores {
-    width: 45%;
+    width: 40%;
 
 }
 
 .fuentes {
-    width: 55%;
+    width: 60%;
 
 }
 
@@ -69,14 +72,10 @@ body {
 .enlaces,
 .formulario {
     background-color: white;
-    /* Fondo blanco para las secciones */
     border-radius: 8px;
-    /* Bordes redondeados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
     padding: 20px;
     margin: 0 10px;
-    /* Margen lateral */
 }
 
 /*-----------------*/
@@ -147,11 +146,11 @@ body {
 
 
 .enlaces {
-    width: 28%;
+    width: 30%;
 }
 
 .formulario {
-    width: 72%;
+    width: 70%;
 }
 
 .contenidoFormulario {
@@ -161,16 +160,14 @@ body {
 }
 
 .contenidoFormulario .entradas,
-.botones,
-.text {
-    width: 33%;
+.botones{
+    width: 49%;
     margin-right: 10px;
     /* Espacio entre columnas */
 }
 
 .entradas,
-.botones,
-.text {
+.botones{
     background-color: #f9f9f9;
     padding: 10px;
     border-radius: 8px;
@@ -198,29 +195,24 @@ footer {
     font-size: 46px;
 
 }
-
 .h2halloween {
     font-family: TwistedHalloween;
     font-size: 26px;
 }
-
 .h3halloween {
     font-family: TwistedHalloween;
     font-size: 22px;
 }
-
 .headerHalloween {
     font-family: AnotherDanger;
     font-size: 68px;
 }
-
 .aHalloween {
     text-decoration: underline;
     color: #a10684;
     font-weight: bold;
     transition: color 0.5s;
 }
-
 .aHalloweenHover {
     text-decoration: underline;
     font-weight: bold;
@@ -228,8 +220,6 @@ footer {
     color: #e99f00;
     text-shadow: 0 0 5px #ffff0080;
 }
-
-
 button {
     background-color: #a10684;
     color: white;
@@ -242,9 +232,18 @@ button {
     font-family: TwistedHalloween;
     letter-spacing: 2px;
 }
-
-button:hover {
+.buttonHover{
+    margin-top: 10px;
     background-color: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    font-family: TwistedHalloween;
+    letter-spacing: 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -260,10 +259,31 @@ button:hover {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formulario input:focus,
+.textareaC{
+    margin-top: 10px;;
+    width: 50%;
+    padding: 12px;
+    border: 2px solid #da71d7ce;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ .formulario input:focus,
 .formulario select:focus,
 .formulario textarea:focus {
     border-color: #ec0000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}  
+
+.radio{
+    margin-top: 15px;
+}
+
+.textHover{
+    margin-top: 10px;
+    border: 5px solid #ec0000;
     box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
 }
 

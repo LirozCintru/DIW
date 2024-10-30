@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Guía de Estilos</h1>
+    <h1 class="enlace">Guía de Estilos  <a href="CineHallowen.html">Diseño web evento</a></h1>
     <div class="contenido">
         <div class="grupo">
             <div class="colores">
@@ -90,25 +90,26 @@
                     <!-- Columna de Cabeceras -->
                     <div class="cabeceras">
                         <h3>Cabeceras</h3>
-                        <p><strong>Nombre:</strong> TwistedHalloween<br>
-                            <strong>Tamaño:</strong> 46px (h1), 26px (h2), 22px (h3)<br>
-                            <strong>Formato:</strong> Normal
+                        <p><strong>Fuente:</strong> TwistedHalloween<br>
+                        <strong>Tamaño:</strong> 46px (h1), 26px (h2), 22px (h3)<br>
+                        <strong>Formato:</strong> Normal
                         </p>
                         <div class="ejemplosH">
-                            <h1 class="h1halloween">Ejemplo</h1>
-                            <h2 class="h2halloween">Ejemplo</h2>
-                            <h3 class="h3halloween">Ejemplo</h3>
+                            <h1 class="h1halloween">First</h1>
+                            <h2 class="h2halloween">Second</h2>
+                            <h3 class="h3halloween">Third</h3>
                         </div>
+                        
                     </div>
 
                     <!-- Columna de Body -->
                     <div class="body">
                         <h3>Body</h3>
-                        <p><strong>Nombre:</strong> Arial, sans-serif<br>
+                        <p><strong>Fuente:</strong> Arial, sans-serif<br>
                             <strong>Tamaño:</strong> 16px<br>
                             <strong>Formato:</strong> Normal
                         </p>
-                        <div class="ejemplosHeader">
+                        <div class="ejemploCuerpo">
                             <p>Ejemplo texto del cuerpo</p>
                         </div>
 
@@ -117,12 +118,12 @@
                     <!-- Fila completa para Header -->
                     <div class="header">
                         <h3>Header</h3>
-                        <p><strong>Nombre:</strong> AnotherDanger<br>
+                        <p><strong>Fuente:</strong> AnotherDanger<br>
                             <strong>Tamaño:</strong> 68px<br>
                             <strong>Formato:</strong> Normal
                         </p>
                         <div class="ejemplosHeader">
-                            <h1 class="headerHalloween">Ejemplo</h1>
+                            <h1 class="headerHalloween">Header</h1>
                         </div>
                     </div>
                 </div>
@@ -134,26 +135,20 @@
                     <h2>Estilo de Enlaces</h2>
                     <h3>Enlace footer</h3>
                     <p>Color: #a10684 <br>
-                        Formato: Subrayado<br>
-                        Efecto hover: cambia a #e99f00 con una transición suave y añade sombra (text-shadow: 0 0 5px #ffff0080).<br>
                         Onclic: Se mantiene formato</p>
                     
-                    <a class="aHalloween" href="hojaDeEstilo.html">Guía de Estilos</a>
+                    <a class="aHalloween" href="hojaDeEstilo.html">Normal</a>
                     <br>
-                    <a class="aHalloweenHover" href="hojaDeEstilo.html">Guía de Estilos</a>
+                    <a class="aHalloweenHover" href="hojaDeEstilo.html">Hover</a>
                     </div>
                     
                     <div class="contenidoEnlaces">
                     <h3>Enlace Navegador</h3>
                     <p>Color: #b95900 <br>
-                        Formato: Subrayado y negrita<br>
                         Tamaño: 20px<br>
-                        Efecto hover: cambia a #ffcc00 sin transición y añade sombra del mismo color (text-shadow: 0 0 5px #ffff00cc).<br>
-                        Onclic: Se mantiene formato</p>
-
-                    <a class="aHalloweenNav" href="hojaDeEstilo.html">Guía de Estilos</a>
+                    <a class="aHalloweenNav" href="hojaDeEstilo.html">Normal</a>
                     <br>
-                    <a class="aHalloweenNavHover" href="hojaDeEstilo.html">Guía de Estilos</a>
+                    <a class="aHalloweenNavHover" href="hojaDeEstilo.html">Hover</a>
                 </div>
             </div>
 
@@ -163,36 +158,23 @@
                 <div class="contenidoFormulario">
 
                 <div class="entradas">
-                    <h3>Inputs</h3>
+                    <h3>Inputs/Textarea</h3>
                     <p>Color de fondo: #444;<br>
                         Color del texto: #ffffff;<br>
-                        Borde: 2px sólido #da71d7ce y 5px de radio<br>
-                        Tamaño: 50% del contenedor, con 12px de padding.</p>
+                        Tamaño: 50% del contenedor</p>
 
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
+                    <input type="text" id="nombre" name="nombre" placeholder="..." required>
+                    <textarea class="textareaC" cols="40" rows="5"  placeholder="Cols 40 rows 5" style="resize:none;"></textarea>
+                    <input class="textHover" type="text" id="Hover" name="nombre" placeholder="Hover..." required>
                 </div>
-
+                
                 <div class="botones">
-                    <h3>Botones</h3>
+                    <h3>Botones/Radio/Checkbox</h3>
                     <p>Color de fondo: #a10684;<br>
-                        Color del texto: blanco;<br>
                         Padding: 12px 20px;<br>
-                        Borde: ninguno;<br>
-                        Efecto hover: cambia a #ec0000 con sombra (box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5))</p>
-
-                    <button type="reset" value="Reset">Reset</button>                    
-                </div>
-
-                <div class="text">
-                    <h3>Radio/Checkbox/Select</h3>
-                    <p>Color de fondo: #444;<br>
-                        Color del texto: #ffffff;<br>
-                        Borde: 2px sólido #da71d7ce y 5px de radio<br>
-                        Tamaño: 50% del contenedor, con 12px de padding.<br>
-                        Rediseño del tamaño "none".</p>
+                    <button type="reset" value="Reset">Normal</button>    
+                    <button class="buttonHover" type="reset" value="Reset">Hover</button>  
                     <div class="radio">
-                        <textarea name="comentarios" cols="40" rows="5" placeholder="Comentarios adicionales..."
-                            style="resize: none;"></textarea>
                         <input type="radio" id="opcion-socio-cine" name="opcionInfo" value="socioCine">
                         <input type="checkbox" id="movilidadReducida" name="movilidadReducida">
                     </div>
