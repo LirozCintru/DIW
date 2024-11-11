@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="svg.html">
+    <title>Máscaras con imágenes SVG</title>
+</head>
+
+<body>
+
+    <!-- Definir la imagen 2341-->
+    <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 752">
+        <defs>
+            <pattern id="imgPattern1" patternUnits="userSpaceOnUse" width="1500" height="752">
+                <image href="montecantabria.jpg" width="1500" height="752" />
+            </pattern>
+        </defs>
+
+        <mask id="maskDividida1">
+            <rect x="0" y="0" width="300" height="752" fill="white" rx="20" ry="20" stroke="red" stroke-width="3" />
+            <rect x="310" y="0" width="300" height="752" fill="white" rx="20" ry="20" stroke="blue" stroke-width="3" />
+            <rect x="610" y="0" width="300" height="752" fill="white" rx="20" ry="20" stroke="orange" stroke-width="3" />
+            <rect x="910" y="0" width="300" height="752" fill="white" rx="20" ry="20" stroke="green" stroke-width="3" />
+        </mask>
+
+        <!-- Aplicar la imagen con la máscara -->
+        <rect x="0" y="0" width="1200" height="752" fill="url(#imgPattern1)" mask="url(#maskDividida1)" />
+        <!-- Para visualizar mejor, podemos agregar un borde a cada rectángulo de la máscara -->
+        <rect x="0" y="0" width="300" height="752" fill="none" rx="20" ry="20" stroke="red" stroke-width="3" />
+        <rect x="310" y="0" width="300" height="752" fill="none" rx="20" ry="20" stroke="blue" stroke-width="3" />
+        <rect x="620" y="0" width="300" height="752" fill="none" rx="20" ry="20" stroke="orange" stroke-width="3" />
+        <rect x="930" y="0" width="300" height="752" fill="none" rx="20" ry="20" stroke="green" stroke-width="3" />
+      </svg>
+    </svg>
+    </article>
+
+
+
+</body>
+
+</html>
