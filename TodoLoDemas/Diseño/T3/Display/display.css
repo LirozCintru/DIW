@@ -1,0 +1,5 @@
+.a { display: none; }
+.b { display: inline; width: 100px; height: 50px;}
+.c { display: block; }
+.d { display: inline-block; width: 100px; height: 50px;}
+p  { color: purple; border: dotted;}

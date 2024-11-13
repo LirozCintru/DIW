@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style:none;
+}
+
+.navigation {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.mainmenu {
+    background-color: rgb(170, 170, 170);
+    width: 30%;
+    color: red;
+    height: auto;
+}
+
+.mainmenu:hover a{
+    background-color: rgb(255, 175, 175);
+}
+
+.submenu:hover{
+    background-color: rgb(183, 255, 231);
+}
+
+.mainmenu li:hover .submenu{
+    display: block;
+    transition: all 5s Ease-In-Out;
+ }
+
+.submenu {
+    display: none;
+   
+}
+

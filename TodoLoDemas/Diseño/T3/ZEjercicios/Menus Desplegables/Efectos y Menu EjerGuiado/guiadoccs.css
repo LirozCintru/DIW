@@ -1,0 +1,66 @@
+a {
+    color: red;
+    font-size: 25px;
+
+}
+
+a:visited {
+    color:#800000;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+div:hover{
+    width: 300px;
+    height: 140px;
+    background-color: orange;
+}
+
+.transition {
+    width: 150px;
+    height: 70px;
+    background-color: purple;
+    margin: 5px;
+}
+
+.Ease {
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -ms-transition: all 5s ease;
+    -o-transition: all 5s ease;
+    transition: all 5s ease;
+}
+
+.Linear {
+    -webkit-transition: all 5s Linear;
+    -moz-transition: all 5s Linear;
+    -ms-transition: all 5s Linear;
+    -o-transition: all 5s Linear;
+    transition: all 5s Linear;
+}
+
+.Ease-in {
+    -webkit-transition: all 5s Ease-in;
+    -moz-transition: all 3s Ease-in;
+    -ms-transition: all 3s Ease-in;
+    -o-transition: all 3s Ease-in;
+    transition: all 3s Ease-in;
+}
+
+.Ease-Out {
+    -webkit-transition: all 5s Ease-Out;
+    -moz-transition: all 3s Ease-Out;
+    -ms-transition: all 3s Ease-Out;
+    -o-transition: all 3s Ease-Out;
+    transition: all 3s Ease-Out;
+}
+
+.Ease-In-Out {
+    -webkit-transition: all 5s Ease-In-Out;
+    -moz-transition: all 3s Ease-In-Out;
+    -ms-transition: all 3s Ease-In-Out;
+    -o-transition: all 3s Ease-In-Out;
+    transition: all 3s Ease-In-Out;
+}
