@@ -28,7 +28,7 @@ tbody tr td:nth-child(odd){
     border-left:solid 1px black;
 }
 
-.euro tr td:nth-child()::after{
-    content: "€";
+.euro td::after{
+    content: " €";
 }
 
