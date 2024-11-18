@@ -1,0 +1,120 @@
+:root{
+    --color-azul-principal: rgb(85, 101, 148);
+    --color-azul-secundario: darkblue;
+    --color-blanco: #f1f1f1;
+    --fuente-titulos: helvetica, arial;
+}
+
+*{
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 5vw;
+    background-color: var(--color-azul-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgPHP{
+    width: 30%;
+}
+
+#imgPHP img{
+    width: 30%;
+}
+
+#infoHeader{
+    width: 70%;
+}
+    
+
+header h1{
+    font-size: clam(2rem 4vw 2.5rem);
+    color: var(--color-blanco);
+    font-family: var(--fuente-titulos);
+}
+
+section{
+    width: 50%;
+    float: left;
+    padding: 20px 10px;
+}
+
+.divPrincipal{
+    border-radius: 10px;
+}
+
+.video1section2{
+    text-align: center;
+}
+
+footer{
+    clear: both;
+    height: 10vw;
+    display: flex;
+}
+
+#comercio, #miembros, #php{
+    height: inherit;
+}
+
+#comercio{
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#comercio img{
+    width: 45%;
+    margin: 2% 0;
+}
+
+#miembros{
+    width: 36%;
+}
+
+#php{
+    width: 32%;
+}
+
+#mascara {
+    margin: 5%;
+}
+
+#myVideo{
+    width: 50%;
+    text-align: center;
+    margin: 10px 25%;
+    
+}
+.boton{
+    width: 100%;
+    text-align: center;
+}
+
+#myBtn{
+    padding: 20px;
+    width: 200px;
+    font-size: 18px;
+    padding: 20px;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    justify-content: center;
+}
+#myBtn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
