@@ -1,0 +1,94 @@
+WEBVTT
+
+00:00.000-->00:01.500 line:85% align:middle
+Bienvenidos a esta introducción breve sobre
+ 
+00:01.500-->00:03.000 line:85% align:middle
+Condicionales y Bucles PHP
+
+00:03.000-->00:05.500 line:85% align:middle
+CONDICIONAL 'IF ELSE'
+
+00:05.500-->00:08.000 line:85% align:middle
+Declaramos que 'a' sea menor que 'b' como condición del 'if'
+
+00:08.000-->00:11.000 line:85% align:middle
+y si se cumple la condición, mostramos el resultado por consola (echo).
+
+00:11.000-->00:13.500 line:85% align:middle
+Seguidamente declaramos un 'else if' donde 'a' sea mayor que 'b'
+
+00:13.500-->00:15.000 line:85% align:middle
+donde mostraremos su resultado.
+
+00:15.000-->00:17.500 line:85% align:middle
+Y finalmente el 'else', que se ejecutaría
+
+00:17.500-->00:20.000 line:85% align:middle
+en caso de que las variables sean iguales.
+
+00:20.000-->00:21.500 line:85% align:middle
+Al ejecutarlo podemos ver
+
+00:21.500-->00:23.000 line:85% align:middle
+que 1 es menor que 2,
+
+00:23.000-->00:25.000 line:85% align:middle
+ya que 'a' = 1  y 'b' = 2
+
+00:26.000-->00:29.000 line:85% align:middle
+Si probamos a revertir los valores
+
+00:29.000-->00:32.000 line:85% align:middle
+se cumpliría la condición del 'else if'.
+
+00:32.000-->00:35.000 line:85% align:middle
+Por último, probamos el único caso restante
+
+00:35.000-->00:37.500 line:85% align:middle
+que sería 'a' = 'b'.
+
+00:39.000-->00:41.000 line:85% align:middle
+BUCLE WHILE
+
+00:41.000-->00:43.500 line:85% align:middle
+Al igual que el 'if' necesitamos una condición, 
+
+00:43.500-->00:46.000 line:85% align:middle
+en este caso que 'a' sea menor a 10.
+
+00:46.000-->00:48.500 line:85% align:middle
+Indicamos que se muestre 'a' por pantalla
+
+00:48.500-->00:51.000 line:85% align:middle
+y que su valor incremente de 1 en 1
+
+00:51.000-->00:54.000 line:85% align:middle
+hasta que no se cumpla la condición. 
+
+01:00.000-->01:02.500 line:85% align:middle
+También podemos realizar bucles
+
+01:02.500-->01:05.000 line:85% align:middle
+donde haya que decrementar el valor de 'a'.
+
+01:12.000-->01:14.000 line:85% align:middle
+BUCLE 'FOR'
+
+01:15.000-->01:18.000 line:85% align:middle
+Dentro del bucle 'for' inicializamos una variable
+
+01:18.000-->01:20.000 line:85% align:middle
+('i' en este caso),
+
+01:20.000-->01:23.000 line:85% align:middle
+indicamos una condición
+
+01:23.000-->01:26.000 line:85% align:middle
+y finalmente la instrucción de incrementar o decrementar.
+
+01:30.000-->01:35.000 line:85% align:middle
+Por último, un ejemplo de donde decrementamos 'i'.
+
+01:50.000-->01:54.000 line:85% align:middle
+GRACIAS POR VER EL VÍDEO :)

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imgs/logoPhp.png" type="image/x-icon">
+    <title>Php</title>
+</head>
+
+<body>
+    <header>
+        <div id="imgPHP">
+            <img src="imgs/logoPhp.png" alt="Logo de PHP" usemap="#home">
+            <map name="home">
+                <area shape="default" alt="" href="https://www.php.net">
+            </map>
+        </div>
+        <div id="infoHeader">
+            <h1>Introducción a PHP</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="divPrincipal">
+                    <h2>Video Introductorio a PHP</h2>
+                    <p>En esta presentación, exploramos los condicionales y bucles en PHP. Comenzamos con el condicional
+                        'if else', donde verificamos si 'a' es menor, mayor o igual que 'b', mostrando los resultados
+                        correspondientes. </p>
+                    <p>Luego, discutimos el bucle 'while', que itera mientras 'a' sea menor a 10, y
+                        también mencionamos cómo decrementar valores. </p>
+                    <p>Finalmente, abordamos el bucle 'for', donde
+                        inicializamos una variable y definimos condiciones de incremento o decremento.</p>
+                    <div class="videoP">
+                        <video id="myVideo" autoplay muted loop>
+                            <source src="VideoFinal.MOV" type="video/mp4">
+                            <track src="subtitles.vtt" kind="subtitles" srclang="es" label="Español" default>
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <!-- Botón de Play/Pausa -->
+                    <div class="boton">
+                        <button id="myBtn" onclick="myFunction()">Pause</button>
+                    </div>
+                    <p>Espero que esta introducción a PHP les haya sido útil y les inspire a seguir explorando el mundo
+                        de la programación. ¡Hasta pronto!</p>
+                </div>
+            </article>
+
+        </section>
+        <section>
+            <article>
+                <div class="divPrincipal">
+                    <h2>¿Qué es PHP?</h2>
+                    <div class="video1section2">
+                        <iframe id="externalVideo"
+                            src="https://www.youtube.com/embed/ykGRYEX0n60?autoplay=1&mute=1&enablejsapi=1&controls=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen >
+                        </iframe>
+                    </div>
+                    <div class="boton">
+                        <button id="soundBtn" onclick="soundMute()">
+                            <img src="imgs/muteB.png" alt="sound/mute" id="soundImg">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </article>
+
+            <article class="mascara">
+                <!-- Definir la imagen ancho=1024 alto=538-->
+                <svg width="100%" height="538" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 538">
+                    <defs>
+                        <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="1024" height="538">
+                            <image href="imgs/phpImagen.png" width="1024" height="538" />
+                        </pattern>
+                    </defs>
+
+                    <mask id="maskDividida2">
+                        <rect x="10" y="110" width="135" height="328" fill="white" rx="20" ry="20" />
+                        <rect x="155" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                        <rect x="345" y="0" width="340" height="538" fill="white" rx="20" ry="20" />
+                        <rect x="700" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                        <rect x="885" y="110" width="135" height="328" fill="white" rx="20" ry="20" />
+                    </mask>
+
+                    <!-- Aplicar la imagen con la máscara -->
+                    <rect x="0" y="0" width="1024" height="538" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+                </svg>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div id="comercio">
+            <img src="imgs/logoComercio.png" alt="Logo de la escuela IES Comercio" usemap="#pagComercio">
+            <map name="pagComercio">
+                <area shape="default" alt="" href="https://iescomercio.com/">
+            </map>
+        </div>
+        <div id="miembros">
+            <p>Hugo Quesada Alvarez</p>
+            <p>Martin Guerrier López</p>
+            <p>Javier Liroz Trincado</p>
+        </div>
+        <div id="php">
+            <p>2DAW</p>
+            <p>Diseño de Interfaces Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>

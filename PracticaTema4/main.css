@@ -1,0 +1,276 @@
+:root {
+    --color-azul-principal: rgb(85, 101, 148);
+    --color-azul-secundario: #00008b;
+    --color-blanco: #f9f9f9;
+    --fuente-titulos: helvetica, arial;
+    --oro: gold;
+    --violeta-fondo: rgb(139, 155, 201);
+    --violeta-section: #adc4ff;
+    --azul-boton: #537fee;
+    --azul-boton-hover: rgb(0, 50, 255);
+    --negro: rgb(0, 0, 0);
+    --morado-borde: rgb(44, 0, 50);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--violeta-fondo);
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    width: 100%;
+    height: 7vw;
+    background-color: var(--color-azul-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#imgPHP {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+#imgPHP img {
+    width: 10vw;
+}
+
+#infoHeader {
+    display: flex;
+    width: 70%;
+    float: left;
+}
+
+#infoHeader h1 {
+    font-size: clamp(2vw, 4vw, 8vw);
+    color: var(--color-blanco);
+    font-family: var(--fuente-titulos);
+}
+
+section {
+    width: 46%;
+    float: left;
+    padding: 1vh 1vw;
+    border: 2px outset var(--morado-borde);
+    margin: 2%;
+    /* margin: 2%; preguntar  si % o vw vh  */
+    background-color: var(--violeta-section);
+    box-shadow: 0 5px 5px rgba(53, 53, 53, 0.7);
+    border-radius: 8px;
+}
+
+section div {
+    text-align: justify;
+}
+
+.divPrincipal {
+    margin: 0.75vh 0.9vw;
+}
+
+.divPrincipal p {
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    margin: 1.5vh 0;
+}
+
+.divPrincipal h2 {
+    font-size: clamp(2vw, 2vw, 4vw);
+}
+
+.video1section2 {
+    text-align: center;
+    margin: 2vw;
+}
+
+#myVideo {
+    width: 70%;
+    margin: 1.5vh 15%;
+}
+
+#externalVideo {
+    width: 80%;
+    height: 300px;
+    margin: 1.5vh 10%;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+}
+
+#myBtn {
+    width: 10vw;
+    font-size: 18px;
+    padding: 1rem;
+    border: none;
+    background-color: var(--azul-boton);
+    color: var(--negro);
+    justify-content: center;
+    border-radius: 5px;
+    color: var(--color-blanco);
+    transition: background-color 0.3s ease;
+}
+
+#myBtn:hover {
+    cursor: pointer;
+    background-color: var(--azul-boton-hover);
+}
+
+#soundBtn {
+    width: 4.5vw;
+    height: 4.5vw;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--negro);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#soundBtn:hover {
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(53, 53, 53, 0.7);
+    transition: border 0s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+#soundImg {
+    width: 70%;
+}
+
+footer {
+    border-top: 2px outset var(--morado-borde);
+    display: flex;
+    background-color: var(--color-azul-principal);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+#comercio,
+#miembros,
+#php {
+    height: 100%;
+}
+
+#comercio {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#comercio img {
+    width: 30%;
+}
+
+#miembros {
+    width: 36%;
+    text-align: center;
+    color: var(--oro);
+}
+
+#miembros p {
+    margin: 0.75rem;
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+}
+
+#php {
+    width: 32%;
+}
+
+#php p {
+    text-align: center;
+    color: var(--color-blanco);
+    margin: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    section {
+        width: 95%;
+        float: none;
+        padding: 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .divPrincipal h2 {
+        font-size: clamp(5vw, 5.5vw, 6vw);
+    }
+
+    #imgPHP,
+    #infoHeader,
+    #comercio,
+    #miembros,
+    #php {
+        width: 100%;
+        text-align: center;
+    }
+
+    #myVideo,
+    iframe {
+        width: 100%;
+    }
+
+    #myVideo {
+        width: 80%;
+        margin: 1.5vh 10%;
+    }
+
+    .boton {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    #myBtn {
+        width: 30vw;
+        padding: 1rem;
+    }
+
+    #soundBtn {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    #imgPHP img {
+        width: 8vh;
+    }
+
+    #comercio img {
+        width: 100%;
+    }
+}
