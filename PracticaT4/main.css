@@ -81,19 +81,32 @@ section{
 
 .video1section2{
     text-align: center;
-    margin: 1vw;
+    margin: 2vw;
 }
 
 /* .mascara {
 
 } */
+/* 
+#videoP {
+    
+    width: 100%;
+    padding: 50%;
+    border: 4px solid red;
+    
+} */
 
 #myVideo{
-    width: 50%;
-    text-align: center;
-    margin: 1vw;
-    
+    width: 70%;
+    margin: 1.5vh 15%; 
 }
+
+#externalVideo{
+    width: 80%;
+    height: 300px;
+    margin: 1.5vh 10%; 
+}
+
 .boton{
     width: 100%;
     text-align: center;
@@ -190,6 +203,11 @@ footer {
 
     #myVideo, iframe {
         width: 100%;
+    }
+
+    #myVideo{
+        width: 80%;
+        margin: 1.5vh 10%; 
     }
 
     .boton {

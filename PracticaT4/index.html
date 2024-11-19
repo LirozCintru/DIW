@@ -25,12 +25,13 @@
                     <p>Informacion de la primera secion</p>
                     <p>Video propio con subtitulos un botón de Play/Pausa y tener una duración mínima de 1 minuto y
                         reproducirse en bucle</p>
-                    <video id="myVideo" autoplay muted loop>
-                        <source src="imgs/videoprueba.mp4" type="video/mp4">
-                        <track src="imgs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
-                        Tu navegador no soporta el elemento de video.
-                    </video>
-
+                    <div class="videoP">
+                        <video id="myVideo" autoplay muted loop>
+                            <source src="imgs/videoprueba.mp4" type="video/mp4">
+                            <track src="imgs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
                     <!-- Botón de Play/Pausa -->
                     <div class="boton">
                         <button id="myBtn" onclick="myFunction()">Pause</button>
@@ -45,7 +46,7 @@
                     <h1>¿Qué es PHP?</h1>
                     <p>Preguntar sobre el boton de mute</p>
                     <div class="video1section2">
-                        <iframe id="externalVideo" width="90%" height="315"
+                        <iframe id="externalVideo"
                             src="https://www.youtube.com/embed/ykGRYEX0n60?autoplay=1&mute=1&enablejsapi=1"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                         </iframe>
