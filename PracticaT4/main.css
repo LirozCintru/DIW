@@ -3,6 +3,11 @@
     --color-azul-secundario: #00008b;
     --color-blanco: #f1f1f1;
     --fuente-titulos: helvetica, arial;
+    --oro:gold;
+    --violeta-fondo:rgb(139,155,201);
+    --azul-boton:#537fee;
+    --azul-boton-hover:rgb(0, 50, 255);
+    --blanco:rgb(255, 255, 255);
 }
 
 *{
@@ -21,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: rgb(139,155,201);
+    background-color: var(--violeta-fondo);
 }
 
 main {
@@ -42,12 +47,11 @@ header{
     display: flex;
     width: 30%;
     justify-content: center;
+    padding: 0.5rem;
 }
 
 #imgPHP img{
-    width: 11vw;
-    justify-content: center;
-
+    width: 10vw;
 }
 
 #infoHeader{
@@ -68,26 +72,26 @@ section{
     float: left;
     padding: 1vh 1vw;
     border: 2px outset rgb(44, 0, 50); 
-    margin: 2%; /*REm*/
+    margin: 2%;
+    /* margin: 2%; preguntar  si % o vw vh  */
     background-color: #adc4ff;
     box-shadow: 0 5px 5px rgba(53, 53, 53, 0.7);
     border-radius: 8px;
 }
-
 
 .video1section2{
     text-align: center;
     margin: 1vw;
 }
 
-#mascara {
-    margin: 5%;
-}
+/* .mascara {
+
+} */
 
 #myVideo{
     width: 50%;
     text-align: center;
-    margin: 10px 25%;
+    margin: 1vw;
     
 }
 .boton{
@@ -100,7 +104,7 @@ section{
     font-size: 18px;
     padding: 1rem;
     border: none;
-    background-color: #537fee;
+    background-color: var(--azul-boton);
     color: black;
     justify-content: center;
     border-radius: 5px;
@@ -109,12 +113,11 @@ section{
 }
 #myBtn:hover{
     cursor: pointer;
-    background-color: rgb(0, 50, 255);
+    background-color: var(--azul-boton-hover);
 }
 
 #soundBtn{
-    width: 10vw;
-    padding: 1rem;
+    width: auto;
     cursor: pointer;
     border: none;
     background-color: rgb(0, 0, 0,0);
@@ -149,7 +152,7 @@ footer {
 #miembros{
     width: 36%;
     text-align: center;
-    color: gold;
+    color:var(--oro);
 }
 #miembros p {
     margin: 0.75rem;
@@ -161,9 +164,53 @@ footer {
 
 #php p{
     text-align: center;
-    color:rgb(255, 255, 255);
+    color:  var(--blanco);
     margin: 0.75rem;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        float: none;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #imgPHP, #infoHeader, #comercio, #miembros, #php {
+        width: 100%;
+        text-align: center;
+    }
+
+    #myVideo, iframe {
+        width: 100%;
+    }
+
+    .boton {
+        text-align: center;
+        margin: 1rem 0; 
+    }
+
+    #myBtn {
+        width: 30vw;
+        padding: 1rem; 
+    }
+
+    header{  
+      height: 10vh;  
+    }
+    
+    #imgPHP img{
+        width: 8vh;
+    }
+    
+    #comercio img{
+        width: 100%;
+    }
 }
