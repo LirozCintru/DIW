@@ -25,7 +25,6 @@ header {
     text-align: center;
 }
 
-
 main {
     display: flex;
     margin: 0;
@@ -35,13 +34,14 @@ main {
 .contenedor {
     flex: 3;
     padding: 1rem;
+    margin: 0 3vw;;
 }
 
 aside {
     flex: 1;
     background-color: var(--secondary-color);
     padding: 1rem;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -52,12 +52,19 @@ footer {
     margin-top: 1rem;
 }
 
-h2 {
-    margin-top: 0;
+h2,
+h1,
+h3 {
+    margin: 1vh 0;
 }
 
 ul {
     padding-left: 1.5rem;
+    margin: 1vh 0 1.5vh 0;
+}
+
+li {
+    margin: 0.75vh 0;
 }
 
 a {
@@ -69,7 +76,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Contenedor de las prácticas */
+/* Contenedor prácticas */
 .practicaContenedor {
     display: grid;
     gap: 2vh;
@@ -79,7 +86,7 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* Estilo de los círculos */
+/*Círculos */
 .practicaCirculo {
     width: 120px;
     height: 120px;
@@ -89,14 +96,14 @@ a:hover {
     justify-content: center;
     color: white;
     font-weight: bold;
-    position: relative;
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: transform 0.15s ease 0.15s ;
+    transition: transform 0.15s ease 0.15s;
 }
+
 .practicaCirculo:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .practicaCirculo p {
@@ -111,54 +118,71 @@ a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
-/* Imágenes específicas para cada práctica */
+/*Imagen Practica*/
 .practica1 {
     background-image: url("imgs/rugby.png");
-    /* Ruta de la imagen */
 }
 
 .practica2 {
     background-image: url("imgs/instagram.png");
-    /* Ruta de la imagen */
 }
 
 .practica3 {
     background-image: url("imgs/eventoHalloween.png");
-    /* Ruta de la imagen */
 }
 
 .practica4 {
     background-image: url("imgs/tema4.png");
-    /* Ruta de la imagen */
 }
 
 .practica5 {
     background-image: url("imgs/imagen5.jpg");
-    /* Ruta de la imagen */
 }
 
 
 
 
+@media (max-width: 1024px) {
+    .practicaContenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .practicaCirculo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media (max-width: 768px) {
-    .container {
-        flex-wrap: wrap;
+    main {
+        flex-direction: column;
     }
 
     aside,
-    main {
+    .contenedor {
         flex: 1 1 100%;
         max-width: 100%;
     }
 
     .practicaContenedor {
-        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     .practicaCirculo {
         width: 90px;
         height: 90px;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .practicaContenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .practicaCirculo {
+        width: 80px;
+        height: 80px;
     }
 }
