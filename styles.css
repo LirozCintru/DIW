@@ -5,6 +5,13 @@
     --font-family: Arial, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     font-family: var(--font-family);
@@ -18,25 +25,23 @@ header {
     text-align: center;
 }
 
-.container {
-    display: flex;
-    flex-wrap: nowrap; /* No permite que los elementos salten de línea */
-    margin: 0;
-}
 
 main {
-    flex: 1 1 75%; /* Ocupa el 75% del espacio */
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+.contenedor {
+    flex: 3;
     padding: 1rem;
-    order: 0; /* Asegura que main esté primero */
 }
 
 aside {
+    flex: 1;
     background-color: var(--secondary-color);
     padding: 1rem;
-    flex: 0 0 25%; /* Ancho fijo del 25% */
-    max-width: 25%;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra hacia la izquierda */
-    order: 1; /* Asegura que aside esté después */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -64,13 +69,96 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Contenedor de las prácticas */
+.practicaContenedor {
+    display: grid;
+    gap: 2vh;
+    justify-items: center;
+    margin: 1.5rem auto;
+    max-width: 60%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Estilo de los círculos */
+.practicaCirculo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.15s ease 0.15s ;
+}
+.practicaCirculo:hover {
+    transform: scale(1.2); 
+}
+
+.practicaCirculo p {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.practicaCirculo:hover p {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Imágenes específicas para cada práctica */
+.practica1 {
+    background-image: url("imgs/rugby.png");
+    /* Ruta de la imagen */
+}
+
+.practica2 {
+    background-image: url("imgs/instagram.png");
+    /* Ruta de la imagen */
+}
+
+.practica3 {
+    background-image: url("imgs/eventoHalloween.png");
+    /* Ruta de la imagen */
+}
+
+.practica4 {
+    background-image: url("imgs/tema4.png");
+    /* Ruta de la imagen */
+}
+
+.practica5 {
+    background-image: url("imgs/imagen5.jpg");
+    /* Ruta de la imagen */
+}
+
+
+
+
 @media (max-width: 768px) {
     .container {
-        flex-wrap: wrap; /* Permite que los elementos salten de línea */
+        flex-wrap: wrap;
     }
 
-    aside, main {
-        flex: 1 1 100%; /* Ambos ocupan el 100% del ancho */
+    aside,
+    main {
+        flex: 1 1 100%;
         max-width: 100%;
+    }
+
+    .practicaContenedor {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 15px;
+    }
+
+    .practicaCirculo {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
     }
 }
