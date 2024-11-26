@@ -14,7 +14,7 @@
 }
 
 img {
-    border: 3px solid rgb(126, 126, 126);
+    /* border: 3px solid rgb(126, 126, 126); */
     /* width: 200px; */
 }
 
@@ -24,7 +24,7 @@ img {
 }
 
 .img1 {
-    width: 20vh;
+    width: 20vw;
     height: 35vh;
     opacity: 0.5;
     transition: opacity 2s;
@@ -51,8 +51,8 @@ img {
 }
 
 .img3 {
-    width: 24vw;
-    height: 40vh;
+    width: 25vw;
+    height: 50vh;
     transition: border-radius 2s ease 2s;
 }
 
@@ -65,13 +65,13 @@ img {
 .arriba {}
 
 .img4 {
-    width: 25vw;
-    height: 20vh;
+    width: 24vw;
+    height: 25vh;
 }
 
 .img5 {
     width: 25vw;
-    height: 20vh;
+    height: 25vh;
     transition: transform 10s ease-in;
 }
 
@@ -82,14 +82,25 @@ img {
 .abajo {}
 
 .img6 {
-    width: 25vw;
-    height: 20vh;
+    width: 24vw;
+    height: 25vh;
+    position: relative;
+    top:0;
+    transition: top 4s, opacity 4s;
 }
-.img6:hover{
-    top: 400;
+
+.img6:hover {
+    top: 400px;
+    opacity: 0; 
 }
 
 .img7 {
     width: 25vw;
-    height: 20vh;
+    height: 25vh;
+    transition: top 4s, opacity 3s;
+}
+
+.img7:hover {
+    /* visibility:hidden; */
+    opacity: 0; 
 }
