@@ -31,10 +31,15 @@ main {
     width: 100%;
 }
 
-.contenedor {
-    flex: 3;
-    padding: 1rem;
+.info-contenedor {
+    display: flex;
+    padding: 0.5rem;
     margin: 0 3vw;;
+}
+
+.info-laboral,
+.info-academica {
+    flex: 1;
 }
 
 aside {
@@ -44,18 +49,16 @@ aside {
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-}
 
-h2,
-h1,
-h3 {
-    margin: 1vh 0;
+/* listas principale adios puntos de laboral y académico*/
+.info-laboral > ul,
+.info-academica > ul {
+    list-style-type: none;
+}
+/* Sublista puntos */
+.info-laboral ul ul,
+.info-academica ul ul {
+    list-style-type: disc;
 }
 
 ul {
@@ -63,8 +66,27 @@ ul {
     margin: 1vh 0 1.5vh 0;
 }
 
+
+ul li strong {
+    font-size: 1.2em;
+}
+
 li {
     margin: 0.75vh 0;
+}
+
+/* Estilo general para los títulos */
+h1, h2, h3 {
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: 1.5vh 0;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    position: relative; /* ::after */
+}
+.tituloSobreVerde{
+    color: var(--secondary-color);
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 1);
 }
 
 a {
@@ -77,6 +99,15 @@ a:hover {
 }
 
 /* Contenedor prácticas */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-top: outset 5px black;
+}
+
 .practicaContenedor {
     display: grid;
     gap: 2vh;
@@ -88,8 +119,8 @@ a:hover {
 
 /*Círculos */
 .practicaCirculo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: flex;
     align-items: flex-end;
@@ -99,11 +130,18 @@ a:hover {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: transform 0.15s ease 0.15s;
+    transition: all 0.75s ease-in 0.75s;
+    transform-origin: center;
 }
 
 .practicaCirculo:hover {
-    transform: scale(1.2);
+    box-shadow: 
+     2px 2px black,
+     5px 5px green,
+     8px 8px yellow;
+    transform: scale(1.8);
+    border-radius: 5%;
+    margin: 8vh;
 }
 
 .practicaCirculo p {
