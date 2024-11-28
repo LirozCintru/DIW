@@ -130,7 +130,7 @@ footer {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    transition: all 0.75s ease-in 0.75s;
+    transition: all 0.75s ease-in-out 0.75s;
     transform-origin: center;
 }
 
@@ -139,9 +139,9 @@ footer {
      2px 2px black,
      5px 5px green,
      8px 8px yellow;
-    transform: scale(1.8);
+    transform: scale(2);
     border-radius: 5%;
-    margin: 8vh;
+    margin: 10vh;
 }
 
 .practicaCirculo p {
