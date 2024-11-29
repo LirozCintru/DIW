@@ -54,26 +54,43 @@ body {
 .c1.valor { background-image: url("cartasPokemon/d1.png"); }
 .c2.valor { background-image: url("cartasPokemon/d2.png"); }
 .c3.valor { background-image: url("cartasPokemon/d3.png"); }
-.c4.valor { background-image: url("cartasPokemon/d4.png"); }
-.c5.valor { background-image: url("cartasPokemon/d5.png"); }
-.c6.valor { background-image: url("cartasPokemon/d6.png"); }
+.c4.valor { background-image: url("cartasPokemon/d3.png"); }
+.c5.valor { background-image: url("cartasPokemon/d2.png"); }
+.c6.valor { background-image: url("cartasPokemon/d1.png"); }
 
 .valor{ 
     z-index: 0;
-    transition: all 0.35s ease 0.35s;
+    opacity: 0;
     transform: rotateY(-180deg);
+    /* transition: transform 0.3s ease 0.3s,
+    z-index 0.3s ease 0.3s; */
+    transition: all 0.3s ease 0.3s;
 }
 .carta:hover .valor{
-    z-index: 1;
-    transform: rotateY(0);
+    /* z-index: 1; */
+    /* transform: rotateY(0); */
 }
 
 .reverso{
     z-index: 1;
-    transform: rotateY(0);
-    transition: all 0.35s ease 0.35s;
+    transition: all 0.3s ease 0.3s;
+    opacity: 0.3;
+
+        /* transform: rotateY(0); */
 }
 .carta:hover .reverso{
-    z-index: 0;
+    opacity: 1;
+    /* z-index: 0; */
+    /* transform: rotateY(180deg); */
+}
+
+/*-----*/
+.girada .valor{
+    opacity: 1;
+    z-index: 1;
+    transform: rotateY(0);
+}
+.girada .reverso{
     transform: rotateY(180deg);
+    z-index: 0;
 }
