@@ -35,7 +35,6 @@ main {
     display: flex;
     padding: 0.5rem;
     margin: 0 3vw;
-    ;
 }
 
 .info-laboral,
@@ -44,7 +43,6 @@ main {
 }
 
 aside {
-    flex: 1;
     background-color: var(--secondary-color);
     padding: 1rem;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -147,7 +145,7 @@ footer {
         8px 8px rgb(0, 255, 0);
     transform: scale(2);
     border-radius: 5%;
-    margin: 10vh;
+    margin: 12vh;
 }
 
 
@@ -183,11 +181,19 @@ footer {
 .practica5 {
     background-image: url("imgs/imagen5.jpg");
 }
+.practica6 {
+    background-image: url("imgs/imagen5.jpg");
+}
 
 
 
 
 @media (max-width: 1024px) {
+    .info-contenedor {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
     .practicaContenedor {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -195,6 +201,10 @@ footer {
     .practicaCirculo {
         width: 100px;
         height: 100px;
+    }
+
+    .info-laboral, .info-academica, aside {
+        margin-bottom: 1rem;
     }
 }
 
@@ -227,7 +237,7 @@ footer {
     }
 
     .practicaCirculo {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 }
