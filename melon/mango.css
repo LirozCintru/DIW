@@ -12,6 +12,14 @@
     text-decoration: none;
 }
 
+body {
+    font-family: var(--font-family);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+
 
 .ficha::before {
     content: '';
@@ -31,6 +39,9 @@
     background-color: red;
     padding: 5%;
     border-radius: 3%;
+
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ficha > * {
@@ -38,18 +49,24 @@
 }
 
 .mangoImagen img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 .info {
 
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 0px;
     width: 100%;
 }
 
-.titulo,
+.titulo h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 .tamaño,
 .unidades,
 .precio {
@@ -59,6 +76,14 @@
     justify-content: center;
     align-items: center;
 }
+
+.tamaño span, .unidades span, .precio span {
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
 
 /* 
 .titulo {
