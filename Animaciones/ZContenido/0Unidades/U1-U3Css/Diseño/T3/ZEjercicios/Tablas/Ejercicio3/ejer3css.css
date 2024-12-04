@@ -1,0 +1,34 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tbody th {
+text-align: right;
+}
+
+td {
+    padding: 8px;
+}
+
+.rojo{
+    color:red;
+}
+
+.azul{
+    color:blue;
+}
+
+.verde{
+    color:green;
+}
+
+tbody tr td:nth-child(odd){
+    border-right:solid 1px black;
+    border-left:solid 1px black;
+}
+
+.euro tr:nth-child(5) td::after{
+    content: "€";
+}
+

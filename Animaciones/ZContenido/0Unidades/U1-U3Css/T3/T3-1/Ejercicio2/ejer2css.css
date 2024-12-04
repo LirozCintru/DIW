@@ -1,0 +1,23 @@
+table, th, tr, td{
+    border: solid 1px #ddd;
+    border-collapse: collapse;
+    text-align: center;
+    width: 500px;
+}
+
+thead, th {
+    background-color: #009688;
+    color:white;
+}
+
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+tbody tr td:nth-child(3)::after{
+    content: "€";
+}
+
+tr:hover td{
+    background-color: #c7e2e0;
+}

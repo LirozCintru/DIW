@@ -1,0 +1,84 @@
+p  {
+    width: 100px;
+    color: purple;
+    border: dotted;
+}
+
+.s1 {
+    position: static;
+}
+.s2 {
+    position: static;
+    top: 80px;
+    left: 40px;
+}/*Como puedes ver, en position static no funcionan las propiedades top, bottom, left y right*/
+.s3 {
+    position: static;
+}
+
+.r1 {
+    position: relative;
+}
+.r2 {
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+.r3 {
+    position: relative;
+}
+
+.f1 {
+    position: fixed;
+}
+.f2 {
+    position: fixed;
+    top: 100px;
+    left: 300px;
+}
+.f3 {
+    position: fixed;
+}
+
+.a1 {
+    position: absolute;
+}
+.a2 {
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+.a3 {
+    position: absolute;
+}
+
+.a {
+    position: static; /*cambia este valor a static para ver la diferencia*/
+    width: 300px;
+    height: 300px;
+    border: 2px dotted purple; 
+  } 
+.b {
+    position: absolute;/*Se posiciona de forma relativa al primer elemento padre que tiene una posición distinta a static*/
+    background-color: #e1f4fc;
+    top: 60px;
+    right: 0px;
+    width: 200px;
+    height: 80px;
+    border: 3px solid blue;
+}
+
+.sy1 {
+    position: -webkit-sticky;
+    position: sticky;
+}
+.sy2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 40px;
+}
+.sy3 {
+    position: -webkit-sticky;
+    position: sticky;
+}

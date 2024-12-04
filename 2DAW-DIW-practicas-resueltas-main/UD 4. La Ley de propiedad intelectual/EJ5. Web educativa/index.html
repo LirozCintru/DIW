@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Educativa</title>
+</head>
+<body>
+    <header>
+        <h1>Networking rules!</h1>
+    </header>
+
+    <main>
+        <section class="left">
+
+            <article>
+                <p>Las redes son divertidas porque nos permiten conectar con personas de todo el mundo, compartir momentos especiales y descubrir contenido que nos hace reír, aprender o sorprendernos. Desde memes graciosos hasta videos virales, siempre hay algo nuevo que explorar. Además, podemos interactuar con amigos y comunidades que comparten nuestros intereses, creando experiencias únicas y entretenidas en cada clic. 😊</p>
+            </article>
+
+            <article>
+                <h2>Explicación protocolo TCP/IP</h2>
+                <div>
+                <video autoplay loop muted id="video">
+                    <source src="media/video/protocolo-TCPIP.mp4" type="video/mp4">
+                    <track src="media/subtitulos.vtt" kind="captions" srclang="es" label="Español">
+                    <p>Tu navegador no soporta el elemento de video.</p>
+                </video>
+                <button id="playButton">⏸️</button>
+            </div>
+                <p>TCP/IP (Transmission Control Protocol/Internet Protocol) es el conjunto de reglas que permite que los dispositivos se comuniquen a través de internet. Funciona dividiendo los datos en pequeños paquetes, que se envían a través de redes y se reagrupan en su destino. TCP se encarga de asegurar que los paquetes lleguen correctamente y en el orden adecuado, mientras que IP se encarga de direccionar y enviar estos paquetes a su destino a través de las redes.</p>
+            </article>
+
+
+        </section>
+
+        <section class="right">
+
+            <article>
+                <h2>¿Cómo funciona internet?</h2>
+                <button id="soundButton">🔈</button>
+                <div id="videoYT">
+                    <iframe src="https://www.youtube.com/embed/rw41W8crZ_Y?si=DJIy41V3puYqyuW_&autoplay=1&mute=1"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article>
+
+                <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 353">
+                    <!-- Definir la imagen -->
+                    <defs>
+                        <pattern id="imgPattern6" patternUnits="userSpaceOnUse" width="612" height="353">
+                            <image href="media/imgs/networking.jpg" width="612" height="353" />
+                        </pattern>
+                    </defs>
+                
+                    <!-- Crear la máscara que divide la imagen -->
+                    <mask id="maskDividida6">
+                        <!-- Redimensionar los rectángulos de la máscara -->
+                        <rect x="0" y="40" width="92" height="313" fill="white" rx="20" ry="20"/> 
+                        <!-- 10 px blancos -->
+                        <rect x="102" y="18" width="41" height="318" fill="white" rx="20" ry="20"/>
+                        <!-- 21 px blancos -->
+                        <rect x="164" y="0" width="274" height="353" fill="white" rx="20" ry="20"/>
+                        <!-- 21 px blancos -->
+                        <rect x="459" y="18" width="41" height="318" fill="white" rx="20" ry="20"/>
+                        <!-- 10 px blancos -->
+                        <rect x="510" y="40" width="92" height="313" fill="white" rx="20" ry="20"/>
+                    </mask>
+                
+                    <!-- Aplicar la imagen con la máscara -->
+                    <rect x="0" y="0" width="612" height="353" fill="url(#imgPattern6)" mask="url(#maskDividida6)" />
+
+                        <rect x="0" y="40" width="92" height="313" fill="none" rx="20" ry="20" stroke="var(--verde-lima)" stroke-width="3"/>
+                        <rect x="102" y="18" width="41" height="318" fill="none" rx="20" ry="20" stroke="var(--verde-lima)" stroke-width="3"/>
+                        <rect x="164" y="0" width="274" height="353" fill="none" rx="20" ry="20" stroke="var(--verde-lima)" stroke-width="3"/>
+                        <rect x="459" y="18" width="41" height="318" fill="none" rx="20" ry="20" stroke="var(--verde-lima)" stroke-width="3"/>
+                        <rect x="510" y="40" width="92" height="313" fill="none" rx="20" ry="20" stroke="var(--verde-lima)" stroke-width="3"/>
+
+                </svg>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p> Sara Berezo Loza </p>
+    </footer>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- API youtube -->
+    <script>
+        
+        let player; // Variable para guardar el reproductor
+        // Seleccionamos el video y el botón
+        const video = document.getElementById("video");
+        const soundButton = document.getElementById("soundButton");
+        const playButton = document.getElementById("playButton");
+        const videoYT = document.getElementById("videoYT");
+
+        // Función para alternar play/pause
+        playButton.addEventListener("click", () => {
+            if (video.paused) {
+                video.play();
+                playButton.innerHTML = "⏸️";
+            } else {
+                video.pause();
+                playButton.innerHTML = "▶️";
+            }
+        });
+    
+        // Función que se ejecuta cuando la API de YouTube está lista
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('videoYT', {
+                videoId: 'rw41W8crZ_Y', // ID del video de YouTube
+                playerVars: {
+                    autoplay: 1,  // El video se reproducirá automáticamente
+                    mute: 1,       // El video se reproduce en modo mudo
+                    loop: 1,       // Reproduce el video en bucle
+                }
+            });
+        }
+
+        // Función para alternar el sonido
+        soundButton.addEventListener("click", () => {
+            if (player.isMuted()) {
+                player.unMute(); // Si está muteado, desmutea el video
+                soundButton.textContent = "🔊"; // Cambia el ícono a sonido activado
+            } else {
+                player.mute(); // Si está desmuteado, mútelo
+                soundButton.textContent = "🔈"; // Cambia el ícono a sonido desactivado
+            }
+        });
+      </script>
+
+</body>
+</html>

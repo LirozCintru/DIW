@@ -1,0 +1,56 @@
+Ejercicios de Tablas
+Ejercicio de tablas 1:
+
+Resultado:
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/Resultado.PNG
+
+
+Archivos auxiliares:
+
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/fondo_gris.gif?time=1728665687426
+
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/dolar.png?time=1728665695875
+
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/euro.png?time=1728665703915
+
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/libra%20%281%29.png
+
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/yen.png?time=1728665721463
+
+
+
+
+
+
+Ejercicio de tablas 2:
+
+Resultado:
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/Animation.gif
+
+
+Para poner formato solo a los elementos impares se puede usar: .styled-table tbody tr:nth-child(odd)
+
+Para que ponga siempre un símbolo sin necesidad de incrustarlo en el HTML:
+
+.styled-table tbody tr td:nth-child(3)::after { 
+
+     /* tercer hijo de tr, que es de tipo td, el primer hijo es un th, el segundo es un td, el tercero es un td*/
+
+    content: "€";
+
+
+}
+
+Ayuda:
+
+Color fondo: #009688
+Color borde: #ddd
+Color gris: #f2f2f2
+Color hover: #c7e2e0
+
+
+
+Ejercicio de tablas 3:
+
+Resultado (sin el fondo):
+https://aulavirtual-educacion.larioja.org/pluginfile.php/1102443/mod_page/content/4/tabla-precios-css.jpg

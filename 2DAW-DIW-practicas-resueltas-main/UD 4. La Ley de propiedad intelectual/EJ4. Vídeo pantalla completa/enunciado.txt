@@ -1,0 +1,28 @@
+Se define un elemento de video con la etiqueta <video>.
+Este elemento tiene los siguientes atributos y propiedades:
+    autoplay: El video se reproduce automáticamente cuando se carga la página.
+    muted: El audio del video está desactivado.
+    loop: El video se reproduce en bucle de forma continua.
+    id="myVideo": Se asigna un identificador único "myVideo" al elemento de video para que sea fácilmente seleccionable a través de JavaScript.
+
+Se proporciona una fuente de video mediante la etiqueta <source>. Esta fuente especifica la ubicación
+del archivo de video ("./examples/ud2/ex4/mov_bbb.mp4") y su tipo ("video/mp4").
+
+Luego, se crea un elemento <div> con la clase "content". Este div contendrá el título,
+un párrafo y el botón de pausa/reproducción.
+
+Dentro del <div> con la clase "content", se incluye un título <h1> con el texto "Heading" y
+un párrafo <p> con el texto "Lorem ipsum...". Estos elementos pueden contener cualquier contenido
+que desees mostrar junto al video.
+
+Se agrega un botón <button> con el atributo id="myBtn" y el texto "Pause" inicialmente.
+Este botón es el control para pausar y reproducir el video.
+
+
+El código JavaScript comienza obteniendo dos elementos del documento HTML por su identificador:
+var video = document.getElementById("myVideo");: Obtiene el elemento de video con el id "myVideo" y lo almacena en la variable video.
+var btn = document.getElementById("myBtn");: Obtiene el botón con el id "myBtn" y lo almacena en la variable btn.
+
+Se define una función llamada myFunction(), que se activa cuando se hace clic en el botón "Pause". Esta función realiza lo siguiente:
+Verifica si el video está pausado utilizando video.paused. Si está pausado, lo reproduce con video.play() y cambia el texto del botón a "Pause".
+Si el video no está pausado, lo pausa con video.pause() y cambia el texto del botón a "Play".

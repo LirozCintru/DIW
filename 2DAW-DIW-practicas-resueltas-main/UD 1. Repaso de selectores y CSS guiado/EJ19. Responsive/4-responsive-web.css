@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: #a99f4e;
+    color: #fff;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav a{
+    color:white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    padding: 2%;
+    padding-left: 5%;
+    float: left;
+    width: 80%;
+    /* overflow:auto; */
+  }
+  main ul {
+    list-style:circle;
+  }
+  .tit_list{
+    text-decoration: underline wavy #797137 2px;
+  }
+  section {
+    display:block;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    width: 45%;
+    float: left;
+  }
+  aside {
+    padding: 20px;
+    float: left;
+    width: 20%;
+    height: auto;
+    background-color: #eee;
+    /* overflow: auto; */
+  }
+  aside ul{
+    list-style: none inside;
+    padding-left: 0;
+  }
+  aside ul li::before{
+    content: '😂😂';
+    margin-right: 5px;
+  }
+  footer {
+    clear:both;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    /* overflow: hidden; */
+  }
+  footer div {
+    float: left;
+    padding: 20px;
+    width: 25%;
+  }
+  @media (max-width: 1000px) {
+    body {
+      font-size: 18px;
+    }
+    /* Al aplicarlo aquí se aplica a todas las menores de 100
+    y no hace falta ponerlo en la de 600 */
+    nav a:hover {
+      text-decoration: none;
+    }
+    main {
+      width: 100%;
+      float: none; /* Eliminamos float para que ocupe todo el ancho */
+    }
+    aside {
+      width: 100%;
+      float: none; /* Eliminamos float para que ocupe todo el ancho */
+    }
+    footer div {
+      width: 50%;
+      float: left;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+    nav {
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+    nav li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    /* main, aside no haría falta ponerlo porque ya está en 1000 */
+    main, section, aside, footer div{
+      width: 100%;
+      float: none;
+    }
+  }

@@ -1,0 +1,97 @@
+/* ESTILOS EXPLICACIÓN */
+:root{
+    --rojo-claro: #ffebee;
+    --rojo-intermedio: #ffcdd2;
+    --rojo-palido: #ef9a9a;
+    --rojo-oscuro: #e57373;
+    --color-fuente: #921414;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    margin: 2%;
+}
+h1, h2, h3, h4, p {
+    margin-bottom: 1%;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+}
+th{
+    background-color: gray;
+    color: whitesmoke;
+}
+
+/* ESTILOS SECTIONS Y ARTICLES */
+section {
+    padding: 1%;
+    margin: 1% 1% 0% 1%;
+    color: var(--color-fuente);
+    overflow: hidden;
+}
+section:nth-child(even){
+    background-color: var(--rojo-claro);
+}
+
+section:nth-child(odd){
+    background-color: var(--rojo-intermedio);
+}
+article{
+    padding: 1%;
+    margin: 1%;
+    width: 48%;
+    float: left;
+    background-color: white;
+    border: var(--rojo-palido) 1px solid;
+    box-sizing: border-box;
+}
+
+/* EJEMPLO 1 */
+.masked-image-css-cir {
+    width: 100%;
+    padding-bottom: 66.56%; /* Aspect ratio de 1600x1065 */
+    background-image: url('girasoles.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* Aplicamos una máscara circular con mask-image */
+    mask-image: radial-gradient(circle, black 25%, transparent 16%);
+}
+.masked-image-css-cir:hover{
+    mask-image: radial-gradient(circle, black 50%, transparent 51%);
+}
+
+.masked-image-svg {
+    width: 100%;
+    height: auto;
+}
+.masked-image-svg:hover {
+    opacity: 0.5;
+    transition: opacity 1s ease; /* Transición suave de mask-size */
+}
+
+/* EJEMPLO 2 */
+.masked-image-css-rec {
+    width: 100%;
+    padding-bottom: 66.56%; /* Aspect ratio de 1600x1065 */
+    background-image: url('girasoles.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* Aplicamos una máscara rectangular con mask-image */
+    mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%);
+}
+.masked-image-css-rec:hover{
+    mask-image: none;
+}

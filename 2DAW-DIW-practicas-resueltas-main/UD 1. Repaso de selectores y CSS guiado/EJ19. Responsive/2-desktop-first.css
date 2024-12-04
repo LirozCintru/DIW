@@ -1,0 +1,31 @@
+/* En un enfoque «Desktop First», los estilos base están diseñados para escritorios y
+luego se aplican ajustes mediante media queries para tabletas y dispositivos móviles. */
+
+/* Estilos base para escritorios */
+body {
+    background-color: blue;
+}
+p:after {
+    color: white;
+    content: "Escritorio";
+}
+
+/* Media query para tabletas (por ejemplo, anchura entre 600px y 1024px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body {
+        background-color: green;
+    }
+    p:after {
+        content: "Tablet";
+    }
+}
+
+/* Media query para dispositivos móviles (por ejemplo, anchura menor a 600px) */
+@media (max-width: 599px) {
+    body {
+        background-color: red;
+    }
+    p:after {
+        content: "Móvil";
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo transitions</title>
+</head>
+<body>
+    <style>
+
+/* --- TRANSITIONS ---
+ease-in -> comenzará la animación lentamente y finalizará a toda velocidad.
+ease-out -> iniciará la animación a toda velocidad, luego terminará lentamente.
+ease-in-out -> comenzará lentamente, será más rápido en el medio de la animación y luego terminará lentamente.
+ease -> es como easy-in-out, excepto que comienza ligeramente más rápido de lo que termina.
+linear -> no usa relajación.
+*/
+
+/* --- TRANSITIONS PARA DIFERENTES NAVEGADORES --
+moz-        es el que utiliza Firefox
+-webkit-    lo utilizan los navegadores basados en Chromium (Chrome y Safari)
+-o-         para Opera
+-ms-        es el prefijo de Internet Explorer
+*/
+        
+.transition{
+  width: 150px;
+  height: 70px;
+  background-color: #ddd;
+  margin: 5px;
+}
+
+div:hover{
+  width: 300px;
+  height: 140px;
+  background-color: orange;
+}
+
+.Ease{
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.Linear{
+  -webkit-transition: all 3s linear;
+  -moz-transition: all 3s linear;
+  -ms-transition: all 3s linear;
+  -o-transition: all 3s linear;
+  transition: all 3s linear;
+}
+
+.Ease-In{
+  -webkit-transition: all 3s ease-in;
+  -moz-transition: all 3s ease-in;
+  -ms-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
+}
+
+.Ease-Out{
+  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  transition: all 3s ease-out;
+}
+
+.Ease-In-Out{
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+    </style>
+
+
+    <div class="transition">Sin efecto</div>
+    <div class="transition Ease">Ease</div>
+    <div class="transition Linear">Linear</div>
+    <div class="transition Ease-In">Ease-In</div>
+    <div class="transition Ease-Out">Ease-Out</div>
+    <div class="transition Ease-In-Out">Ease-In-Out</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.visible {
+    background-color: lightyellow;
+    width: 150px;
+    height: 150px;
+    overflow: visible; /*Contenido sale del elemento y es completamente visible.*/
+  }
+  .scroll {
+    background-color: lightgreen;
+    width: 150px;
+    height: 150px;
+    overflow: scroll; /*Muestra una barra de scroll (horizontal y vertical) cuando los contenidos no caben en el contenedor.*/
+  }
+  .hidden {
+    background-color: lightblue;
+    width: 150px;
+    height: 150px;
+    overflow: hidden; /*Contenido que sale del contenedor padre se oculta y no se muestran barras de scroll. */
+  }
+  .auto {
+    background-color: lightgrey;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+  }
+  /*Ejemplo de overflow:hidden con floats*/
+  .auto-img {
+    background-color: lightgrey;
+  
+  }
+  .auto-img img{
+   float: left;
+   max-height: 300px;
+  }

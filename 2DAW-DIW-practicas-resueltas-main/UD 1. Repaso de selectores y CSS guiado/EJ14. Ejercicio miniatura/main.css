@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+article{
+    float: left;
+    width: 420px;
+    height: 140px;
+    background-color: #F7F3F3;
+    margin: 10px;
+}
+article figure{
+    width: 150px;
+    float: left;
+} 
+article figure img {
+    width: 100%;
+    align-items: center;
+}
+.datos-productos{
+    float: right;
+    padding: 20px;
+    max-width: 190px;
+} 
+.borrar{
+    float: right;
+    padding: 0 5px 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.nombre{
+    padding-top: 20px;
+    float: left;
+    font-weight: bold;
+}
+.precio{
+    clear: both;
+    float: left;
+    color: #666;
+    font-size: 90%;
+    margin: 5px 0 5px 0;
+}   
+.colores{
+    clear: both;
+    margin-left: -5px;
+}    
+.colores li{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 12.5px;
+    margin: 10px 0px 0px 5px;
+    border: 1px solid black;
+} 
+.colores li:nth-child(1) {
+    /* background-color: black; */
+    background-image: url(cuero.jpg);
+    background-size: cover;
+}
+.colores li:nth-child(2) {
+    background-color: burlywood;
+}
+.colores li:nth-child(3) {
+    background-color: gray;
+}
+.colores li:nth-child(4) {
+    background-color: #bf8a3d;
+}
+.colores li:nth-child(5) {
+    background-color: #724625 ;
+}

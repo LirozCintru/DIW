@@ -1,0 +1,86 @@
+:root {
+    --azul-electrico: #007BFF; /* Encabezados y títulos */
+    --blanco: #FFF; /* Fondo */
+    --gris-claro: #F5F5F5; /* Secciones secundarias o cuadros de texto */
+    --verde-lima: #00D97E; /* Botones interactivos */
+    --naranja-brillante: #FF6B35; /* Destacar alertas o mensajes importantes */
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: red 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html, body {
+    height: 100%; /* El alto es igual al del viewport */
+    width: 100%;  /* El ancho es igual al del viewport */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columna */
+    justify-content: space-between; /* Distribuye los elementos de manera flexible */
+}
+
+/* Header: un contenedor fijo para el encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;  /* El header ocupa todo el ancho */
+    flex-shrink: 0; /* No se puede reducir el tamaño del header */
+}
+
+/* Main: el área principal que ocupa el espacio restante */
+main {
+    display: flex;
+    flex: 1;  /* Ocupa todo el espacio restante */
+    flex-direction: row; /* Organiza las secciones en fila */
+    justify-content: space-between; /* Alinea las secciones a los extremos */
+    padding: 1rem;
+}
+
+/* Sección izquierda y derecha con un tamaño flexible */
+section {
+    flex: 1; /* Ambas secciones ocupan la mitad del espacio disponible */
+    margin: 1rem; /* Espacio entre las secciones */
+    padding: 1rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column; /* Contenido en columnas dentro de cada sección */
+    justify-content: flex-start; /* Alineación desde el inicio de cada sección */
+}
+
+/* Footer: un contenedor fijo para el pie de página */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;  /* El footer ocupa todo el ancho */
+    flex-shrink: 0; /* No se puede reducir el tamaño del footer */
+}
+
+video, iframe {
+    width: 100%;
+    height: auto
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    /* Mínimo (1rem): El tamaño más pequeño que tendrá el texto en pantallas pequeñas.
+    Relativo (4vw): Escala con el alto del viewport.
+    Máximo (2.5rem): Evita que el texto sea demasiado grande en pantallas amplias. */
+    text-align: center;
+    font-size: 1vw;
+}
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+    font-size: 1vw;
+}
+p {
+    line-height: 1.5;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: 1vw;
+}

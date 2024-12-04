@@ -1,0 +1,40 @@
+/*Barra Arriba Instagram*/
+#barra{
+    background-color: white(199, 199, 199);
+    border-bottom: 1px rgb(8, 8, 8) groove;
+    padding: 10px;
+    
+}
+
+#iconoInsta {
+    width: 150px ;
+    border-right: 2px black solid;
+    padding: 20px;
+
+}
+
+#nombreLogoInsta {
+    width: 150px ;
+
+    margin-right: 15%;
+}
+
+#lupaBusqueda {
+    width: 10px ;
+    height: auto;
+    color:aquamarine;
+}
+
+#buscar {
+    text-align: center;
+    margin: none;
+}
+
+/**-----Fin Barra Arriba Instagram----*/
+/*Contenido*/
+#publicaciónEntera{
+    border:1px black ridge;
+}
+
+/*Imagen Izquierda*/
+

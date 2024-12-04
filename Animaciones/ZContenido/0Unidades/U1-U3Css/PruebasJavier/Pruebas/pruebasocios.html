@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Socios - R.C. Osasuna Rugby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #d2232a;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #d2232a;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b71c21;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hazte Socio - R.C. Osasuna Rugby</h1>
+    <p>Únete a nuestra gran familia y disfruta de ventajas exclusivas como socio del R.C. Osasuna Rugby. Completa el siguiente formulario para inscribirte.</p>
+
+    <form action="/submit-socio" method="POST">
+        <h2>Información Personal</h2>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="dni">DNI/NIE:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h2>Dirección</h2>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="codigo-postal">Código Postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal" required>
+
+        <h2>Tipo de Socio</h2>
+        <label for="tipo-socio">Selecciona el tipo de socio:</label>
+        <select id="tipo-socio" name="tipo-socio" required>
+            <option value="adulto">Socio Adulto (Mayor de 18 años) - 100€/año</option>
+            <option value="junior">Socio Junior (Menores de 18 años) - 50€/año</option>
+            <option value="familiar">Socio Familiar (2 adultos + hijos) - 200€/año</option>
+        </select>
+
+        <h2>Método de Pago</h2>
+        <label for="metodo-pago">Método de Pago:</label>
+        <select id="metodo-pago" name="metodo-pago" required>
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="domiciliacion">Domiciliación Bancaria</option>
+        </select>
+
+        <h2>Comentarios</h2>
+        <label for="comentarios">¿Alguna observación o solicitud especial?</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+
+</body>
+</html>

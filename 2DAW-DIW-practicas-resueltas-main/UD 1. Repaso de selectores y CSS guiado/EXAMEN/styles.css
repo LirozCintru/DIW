@@ -1,0 +1,222 @@
+:root {
+    --negro: #000000;
+    --gris-oscuro: #333333;
+    --gris-medio: #666666;
+    --gris-claro: #CCCCCC;
+    --marron-oscuro: #3E2723;
+    --mostaza: #F1C40F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "trebuchet ms", arial, sans-serif;
+    /* border: 1px solid red; */
+    /* overflow: auto; */
+}
+
+body > * {
+    padding: 20px 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--gris-oscuro);
+    position: sticky;
+    top: 0;
+}
+
+header h1, header h2 {
+    color: var(--gris-claro)
+}
+
+header h2 {
+    margin-top: 10px;
+}
+
+nav {
+    width: 25%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 20px;  
+}
+
+nav ul li {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mostaza);
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--gris-oscuro);
+    font-size: 18px;
+}
+
+main{
+    clear: both;
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+.presentacion div{
+    width: 67%;
+    margin-right: 3%;
+    float: left;
+}
+
+.presentacion div article {
+    margin-bottom: 1%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.presentacion div article:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+.presentacion div article:nth-child(even) {
+    background-color: var(--gris-medio);
+}
+.presentacion div article ul {
+    list-style: none;
+}
+.presentacion div article ul li {
+    margin-left: 2%;
+}
+
+.presentacion div article ul li::before {
+    content: ""; /* Dejamos el contenido en blanco */
+    display: inline-block;
+    width: 20px; /* Ancho de la imagen de la viñeta */
+    height: 20px; /* Alto de la imagen de la viñeta */
+    background-image: url('imgs/ico-list.png'); /* Ruta de la imagen de la viñeta */
+    background-size: contain; /* Ajustar la imagen al contenedor */
+    /* Espacio entre la viñeta y el texto del elemento */
+}
+
+.presentacion p {
+    line-height: 1.5;
+}
+.presentacion figure {
+    width: 30%;
+    float: left;
+}
+.presentacion figure img {
+    width: 100%;
+    height: auto;
+}
+.presentacion figure figcaption {
+    margin: 5px 0px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--gris-oscuro)
+}
+
+.bares {
+    clear:both;
+}
+
+.bares article {
+    height: auto;
+    width: 21%;
+    margin: 2%;
+    float: left;
+    box-shadow: 5px 10px 8px var(--marron-oscuro);
+}
+
+.bares article figure {
+    background-color: var(--gris-medio);
+}
+
+.bares article figure img {
+    width: 100%;
+    height: auto;
+}
+
+.bares article figcaption {
+    padding: 5px 0px 5px 15px;
+    margin-bottom: 5px;
+}
+
+.bares article figcaption h3 {
+    font-size: 16px;
+    color: var(--mostaza);
+}
+
+.bares article:nth-child(1) figcaption h3::after{
+    margin-left: 10px;
+    content: '⭐⭐';
+}
+.bares article:nth-child(2) figcaption h3::after{
+    margin-left: 10px;
+    content: '⭐⭐⭐';
+}
+.bares article:nth-child(3) figcaption h3::after{
+    margin-left: 10px;
+    content: '⭐';
+}
+.bares article:nth-child(4) figcaption h3::after{
+    margin-left: 10px;
+    content: '⭐⭐⭐⭐⭐';
+}
+
+.bares article figcaption h4 {
+    margin: 5px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--negro);
+}
+
+.bares article div {
+    padding: 10px;
+    background-color: var(--gris-oscuro);
+    text-align: center;
+}
+
+.bares article div a {
+    cursor: pointer;
+    /* text-decoration: none; */
+    color: var(--gris-claro);
+}
+
+.bares article div a:visited {
+    color: var(--negro);
+    /* text-decoration: underline !important; */
+}
+
+footer {
+    width: 100%;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    background-color: var(--gris-oscuro);
+    color: var(--mostaza);
+    font-weight: bold;
+    float: left;
+    text-align: center;
+}
+
+footer div {
+    float: left;
+    width: 33.33%;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+}
+
+footer div img {
+    width: 18%;
+}

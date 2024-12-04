@@ -1,0 +1,187 @@
+:root {
+    --verde-oscuro: #476c2f;
+    --verde-medio: #547d35;
+    --verde-claro: #bbf696;
+    --naranja: #eaa652;
+    --amarillo: #eaec4f;
+    --melocoton: #eedb69;
+    --blanco: white;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ficha {
+    position: relative;
+    margin: 2vh 0 0 2vw;
+    background-color: var(--verde-medio);
+    width: 400px;
+    height: 500px;
+    background-size: 100% 100%;
+    border-radius: 10px 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ficha::after {
+    content: 'Oferta';
+    color: var(--verde-oscuro);
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 800;
+    font-style: italic;
+    z-index: 0;
+}
+
+.ficha::before {
+    content: '';
+    position: absolute;
+    clip-path: circle(150px at 80% 20%);
+    background-color: var(--melocoton);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.img {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    transition: all 1s ease;
+}
+.img img {
+    width: 100%;
+}
+
+.datos {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    transition: all 1s ease 100ms;
+    display: flex;
+    flex-direction: column;
+}
+
+.tit, .tam, .unid, .precio {
+    width: 100%;
+    color: var(--blanco);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0% 5% 0 5%;
+}
+
+.tit {
+    font-size: 1.5rem;
+    margin-top: 8%;
+}
+
+.tam, .unid, .precio {
+    font-size: 1rem;
+    margin-top: 6%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease 0s;
+}
+
+.tam span, .unid span, .precio span {
+    margin: 0 2%;
+    padding: 0 5px;
+    border: 2px solid transparent;
+}
+
+.tam span:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    border: var(--melocoton) solid 2px;
+}
+
+.seleccionado {
+    background-color: var(--amarillo);
+    border-radius: 10px;
+    border: var(--melocoton) solid 2px;
+    color: var(--verde-oscuro);
+}
+
+/* Quitar las flechas */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+.unid span {
+    cursor: pointer;
+}
+
+.unid input {
+    margin-left: 2%;
+    padding: 5px;
+    width: 10%;
+    text-align: center;
+    background-color: var(--amarillo);
+    border: var(--melocoton) solid 1px;
+    border-radius: 10px;
+    color: var(--verde-oscuro);
+}
+
+.precio span {
+    margin-left: 2%;
+    padding: 5px;
+    background-color: var(--amarillo);
+    border-radius: 10px;
+    border: var(--melocoton) solid 2px;
+    color: var(--verde-oscuro);
+}
+.precio span::after {
+    content: ' €';
+}
+
+.ficha:hover .img {
+    transform: translateY(-30%);
+}
+
+.ficha:hover .datos {
+    transform: translateY(-100%);
+}
+
+.ficha:hover .tam,
+.ficha:hover .unid,
+.ficha:hover .precio {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ficha:hover .tam {
+    transition-delay: 0.5s;
+}
+
+.ficha:hover .unid {
+    transition-delay: 0.6s;
+}
+
+.ficha:hover .precio {
+    transition-delay: 0.7s;
+}
+
+.ficha:hover::before {
+    clip-path: circle(300px at 80% -20%);
+}

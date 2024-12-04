@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Aplicar propiedad abreviada list-style */
+        ul {
+            list-style: none; /* Eliminamos los marcadores predeterminados */
+            padding: 0; /* Eliminamos el relleno predeterminado */
+        }
+        li::before {
+            content: '😊'; /* Emoticono como marcador */
+            margin-right: 10px; /* Espacio entre el emoticono y el texto del elemento */
+        }
+    </style>
+    <title>Ejercicio 4: Propiedad abreviada</title>
+</head>
+<body>
+    <ul>
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+        <li>Elemento D</li>
+    </ul>
+</body>
+</html>

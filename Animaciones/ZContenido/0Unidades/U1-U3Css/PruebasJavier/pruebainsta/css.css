@@ -1,0 +1,104 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.post-container {
+    width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    position: relative;
+}
+
+/* Sección izquierda - Imagen */
+.left-section {
+    width: 60%;
+    float: left;
+}
+
+.left-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sección derecha - Información */
+.right-section {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    position: relative; /* Para ajustar elementos internamente */
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.verified {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.location {
+    margin-left: 10px;
+    color: #8e8e8e;
+}
+
+/* Descripción del post */
+.post-description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Comentarios */
+.comments {
+    margin-top: 20px;
+    color: #8e8e8e;
+}
+
+.comments p {
+    margin: 5px 0;
+}
+
+/* Iconos de interacción */
+.interaction-icons {
+    margin-top: 20px;
+    position: absolute; /* Usamos position aquí para controlar su ubicación */
+    bottom: 20px; /* Lo posicionamos en la parte inferior del contenedor */
+    left: 20px;
+}
+
+.interaction-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Clearfix para evitar problemas con float */
+.post-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

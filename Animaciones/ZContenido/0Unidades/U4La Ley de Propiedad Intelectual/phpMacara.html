@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <article>
+        <!-- Definir la imagen ancho=1024 alto=538-->
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 538">
+            <defs>
+                <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="1024" height="538">
+                    <image href="phpImagen.png" width="1024" height="538" />
+                </pattern>
+            </defs>
+
+            <mask id="maskDividida2">
+                <rect x="10" y="110" width="135" height="328" fill="white" rx="20" ry="20"/>
+                <rect x="155" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                <rect x="345" y="0" width="340" height="538" fill="white" rx="20" ry="20" />
+                <rect x="700" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                <rect x="885" y="110" width="135" height="328" fill="white" rx="20" ry="20" />
+            </mask>
+
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="1024" height="538" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+
+            <rect x="0" y="50" width="" height="538" fill="none" rx="20" ry="20" stroke="red" stroke-width="3"/>
+            <rect x="210" y="0" width="" height="538" fill="none" rx="20" ry="20" stroke="blue" stroke-width="3"/>
+            <rect x="420" y="50" width="" height="538" fill="none" rx="20" ry="20" stroke="green" stroke-width="3"/>
+            <rect x="630" y="100" width="" height="538" fill="none" rx="20" ry="20" stroke="purple" stroke-width="3"/>
+        </svg>
+    </article>
+    
+</body>
+</html>

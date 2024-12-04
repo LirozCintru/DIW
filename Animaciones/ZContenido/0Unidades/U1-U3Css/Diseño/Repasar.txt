@@ -1,0 +1,11 @@
+Transitions
+Bordes 
+Tablas
+Cuerpo
+Formularios (hover y foucus)
+display grips
+float
+Positions
+
+flex,left/righ,Grid
+formularios

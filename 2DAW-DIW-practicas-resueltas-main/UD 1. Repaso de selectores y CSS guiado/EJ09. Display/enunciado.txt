@@ -1,0 +1,16 @@
+Display
+Valores: none | inline | block | inline-block
+
+none: los elementos se ocultan y no se muestra el espacio reservado.
+inline: los elementos se muestran en la misma línea (respetando el flujo) y no se aceptan las propiedades width, height ni márgenes verticales.
+block: los elementos se muestran en líneas independientes y se aceptan las propiedades width, height y márgenes verticales.
+inline-block: su comportamiento es una mezcla entre los dos anteriores, los elementos se muestran en la misma línea (respetando el flujo) y se aceptan las propiedades width, height y márgenes verticales.
+
+ Ejemplo display
+
+Aplica los siguientes estilos sobre diferentes elementos y comprueba el resultado.
+
+.a { display: none; }
+.b { display: inline; width: 100px; height: 50px;}
+.c { display: block; }
+.d { display: inline-block; width: 100px; height: 50px;}

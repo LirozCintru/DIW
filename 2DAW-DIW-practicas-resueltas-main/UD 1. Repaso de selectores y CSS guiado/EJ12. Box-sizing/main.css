@@ -1,0 +1,23 @@
+.img-border {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    /*width: 250px;*/
+    padding: 5px;
+   /* border: solid black;*/
+}
+.img-border img{
+    width: 100%;
+}
+
+.img-content {
+    display: inline-block;
+    box-sizing: content-box;
+    width: 33%;
+    /*width: 250px;*/
+    padding: 5px;
+   /* border: solid black;*/
+}
+.img-content img{
+    width: 100%;
+}

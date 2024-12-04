@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enunciado.css">
+    <title>Enunciado ejercicio tablas</title>
+</head>
+<body>
+
+    <header>
+        <div class="hleft">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVPbNdAgLz7Mz0eAPX3WmGY0jPcR6KLJJRFg&s" alt="logo IES Comercio">
+        </div>
+        <div class="hright">
+            <p>2º Desarrollo de Aplicaciones Web</p>
+            <p>DIW - Diseño de Interfaces Web</p>
+            <p>Sara Berezo Loza</p>
+        </div>
+    </header>
+    
+    <main>
+        <!-- EJERCICO 1 -->
+        <h1>Ejercicio de tablas 1</h1>
+
+        <p>Resultado:</p>
+        <img src="imgs/soluciones/tab1.PNG" alt="Descripción de la imagen">
+
+        <p>Imágenes auxiliares</p>
+        <img src="imgs/fondo_gris.gif" alt="Fondo gris">
+        <img src="imgs/dolar.png" alt="Dolar">
+        <img src="imgs/euro.png" alt="Euro">
+        <img src="imgs/libra.png" alt="Libra">
+        <img src="imgs/yen.png" alt="Yen">
+
+        <hr>
+
+        <!-- EJERCICO 2 -->
+        <h1>Ejercicio de tablas 2</h1>
+
+        <p>Resultado:</p>
+        <img src="imgs/soluciones/tab2.gif" alt="Descripción de la imagen">
+
+        <p>Para poner formato solo a los elementos impares se puede usar:
+            <code>.styled-table tbody tr:nth-child(odd)</code>
+        </p>
+
+        <p>Para que ponga siempre un símbolo sin necesidad de incrustarlo en el HTML: <br>
+        <code>
+            .styled-table tbody tr td:nth-child(3)::after { <br>
+                /* tercer hijo de tr, que es de tipo td, el primer hijo es un th, el segundo es un td, el tercero es un td*/ <br>
+            content: "€"; <br>
+        }
+        </code>
+        </p>
+
+        <p>Ayuda:</p>
+        <ul>
+            <li>Color fondo: #009688</li>
+            <li>Color borde: #ddd</li>
+            <li>Color gris: #f2f2f2</li>
+            <li>Color hover: #c7e2e0</li>
+        </ul>
+
+    </main>
+</body>
+</html>

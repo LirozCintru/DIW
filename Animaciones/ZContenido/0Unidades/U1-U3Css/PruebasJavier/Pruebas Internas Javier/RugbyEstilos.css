@@ -1,0 +1,255 @@
+/* Todos los elementos de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font: 1em/1.7 'Noto Sans Myanmar';
+  font-family: 'Noto Sans Myanmar';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h1 {
+  font-size: 64px;
+}
+ h2 {
+  font-size: 32px;
+}
+
+ h3 {
+  font-size: 24px;
+}
+
+ h1,h2,h3 
+{
+  font-weight: bold;
+  margin: 15px 10px 10px 10px;
+  color: #d40c24;
+} 
+
+/*header*/
+.encabezado {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #04044c;
+  position: relative;*/
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centra el contenido horizontalmente */
+  padding: 10px;
+  background-color: #04044c;
+
+}
+
+.encabezado img {
+  margin-right: 10px;
+  /* Espacio entre el logotipo y el h1 */
+  max-width: 150px;
+  /* Ajusta el tamaño del logotipo */
+}
+
+.encabezado h1 {
+  /*font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  left: 41%;
+  color: #c63946;*/
+
+
+  font-size: 64px;
+  font-weight: bold;
+  color: #c63946;
+  margin-left: 20px;
+}
+
+/*Fin header*/
+
+
+/*-Navegación-*/
+.navigation {
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+.mainmenu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #c63946;
+}
+
+.mainmenu li {
+  position: relative;
+}
+
+.mainmenu a {
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.mainmenu a:hover {
+  background-color: #f5d97e;
+}
+
+/* Ocultar el submenu por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: #c63946;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.submenu li {
+  margin-right: 0;
+}
+
+.submenu a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* Mostrar submenu al pasar el ratón */
+.mainmenu li:hover .submenu {
+  display: block;
+}
+
+/*Fin Navegación*/
+
+/*Banner*/
+
+#banner {
+  text-align: center;
+  background-color: #f5d97e;
+  /* Color de fondo */
+  padding: 22px;
+  /* espacio */
+  margin-bottom: 20px;
+  border-bottom: 5px outset rgb(255, 255, 255);
+}
+
+#banner img {
+  display: inline-block; /*bloque */
+  margin: auto; /* Centra la imagen horizontalmente */
+  max-width: 100%; /* Ajusta la imagen para que no exceda el ancho */
+  height: 200px; /* "ya no" proporción de la imagen */
+}
+
+/*---Fin Banner---*/
+
+/*Main Presentación*/
+
+.main {
+  background-color: #fdecc8;
+  padding: 20px;
+  margin: 10px auto; /* Centra el main y espacio alrededor */
+  max-width: 1350px;/* ancho máximo contenido */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+/* Estilo para las secciones dentro del main */
+.main section {
+  margin-bottom: 10px; /* Espacio entre las secciones */
+  padding: 15px;/* Relleno interno */
+  background-color: #fff; 
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;}
+
+.main section h2{font-size: 32px;}
+.main section h3{font-size: 24px;}
+
+.main section h2,.main section h3  {  
+  font-weight: bold;
+  margin: 15px 10px 10px 10px;
+  color: #c63946;}
+
+.main section ul {
+  padding-left: 20px;
+}
+
+.main section ul li {
+  margin-bottom: 5px;
+}
+
+/*---Fin Main---*/
+
+/* Section Article Noticia */
+
+.noticias {
+  display: flex;
+  /*especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas*/
+  /*flex-wrap: nowrap; o wrap */
+  justify-content: space-between; /* Espacio uniforme entre artículos */
+  margin: 20px auto;
+  max-width: 85%;
+}
+
+/* Estilo para cada artículo */
+.noticias article {
+  background-color: #fff; /* Fondo noticias */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; /* Oculta contenido que sobrepase el contenedor */
+  width: 32%; /* Ajusta el tamaño de cada artículo al 32% del ancho del contenedor */
+  text-align: justify; /* Alinea texto  */
+  transition:box-shadow 0.5s ease;
+}
+
+.noticias article:hover {
+
+  box-shadow: rgba(0, 0, 0, 0.80) 0px 5px 15px;
+}
+
+.noticias p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin: 10px;
+}
+
+.noticias img {
+  width: 100%; /*ocupa todo el ancho del artículo */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+  border-bottom: 3px solid #d8b3c2; /* Línea abajo imagen */
+}
+
+.noticias .fecha {
+  color: #a5654c;
+  font-style: italic;
+}
+
+/*--- Fin Section Article Noticia ---*/
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #04044c;
+  color: #fdecc8;
+  bottom: 0;
+  width: 100%; 
+  position: relative;
+}
+
+/*--- Fin Footer---*/

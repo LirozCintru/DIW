@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip Path Example</title>
+    
+</head>
+<body>
+    <style>
+        /* ESTILOS GENERALES */
+
+
+/* EJEMPLO 4 */
+
+.imageMaskSVG5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: url(#mask5);
+}
+
+.imageMaskSVG6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: url(#mask6);
+}
+
+    </style>
+
+<article>
+    <div class="imageMaskSVG5">
+        <img src="codigo.jpg">
+    </div>
+    <svg>
+        <defs>
+            <clipPath id="mask5" clipPathUnits="objectBoundingBox">
+                <path d="M0.6707,0.785H0.3293c-0.0177,0-0.032-0.0111-0.032-0.0247V0.2097c0-0.0136,0.0143-0.0247,0.032-0.0247h0.3413
+                    c0.0177,0,0.032,0.0111,0.032,0.0247v0.5506C0.7027,0.7739,0.6883,0.785,0.6707,0.785z" />
+                <path d="M0.2529,0.6962H0.0217C0.0097,0.6962,0,0.6851,0,0.6715V0.1209c0-0.0136,0.0097-0.0247,0.0217-0.0247h0.2312
+                    c0.012,0,0.0217,0.0111,0.0217,0.0247v0.5506C0.2746,0.6851,0.2649,0.6962,0.2529,0.6962z" />
+                <path d="M0.9783,0.9057H0.7471c-0.012,0-0.0217-0.0111-0.0217-0.0247V0.3304c0-0.0136,0.0097-0.0247,0.0217-0.0247h0.2312
+                    C0.9903,0.3057,1,0.3168,1,0.3304V0.881C1,0.8946,0.9903,0.9057,0.9783,0.9057z" />
+            </clipPath>
+        </defs>
+    </svg>
+ </article>
+
+
+    <article>
+        <div class="imageMaskSVG7">
+            <img src="codigo.jpg">
+        </div>
+        <svg>
+            <defs>
+                <clipPath id="mask6" clipPathUnits="objectBoundingBox">
+                    <path d="M483.292 64.07L372.104 19.499l-194.08 189.002-116.873-88.967-44.441 22.351-.044 233.313 44.232 
+                    22.189 116.778-88.894 194.557 188.829 111.101-44.397-.042-388.855z" />
+                    <path d="M361.037 175.128L249.98 258.15l111.101 83.673-.044-166.695zM72.192 208.596l.066 99.858 
+                    55.483-50.267-55 .549-49.591z" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <svg width="322" height="229" viewBox="0 0 322 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M293.5 228.1H32.2C14.4 228.1 0 213.7 0 195.9V87.4C0 77.8 6.6 69.4 16 67.1L291.2 0.700002C306.9 -3.1 322 8.8 322 25V199.6C322 215.3 309.3 228.1 293.5 228.1Z" fill="#C69C6D"/>
+       </svg>
+     </article>
+
+     <article>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 95.51">
+            <defs>
+                <style>.a{fill:#fff;}.a,.h{fill-rule:evenodd;}.b{mask:url(#a);}.c{fill:#52218a;}.d{fill:#6c33af;}.e{fill:#854cc7;}.f{fill:#b179f1;}.g{opacity:0.25;}.h{fill:url(#b);}</style>
+                <mask id="a" x="0" y="0" width="96" height="95.51" maskUnits="userSpaceOnUse">
+                    <g transform="translate(0 -0.25)">
+                        <path class="a" d="M68.89,95.6a6,6,0,0,0,3.93-.44L92.6,85.65A6,6,0,0,0,96,80.24V15.76a6,6,0,0,0-3.4-5.41L72.82.84A6,6,0,0,0,68.34.55,6,6,0,0,0,66,2L34.12,37.26,15.5,22l-1.63-1.4a4,4,0,0,0-3.61-.83,2.55,2.55,0,0,0-.53.18L2.46,23A4,4,0,0,0,0,26.37c0,.1,0,.2,0,.3V69.33c0,.1,0,.2,0,.3A4,4,0,0,0,2.46,73l7.27,3a2.55,2.55,0,0,0,.53.18,4,4,0,0,0,3.61-.83L15.5,74,34.12,58.74,66,94A6,6,0,0,0,68.89,95.6ZM72,27.68,47.21,48,72,68.32ZM12,34.27,24.41,48,12,61.73Z"/>
+                    </g>
+                </mask>
+                <linearGradient id="b" x1="48" y1="97.75" x2="48" y2="2.25" gradientTransform="matrix(1, 0, 0, -1, 0, 98)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#fff"/>
+                    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <title>BrandVisualStudioWin2019</title>
+            
+            <!-- Insert image to replace purple areas -->
+            <g class="b">
+                <image href="codigo.jpg" x="0" y="0" width="96" height="95.51" preserveAspectRatio="xMidYMid slice" />
+            </g>
+        </svg>
+
+     </article>
+
+</body>
+</html>

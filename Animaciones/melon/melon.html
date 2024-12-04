@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mango.css">
+    <title>Cartas Pokémon</title>
+</head>
+
+<body>
+
+    <div class="ficha">
+        <div class="mangoImagen">
+            <img src="imgs/mango.webp" alt="Mango">
+        </div>
+
+        <div class="info">
+            <div class="titulo">
+                <h1>Mango</h1>
+            </div>
+            <div class="tamaño">
+                <p>Tamaño:</p>
+                <span id="pequeño" class="pequeño" onclick="selecionar(this)">Pequeño <br>(1kg)</span>
+                <span id="medio" class="mediano"  onclick="selecionar(this)">Medio <br>(2kg)</span>
+                <span id="grande" class="grande"  onclick="selecionar(this)">Grande <br>(3kg)</span>
+            </div>
+            <div class="unidades">
+                <p>Unidades:</p>
+                <span class="mas">+</span>
+                <input type="number" class="cantidad">
+                <span class="menos">-</span>
+            </div>
+            <div class="precio">
+                <p>Precio:</p>
+                <span class="precioFinal"></span>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="mango.js"></script>
+</body>
+
+</html>

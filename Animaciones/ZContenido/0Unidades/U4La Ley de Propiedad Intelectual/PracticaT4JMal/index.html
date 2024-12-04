@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Php</title>
+</head>
+
+<body>
+    <header>
+        <div id="imgPHP">
+            <img src="imgs/logoPhp.png" alt="Logo de PHP">
+        </div>
+        <div id="infoHeader">
+            <h1>Introducción a PHP</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div class="divPrincipal">
+                    <h1>Titulo random </h1>
+                    <p>Informacion de la primera secion</p>
+                    <p>Video propio con subtitulos un botón de Play/Pausa y tener una duración mínima de 1 minuto y
+                        reproducirse en bucle</p>
+                    <div class="videoP">
+                        <video id="myVideo" autoplay muted loop>
+                            <source src="imgs/videoprueba.mp4" type="video/mp4">
+                            <track src="imgs/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <!-- Botón de Play/Pausa -->
+                    <div class="boton">
+                        <button id="myBtn" onclick="myFunction()">Pause</button>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <section>
+            <article>
+                <div class="divPrincipal">
+                    <h1>¿Qué es PHP?</h1>
+                    <p>Preguntar sobre el boton de mute</p>
+                    <div class="video1section2">
+                        <iframe id="externalVideo"
+                            src="https://www.youtube.com/embed/ykGRYEX0n60?autoplay=1&mute=1&enablejsapi=1"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="boton">
+                        <button id="soundBtn" onclick="soundMute()">
+                            <img src="imgs/soundB.png" alt="sound/mute" id="soundImg">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </article>
+
+            <article class="mascara">
+                <!-- Definir la imagen ancho=1024 alto=538-->
+                <svg width="100%" height="538" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 538">
+                    <defs>
+                        <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="1024" height="538">
+                            <image href="imgs/phpImagen.png" width="1024" height="538" />
+                        </pattern>
+                    </defs>
+
+                    <mask id="maskDividida2">
+                        <rect x="10" y="110" width="135" height="328" fill="white" rx="20" ry="20" />
+                        <rect x="155" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                        <rect x="345" y="0" width="340" height="538" fill="white" rx="20" ry="20" />
+                        <rect x="700" y="50" width="175" height="438" fill="white" rx="20" ry="20" />
+                        <rect x="885" y="110" width="135" height="328" fill="white" rx="20" ry="20" />
+                    </mask>
+
+                    <!-- Aplicar la imagen con la máscara -->
+                    <rect x="0" y="0" width="1024" height="538" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+                </svg>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div id="comercio">
+            <img src="imgs/logoComercio.png" alt="Logo de la escuela IES Comercio">
+        </div>
+        <div id="miembros">
+            <p>Hugo Quesada Alvarez</p>
+            <p>Martin</p>
+            <p>Javier Liroz Trincado</p>
+        </div>
+        <div id="php">
+            <p>2DAW</p>
+            <p>Diseño de Interfaces Web</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+
+</html>

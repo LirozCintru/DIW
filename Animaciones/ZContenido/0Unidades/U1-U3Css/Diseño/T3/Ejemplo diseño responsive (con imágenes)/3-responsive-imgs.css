@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "The Halloween";
+    src: url('https://fonts.cdnfonts.com/css/the-halloween');
+}
+
+h1{
+    font-family: "The Halloween", Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    color: black;
+}
+
+img{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+
+
+  @media (max-width: 1000px) {
+    img{ 
+      width: 33.33%;
+    }
+    h1 {
+        color: orangered;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+     img{
+       width: 50%;
+     }
+     h1{
+        color: green;
+     }
+  }
+
+  
+  @media (max-width: 400px) {
+     img{ 
+       width: 100%;
+    }
+    h1{
+        color: purple;
+    }
+  }

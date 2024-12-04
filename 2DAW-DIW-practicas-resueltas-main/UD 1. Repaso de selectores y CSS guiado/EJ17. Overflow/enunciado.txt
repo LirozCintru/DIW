@@ -1,0 +1,63 @@
+Propiedad overflow
+Propiedad CSS overflow
+La propiedad overflow (desbordamiento o excedente) nos permite controlar el comportamiento del contenido que se encuentra en una caja o contenedor. Por lo tanto, mediante esta propiedad podremos especificar si queremos recortar un contenido, mostrar barras de desplazamiento o mostrar el contenido que excede de un elemento a nivel de bloque.
+
+1. Valores de overflow
+La propiedad overflow solo funciona sobre elementos de tipo bloque con una altura definida. Sus valores son los siguientes:
+
+overflow: visible|hidden|scroll|auto;
+
+Overflow: visible (default). Por defecto la propiedad overflow es visible y lo que hace es que los contenidos se salgan del elemento y sean completamente visibles.
+Overflow: hidden. Los contenidos que se salen del contenedor padre se ocultan y no se muestran barras de scroll. De esta forma se puede controlar el tamaño del elemento y su contenido.
+Overflow: scroll. Se muestra una barra de scroll (horizontal y vertical) cuando los contenidos no caben en el contenedor o caja.
+Overflow: auto. El navegador es el que decide si se muestran las barras de scroll o si se extiende el contenedor. En cualquier caso, gracias a este valor nunca se permite que el contenido desborde al contenedor. Este valor es muy interesante ya que si el contenido se sale por un lado (horizontal o vertical), sólo se muestra la barra de scroll de ese lado.
+
+2. overflow-x y overflow-y
+Las propiedades CSS overflow-x y overflow-y se utilizan para controlar el comportamiento de desbordamiento (overflow) en las dimensiones horizontal (eje x) y vertical (eje y) de un contenedor. Veamos los valores que admiten estas propiedades y algunos ejemplos de uso.
+
+
+2.1. Valores de overflow-x
+Controla el desbordamiento horizontal del contenido dentro del contenedor. Sus valores son los siguientes:
+
+overflow-x: visible|hidden|scroll|auto;
+visible: Es el valor por defecto. El contenido desbordado se muestra fuera del contenedor sin recortarse.
+hidden: El contenido desbordado se oculta, y no es visible fuera del contenedor.
+scroll: Agrega barras de desplazamiento en el eje x, permitiendo al usuario desplazarse para ver el contenido oculto.
+auto: Similar a scroll, agrega barras de desplazamiento solo si es necesario. Si no hay desbordamiento, no se mostrarán las barras.
+ Ejemplo
+
+En el siguiente ejemplo, cuando el contenido dentro del .container sea más ancho que 200 píxeles, en lugar de recortar el contenido o mostrarlo fuera del contenedor, se agregarán barras de desplazamiento horizontales que permitirán al usuario desplazarse y ver el contenido oculto. Esto es útil cuando deseas asegurarte de que el contenido desbordado sea accesible para los usuarios que pueden no estar viendo el sitio en dispositivos con pantallas lo suficientemente anchas para mostrar todo el contenido a la vez.
+
+.container {
+width: 200px;
+height: 100px;
+overflow-x: scroll;
+}
+
+2.2. Valores de overflow-y
+Controla el desbordamiento vertical del contenido dentro del contenedor. Sus valores son los siguientes:
+
+overflow-y: visible|hidden|scroll|auto;
+visible: Es el valor por defecto. El contenido desbordado se muestra fuera del contenedor sin recortarse.
+hidden: El contenido desbordado se oculta, y no es visible fuera del contenedor.
+scroll: Agrega barras de desplazamiento en el eje y, permitiendo al usuario desplazarse para ver el contenido oculto.
+auto: Similar a scroll, agrega barras de desplazamiento solo si es necesario. Si no hay desbordamiento, no se mostrarán las barras.
+ Ejemplo
+
+En el siguiente ejemplo cuando el contenido dentro del .container sea más alto que 150 píxeles, el contenido que exceda este límite de altura no será visible. En lugar de mostrar barras de desplazamiento verticales para permitir que el usuario vea el contenido oculto, el contenido se recortará y quedará oculto dentro del contenedor.
+
+.container {
+width: 300px;
+height: 150px;
+overflow-y: hidden;
+}
+ Ejemplo
+
+Es importante tener en cuenta que overflow-x y overflow-y pueden combinarse para controlar el desbordamiento en ambas dimensiones. En el siguiente ejemplo, el contenedor tendrá barras de desplazamiento en el eje x si el contenido se desborda horizontalmente, y barras de desplazamiento en el eje y si el contenido se desborda verticalmente.
+
+.container {
+width: 400px;
+height: 200px;
+overflow-x: auto;
+overflow-y: scroll;
+}

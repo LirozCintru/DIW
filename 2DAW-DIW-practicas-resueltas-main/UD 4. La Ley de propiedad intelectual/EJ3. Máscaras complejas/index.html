@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aplicación de máscaras</title>
+</head>
+<body>
+    <main>
+        <h1>Explicación</h1>
+        <p>Para la aplicación de máscaras tenemos dos formas:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th><code>mask-image</code></th>
+                    <th>SVG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Tipo de recurso</strong></td><td>CSS property</td><td>Vector graphic format</td></tr>
+                <tr><td><strong>Uso principal</strong></td><td>Aplicar máscaras simples</td><td>Crear gráficos y máscaras complejas</td></tr>
+                <tr><td><strong>Interactividad</strong></td><td>Limitada</td><td>Alta (animaciones, eventos)</td></tr>
+                <tr><td><strong>Escalabilidad</strong></td><td>No escalable (depende de resolución de imagen)</td><td>Escalable infinitamente</td></tr>
+                <tr><td><strong>Formatos soportados</strong></td><td>PNG, JPEG, Gradients</td><td>Formato SVG nativo</td></tr>
+                <tr><td><strong>Compatibilidad</strong></td><td>CSS-based, para elementos HTML</td><td>Vector-based, gráfico independiente</td></tr>
+            </tbody>
+        </table>
+    </main>
+    
+   <section>
+    <h2>EJEMPLO 1 - CÍRCULO</h2>
+
+    <article>
+        <h3><code>mask-image</code></h3>
+        <div class="masked-image-css-cir"></div>
+    </article>
+
+    <article>
+        <h3>SVG</h3>
+        <svg width="100%" height="auto" class="masked-image-svg" viewBox="0 0 1600 1065">
+            <!-- Definimos la máscara en SVG -->
+            <defs>
+                <mask id="circle-mask">
+                    <!-- Círculo blanco define el área visible de la máscara -->
+                    <circle cx="800" cy="530" r="500" fill="white"/>
+                </mask>
+            </defs>
+            <!-- Aplicamos la máscara SVG a una imagen de fondo -->
+            <image href="girasoles.jpg" width="1600" height="1065" mask="url(#circle-mask)" />
+        </svg>
+
+    </article>
+
+   </section>
+
+   <section>
+    <h2>EJEMPLO 2 - RECTÁNGULO</h2>
+
+    <article>
+        <h3><code>mask-image</code></h3>
+        <div class="masked-image-css-rec"></div>
+    </article>
+
+    <article>
+        <h3>SVG</h3>
+        <svg class="masked-image-svg" width="100%" viewBox="0 0 1600 1065">
+            <!-- Definimos la máscara en SVG -->
+            <defs>
+                <mask id="rect-mask">
+                    <!-- Rectángulo blanco define el área visible de la máscara -->
+                    <rect x="400" y="0" width="800" height="1065" fill="white"/>
+                </mask>
+            </defs>
+            <!-- Aplicamos la máscara SVG a la imagen -->
+            <image href="girasoles.jpg" width="1600" height="1065" mask="url(#rect-mask)" />
+        </svg>
+
+    </article>
+
+   </section>
+
+</body>
+</html>

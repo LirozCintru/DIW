@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Secuencia de Imágenes con Hover</title>
+    <style>
+        /* Contenedor que alberga las imágenes */
+        .contenedor {
+            width: 100px; /* Ancho de cada imagen */
+            height: 100px; /* Alto de cada imagen */
+            overflow: hidden; /* Oculta lo que se sale del contenedor */
+            display: flex; /* Para mostrar las imágenes en fila */
+        }
+
+        /* Contenedor de las imágenes, se moverá a la izquierda con el hover */
+        .animacion-imagenes {
+            display: flex; /* Muestra las imágenes en fila */
+            transition: transform 1s steps(10); /* Transición con 10 pasos para las imágenes */
+        }
+
+        /* Las imágenes dentro del contenedor */
+        .animacion-imagenes img {
+            width: 100px; /* Ancho de cada imagen */
+            height: 100px; /* Alto de cada imagen */
+        }
+
+        /* Cuando se hace hover sobre el contenedor, las imágenes se moverán */
+        .contenedor:hover .animacion-imagenes {
+            transform: translateX(-1000px); /* Mueve el contenedor de imágenes a la izquierda */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="animacion-imagenes">
+            <img src="frame-01.gif" alt="Imagen 1">
+            <img src="frame-02.gif" alt="Imagen 2">
+            <img src="frame-03.gif" alt="Imagen 3">
+            <img src="frame-04.gif" alt="Imagen 4">
+            <img src="frame-05.gif" alt="Imagen 5">
+            <!-- Puedes agregar más imágenes según lo necesites -->
+        </div>
+    </div>
+</body>
+</html>

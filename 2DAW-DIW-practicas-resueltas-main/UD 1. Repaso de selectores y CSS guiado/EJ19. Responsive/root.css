@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #3498db;   /* Variable para el color principal */
+    --secondary-color: #2ecc71; /* Variable para el color secundario */
+    --font-size: 16px;           /* Variable para el tamaño de fuente */
+}
+
+/* Usando las variables en otros elementos */
+body {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+}
+
+.parrafo1 {
+    font-size: var(--font-size);
+}
+
+.parrafo2{
+    font-size: 2vw;
+}

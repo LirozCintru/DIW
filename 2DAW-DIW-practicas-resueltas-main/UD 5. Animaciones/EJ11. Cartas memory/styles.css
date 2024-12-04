@@ -1,0 +1,82 @@
+.baraja{
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos pasen a la sigueinte linea */
+    flex-direction: row;
+}
+
+.carta{
+    margin: 1vh 2vw;
+    position: relative;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    width: 20vw; /* El ancho es un porcentaje del ancho del navegador */
+    height: calc(20vw * 1.578); /* Calcula la altura según la proporción 1102/703 = 1.568 */
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.carta > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.reverso{
+    z-index: 1;
+    background: url('media/reverso.jpg') center center;
+    background-size: contain;
+    /* width: 703px; height: 1102px; */
+    transition: all 0.5s;
+}
+
+.anverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+}
+
+#as .anverso{
+    background: url('media/as-oros.jpg') no-repeat center center;
+    background-size: cover;
+    /* width: 736px; height: 1179px; */
+}
+
+#tres .anverso{
+    background: url('media/tres.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#sota .anverso{
+    background: url('media/sota.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Esto pasa a ser propiedad de girada */
+/*
+.carta:hover .anverso{
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+.carta:hover .reverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+}*/
+
+.carta:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.girada {
+    opacity: 1;
+}
+
+.girada .anverso{
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+.girada .reverso{
+    z-index: 0;
+    transform: rotateY(180deg);
+}

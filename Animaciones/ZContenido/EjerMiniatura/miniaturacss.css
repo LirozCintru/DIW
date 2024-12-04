@@ -1,0 +1,88 @@
+
+article {
+    width: 420px;
+    height: 140px;
+    background-color: blanchedalmond;
+    border: 3px rgb(0, 255, 42) solid;
+    
+}
+
+.imagen{
+    float: left;
+    border: 3px saddlebrown solid;
+}
+
+.imagen img{
+    width: 140px;
+    height: 100px;
+    background-color: aliceblue;
+    display: block;
+
+}
+.datos-productos{
+    float: right;
+    height: 100%;
+    padding-right: 25px;
+    border: 1px saddlebrown solid;
+}
+
+.borrar {
+    float: right;
+    text-align: center;
+    width: 20px;
+    border-radius: 12%;
+    border: 2px solid black;
+    font-size: large;
+}
+
+.nombre{
+    float: left;
+    clear: both;
+    font-weight:  bold;
+
+}
+.precio{
+    float: left;
+    clear: both;
+
+}
+.colores {
+    border: 1px solid blue;
+    clear: both;
+}
+
+.colores li{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 12.5px;
+    margin: 10px 0px 0px 5px;
+    border: 1px solid black;
+
+}
+
+.colores li:nth-child(1){
+    background-color:aquamarine;
+    background-image: url(https://hilarfino.es/wp-content/uploads/IMG_20211021_113314-scaled-1.jpg);
+    background-size: contain;
+}
+.colores li:nth-child(2){
+    background-color:rgb(115, 187, 0);
+    background-image: url(https://img.freepik.com/vector-premium/fondo-estampado-piel-animal-patron-dalmata_53500-1260.jpg);
+    background-size: contain;
+}
+.colores li:nth-child(3){
+    background-color:rgb(255, 0, 221);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Komodo_dragon_skin.jpg/640px-Komodo_dragon_skin.jpg);
+    background-size: contain;
+}
+.colores li:nth-child(4){
+    background-color:rgb(238, 255, 0);
+    background-image: url(https://img.freepik.com/foto-gratis/pared-textura-rugosa_1368-6124.jpg);
+    background-size: contain;
+}
+.colores li:nth-child(5){
+    background-color:rgb(255, 0, 0);
+    background-image: url(https://homesolution.net/blog/wp-content/uploads/2021/09/gotele-1.jpg);
+    background-size: contain;
+}

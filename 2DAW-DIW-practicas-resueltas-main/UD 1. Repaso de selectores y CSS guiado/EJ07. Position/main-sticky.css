@@ -1,0 +1,14 @@
+p {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #6b2faf;
+    padding: 20px;
+    font-weight: bold;
+  }
+  ul{
+    margin: 20px 0;
+  }
+  li{
+    padding-left: 20px;
+  }
