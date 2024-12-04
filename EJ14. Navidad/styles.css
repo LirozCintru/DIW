@@ -91,6 +91,15 @@ main * {
     left: 15%;
     top: 10%;
     z-index: 3;
+    transition: transform ease 3s;
+}
+
+.nube:hover {
+    transform: rotate(360deg);
+    transform: scale(5);
+    background-color: rgb(48, 48, 48);
+    box-shadow: inset 0 0 0 25px rgb(48, 48, 48);
+    border-radius: 30%;
 }
 
 .copos {
@@ -100,6 +109,7 @@ main * {
     left: 15%;
     top: 10%;
     z-index: 2;
+    transition: transform ease 3s;
 }
 .copo {
     width: 12.5%;
@@ -123,9 +133,7 @@ main * {
     top: 45%;
 }
 
-.nube:hover .copos{
-    z-index: 1;
-}
+
 
 .pino {
     height: 50%;
