@@ -1,0 +1,137 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+div {
+    margin: 4vh 2vw;
+}
+
+.caja_color {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    opacity: 1;
+    /* animation: cambiaColor 10s infinite alternate,
+        cambiarOpacidad 1s 0s 2 backwards alternate ; */
+}
+
+@keyframes cambiarOpacidad {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cambiaColor {
+    0% {
+        background-color: orangered;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+.caja_desp {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    /*necesario para que el div se pueda mover libremente*/
+    /* animation: mover 3s linear infinite; */
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100vw;
+    }
+
+}
+
+
+.caja_rot {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: rotar 30s infinite linear;
+}
+
+@keyframes rotar {
+    0% {
+       transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.caja_esc {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    /* animation: escalado 2s infinite alternate; */
+}
+
+@keyframes escalado {
+    0% {
+       transform: scale(1);
+    }
+
+    25% {
+        transform: scale(6)
+    }
+    50% {
+        transform: scale(1);
+     }
+ 
+     75% {
+         transform: scale(6)
+     }
+
+}
+.caja_desp_rot {
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+    animation: rotarGirar 5s infinite alternate linear;
+    position: relative;
+}
+
+@keyframes rotarGirar {
+    0% {
+       left: -30%;
+       transform: rotate(0deg);
+    }
+
+    100% {
+        left: 100vw;
+        transform: rotate(360deg);
+     }
+
+
+}

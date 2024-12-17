@@ -1,0 +1,87 @@
+:root {
+    --corriente-delay: 0s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.papelera {
+    position: relative;
+}
+
+.inferior {
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    z-index: 1;
+}
+
+.superior {
+    position: absolute;
+    top: -45px;
+    left: 555px;
+    transform: rotate(-28deg);
+    z-index: 0;
+    transition: transform 2s ease 0.5s;
+    transform-origin: bottom right;
+}
+
+.pedal {
+    position: absolute;
+    top: 702px;
+    left: 567px;
+    z-index: 2;
+    transition: transform 1.5s ease;
+}
+
+.papel {
+    position: absolute;
+    top: 702px;
+    left: 27px;
+    z-index: 2;
+}
+
+.pedal:hover {
+    transform: translateY(23px);
+}
+
+.pedal:hover~.superior {
+
+    transform: rotate(30deg) !important;
+}
+
+.pedal:hover~.papel {
+    animation: recorrer 4s var(--corriente-delay) linear forwards; 
+
+}
+
+@keyframes recorrer {
+    0% {
+        top: 702px;
+        left: 27px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        top: -45px;
+        left: 625px;
+    }
+    70%{
+        transform: rotate(2500deg);
+        top: 590px;
+        left: 625px;
+        z-index: 0;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0.1);
+        top: 505px;
+        left: 605px;
+        z-index: 0;
+        visibility: none;
+    }
+
+}

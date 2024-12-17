@@ -1,0 +1,64 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../img/agua.webp");
+    /* background-repeat:no-repeat; */
+    background-size:cover;
+    overflow: hidden;
+}
+
+.onda div{
+    width: 300px;
+    height: 300px;
+    border: white 1px solid;
+    position: absolute;
+    border-radius: 1000px;
+    background: transparent;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.onda1 {
+    animation: ampliar 4s infinite;
+}
+
+.onda2 {
+    animation: ampliar 4s 0.75s infinite;
+}
+
+.onda3 {
+    animation: ampliar 4s 1.4s infinite;
+}
+
+.onda4 {
+    animation: ampliar 4s 2s infinite;
+}
+
+.onda5 {
+    animation: ampliar 4s 2.5s infinite;
+}
+
+
+@keyframes ampliar {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
