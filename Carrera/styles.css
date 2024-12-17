@@ -1,4 +1,3 @@
-/*// BASE STYLES //*/
 :root {}
 
 * {
@@ -10,14 +9,24 @@
 
 .camino {
     width: 80vw;
-    height: 10vh;
+    height: 80px;
     background-color: dimgrey;
-    margin: 5vw 0;
+    margin: 10vh 0;
+    position: relative;
+}
+
+.corredor{
+    position: relative;
+    width: 7vw;
+    z-index: 2;
+    top: -40px;
 }
 
 .linea {
-    border: 3px dashed #fff;
-    height: 0px;
-    position: relative;
+    border: 3px dashed #ff0000;
+    position: absolute;
     top: 45%;
+    left: 0; 
+    width: 100%;
+    width: 80vw;
 }
