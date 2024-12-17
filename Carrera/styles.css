@@ -8,20 +8,16 @@
     text-decoration: none;
 }
 
-.road {
-    height: 30%;
-    background: dimgrey;
-    box-sizing: border-box;
-    border-top: 10px solid grey;
-    border-bottom: 10px solid grey;
-    width: 100%;
+.camino {
+    width: 80vw;
+    height: 10vh;
+    background-color: dimgrey;
+    margin: 5vw 0;
 }
 
-.lines {
-    box-sizing: border-box;
-    border: 5px dashed #fff;
+.linea {
+    border: 3px dashed #fff;
     height: 0px;
-    width: 100%;
-    position: absolute;
+    position: relative;
     top: 45%;
 }
