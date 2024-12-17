@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hidden Object Game</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <main>
+            <img id="telon" src="media/telon.png">
+            <img id="reno" name="Reno" src="media/reno.png" onclick="intento(this)">
+            <img id="bolas" name="Bolas navideñas" src="media/bolas.png" onclick="intento(this)">
+            <img id="regalos" name="Regalos" src="media/regalos.png" onclick="intento(this)">
+            <img id="muerdago" name="Muérdago" src="media/muerdago.png" onclick="intento(this)">
+            <img id="copo" name="Copo de nieve" src="media/copo.png" onclick="intento(this)">
+            <img id="malvaviscos" name="Malvaviscos" src="media/malvaviscos.png" onclick="intento(this)">
+            <img id="galleta" name="Galleta de gengibre" src="media/galleta.png" onclick="intento(this)">
+            <img id="muneco_nieve" name="Muñeco de nieve" src="media/muneco_nieve.png" onclick="intento(this)">
+            <img id="calcetin" name="Calcetín" src="media/calcetin.png" onclick="intento(this)">
+            <img id="baston" name="Bastón de caramelo" src="media/baston.png" onclick="intento(this)">
+            <audio id="audio_acierto" src="media/audio/acierto.mp3"></audio>
+            <audio id="audio_error" src="media/audio/error.mp3"></audio>
+        </main>
+    
+        <aside>
+            <div>
+                <h1>Sara Berezo</h1>
+                <h1>1</h1>
+                <h3>DIW</h3>
+                <button id="btn" onclick="iniciarJuego()">Iniciar juego</button>
+                <p>Objeto a buscar:</p>
+                <p class="search">---</p>
+                <p>Aciertos: <span class="aciertos">0</span></p>
+                <p>Errores: <span class="errores">0</span></p>
+            </div>
+        </aside>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ficha fruta</title>
+</head>
+<body>
+
+    <div class="ficha">
+        <div class="img">
+            <img src="media/melon.png">
+        </div>
+
+        <div class="datos">
+
+            <div class="tit">
+                <h1>Melones Bollo</h1>
+            </div>
+
+            <div class="tam">
+                <h2>Tamaño:</h2>
+                <span id="peq" onclick="elegirOpcion(this)">Pequeño<br>(1kg)</span>
+                <span id="med" onclick="elegirOpcion(this)">Medio<br>(1,5kg)</span>
+                <span id="gra" onclick="elegirOpcion(this)">Grande<br>(2kg)</span>
+            </div>
+
+            <div class="unid">
+                <h2>Unidades:</h2>
+                <span id="-" onclick="cambiarUnidades(this)">-</span>
+                <input type="number" name="unidades" id="unidades" min="1" value="1">
+                <span id="+" onclick="cambiarUnidades(this)">+</span>
+            </div>
+
+            <div class="precio">
+                <h2>Precio:</h2>
+                <span id="precioFinal">5</span>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

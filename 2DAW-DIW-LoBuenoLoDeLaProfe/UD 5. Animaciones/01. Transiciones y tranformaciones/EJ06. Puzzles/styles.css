@@ -1,0 +1,69 @@
+body {
+    display: block;
+}
+
+.puzzle, .puzzle-caida{
+    position: relative;
+    margin: 10vh 10vw;
+    width: 500px; 
+    height: 500px;
+}
+
+.puzzle img{
+    position: absolute;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+.puzzle img:hover{
+    opacity: 1;
+}
+
+#pieza1 {
+    top: 0;
+    left: 0;
+}
+
+#pieza2 {
+    top: 0;
+    left: 220px;
+}
+
+#pieza3 {
+    top: 225px;
+    left: 30px;
+}
+
+.puzzle-caida {
+    overflow: hidden;
+}
+
+.puzzle-caida img{
+    position: absolute;
+}
+
+#pieza1-c {
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    transition: transform 3s linear 1s;
+}
+
+#pieza2-c {
+    top: 0;
+    left: 220px;
+    transform: translateX(100vw);
+    transition: transform 3s linear 1s;
+}
+
+#pieza3-c {
+    top: 225px;
+    left: 30px;
+    transform: translateY(100vh);
+    transition: transform 3s linear 1s;
+}
+
+.puzzle-caida:hover #pieza1-c,
+.puzzle-caida:hover #pieza2-c,
+.puzzle-caida:hover #pieza3-c {
+    transform: translateX(0px) translateY(0px);
+}

@@ -1,0 +1,20 @@
+ENUNCIADO:
+Realizar un circuito eléctrico que muestre una corriente eléctrica (representada por un punto) recorriendo el circuito y
+encendiendo dos bombillas a su paso.
+Hacer esto para un circuito serie y un circuito paralelo.
+
+Corriente eléctrica:
+La corriente eléctrica empieza en la pila y recorre el circuito eléctrico continuamente.
+Además, se hace más pequeña y más grande a su paso ganando y perdiendo opacidad (Cuando es muy pequeña es completamente
+transparente y cuando es de su tamaño real, es decir, escalada a 1, es completamente opaca).
+
+Bombillas:
+La primera vez que pasa por cada una de las bombillas estas se encienden y mantienen ese estado hasta el final.
+Tienen cierta transparencia para que se vea en el fondo el símbolo de la bombilla.
+
+Circuito serie:
+Hay una única corriente que recorre el circuito e ilumina las dos bombillas.
+
+Circuito paralelo:
+Hay dos corrientes ya que se tienen que separar una por cada rama para alimentar el circuito.
+Cada una de las dos corrientes iluminará una de las bombillas.

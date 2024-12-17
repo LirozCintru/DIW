@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+div {
+    margin: 4vh 2vw;
+}
+
+/* ------------------------------------- ANIMACIÓN 1 - CAMBIO COLOR ------------------------------------- */
+
+.caja_color {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    opacity: 1;
+    animation: cambiarColor 5s infinite alternate,
+                cambiarOpacidad 1s 0s 2 alternate; /* La animación se aplica al div, tiene una duración de 5 segundos y se repite infinitamente */
+}
+
+@keyframes cambiarOpacidad {
+        0%{
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+}
+
+/* @keyframes cambiarColor: Define la animación llamada cambiarColor. Esta animación cambiará el color de fondo de la caja. */
+@keyframes cambiarColor {
+    /* 0%: En el inicio de la animación, el color de fondo es rojo. */
+    0% {
+        background-color: red;
+    }
+    /* 50%: A mitad de la animación, el color cambia a azul. */
+    50% {
+        background-color: blue;
+    }
+    /* 100%: Al final de la animación, el color vuelve a rojo. */
+    100% {
+        background-color: green;
+    }
+}
+
+
+/* ------------------------------------- ANIMACIÓN 2 - DESPLAZAMIENTO ------------------------------------- */
+
+.caja_desp {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative; /* Esto es necesario para que el div se pueda mover libremente por la pantalla. absolute o relative */
+    animation: mover 7s ease-in-out infinite;
+}
+
+@keyframes mover {
+    /* 0%: Al inicio de la animación, el div está en left: 0. */
+    0% {
+        left: 0;
+    }
+    /* 100%: Al final de la animación, el div se desplaza al 80% del ancho de la ventana. */
+    100% {
+        left: 80%;
+    }
+}
+
+/* ------------------------------------- ANIMACIÓN 3 - ROTACION ------------------------------------- */
+
+.caja_rot {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation: rotar 4s infinite linear; /* La animación se aplica al div, tiene una duración de 4 segundos y se repite infinitamente.*/
+}
+
+@keyframes rotar {
+    /* transform: rotate(0deg): Al principio de la animación, no hay rotación (0 grados). */
+    0% {
+        transform: rotate(0deg);
+    }
+    /* transform: rotate(360deg): Al final de la animación, el div hace una rotación completa de 360 grados. */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------- ANIMACIÓN 4 - ESCALADO ------------------------------------- */
+
+.caja_esc {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation: escalar 2s linear infinite alternate;
+    /*  La animación tiene una duración de 2 segundos, se repite infinitamente y
+    alterna entre los valores definidos (es decir, aumenta y luego disminuye). */
+}
+
+@keyframes escalar {
+    /* transform: scale(1): Al principio y al final de la animación, el div tiene su tamaño original. */
+    0% {
+        transform: scale(1);
+    }
+    /* transform: scale(1): Al principio y al final de la animación, el div tiene su tamaño original. */
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* ------------------------------------- ANIMACIÓN 5 - DESPLAZAMIENTO + ROTACIÓN ------------------------------------- */
+
+.caja_desp_rot {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    position: relative;
+    animation: moverYRotar 5s linear infinite alternate;
+}
+
+@keyframes moverYRotar {
+    /* left: 0;: Al inicio de la animación, el div está en la posición izquierda.
+    transform: rotate(0deg): Al inicio, el div no está rotado. */
+    0% {
+        left: -20%;
+        transform: rotate(0deg);
+    }
+    /* left: 50%;: A mitad de la animación, el div se mueve al 50% de la anchura de la ventana.
+    transform: rotate(180deg): En la mitad de la animación, el div gira 180 grados. */
+    /* 50% {
+        left: 50%;
+        transform: rotate(180deg);
+    } */
+    /* left: 100%;: Al final de la animación, el div se mueve completamente a la derecha.
+    transform: rotate(360deg): Al final de la animación, el div ha completado una rotación completa. */
+    
+    100% {
+        left: 100%;
+        transform: rotate(360deg);
+    }
+}

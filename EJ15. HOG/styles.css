@@ -1,0 +1,93 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+main {
+    background-image: url("media/40spIkbEsTnWd.jpg!w700wp.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 3vh 0 3vh 0;
+    border: 5px solid red;
+    width: 68vw;
+    height: 90vh;
+    z-index: 1;
+}
+
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw;
+    z-index: 2;
+}
+
+main>* {
+    transition: transform 1s,
+        opacity 0.5s ease 1s,
+        z-index 0.5s ease 5s;
+}
+
+.encontrado {
+    transform: rotate(0) scale(1.4) !important;
+    opacity: 0;
+    z-index: -1;
+}
+
+#reno {
+    width: 4vw;
+    top: 245px;
+    left: 450px;
+    transform: rotate(-5deg);
+}
+
+#bola_navidad {
+    width: 1vw;
+    top: 500px;
+    left: 30px;
+    transform: rotate(20deg);
+}
+
+aside {
+    position: relative;
+    margin: 3vh 0;
+    height: 90vh;
+    background-color: rgb(36, 59, 137);
+    color: whitesmoke;
+    font-family: 'FuenteNavidad';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+aside div h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+aside div h3 {
+    font-size: 2rem;
+    margin-top: 2vh;
+    text-align: center;
+}
+

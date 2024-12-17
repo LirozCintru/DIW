@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+    overflow: hidden;
+}
+
+.papelera {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.papelera > * {
+    position: absolute;
+}
+
+.papel {
+    width: 100px;
+    top: 500px;
+    left: 100px;
+    z-index: 0;
+}
+
+.superior {
+    width: 580px;
+    top: -40px;
+    left: 680px;
+    z-index: 2;
+    transition: all 1s ease;
+}
+.inferior {
+    left: 738px;
+    top: 200px;
+    z-index: 1;
+}
+
+.pedal {
+    left: 726px;
+    top: 570px;
+    z-index: 2;
+    transition: all 0.5s linear;
+}
+
+.pedal:hover {
+    transform: translateY(40px);
+}
+
+.pedal:hover ~ .superior {
+    transform-origin: 100% 75%;
+    transform: rotate(30deg);
+}
+
+.pedal:hover ~ .papel {
+    animation: tirar 3s linear;
+}
+
+@keyframes tirar {
+    0%{
+        top: 500px;
+        left: 100px;
+    }
+    25%{
+        top: 240px;
+        left:450px;
+    }
+    50%{
+        transform: rotate(180deg);
+        top: 20px;
+        left:930px;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 250px;
+        left:930px;
+    }
+}
