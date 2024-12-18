@@ -1,0 +1,32 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.camino {
+    width: 80vw;
+    height: 80px;
+    background-color: dimgrey;
+    margin: 10vh 0;
+    position: relative;
+}
+
+.corredor{
+    position: relative;
+    width: 7vw;
+    z-index: 2;
+    top: -40px;
+}
+
+.linea {
+    border: 3px dashed #ff0000;
+    position: absolute;
+    top: 45%;
+    left: 0; 
+    width: 100%;
+    width: 80vw;
+}

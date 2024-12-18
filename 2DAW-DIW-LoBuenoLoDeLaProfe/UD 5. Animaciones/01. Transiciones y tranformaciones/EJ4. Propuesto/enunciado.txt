@@ -1,0 +1,52 @@
+Las transiciones CSS son una forma de agregar efectos suaves de animación a los cambios en los estilos de los elementos HTML.
+Las transiciones permiten que los cambios de estilo, como el color, el tamaño, la posición, la opacidad y otros atributos,
+se realicen de manera gradual en lugar de abrupta.
+Esto puede mejorar la experiencia del usuario y hacer que la interfaz de usuario sea más atractiva.
+
+
+Propiedad transition:
+Para utilizar transiciones CSS, debes definir la propiedad transition en el elemento que deseas animar.
+La propiedad transition se utiliza para especificar qué propiedades CSS se animarán y cuánto tiempo debe durar la animación.
+Puedes definir transition en una regla CSS de la siguiente manera:
+    - propiedad-a-animar: El nombre de la propiedad CSS que deseas animar, como color, width, height, opacity, etc.
+    - valor-inicial: El valor inicial de la propiedad.
+    - duración-fade: La duración de la animación, que puede ser especificada en segundos (s) o milisegundos (ms).
+    - tiempo: La función de temporización que define cómo se interpola la animación a lo largo del tiempo, como ease, linear, ease-in, ease-out, ease-in-out, etc.
+
+Disparadores de transición:
+Para que la transición se active, debes cambiar la propiedad que se está animando.
+Esto generalmente se hace a través de pseudoclases, eventos de JavaScript o animaciones generadas dinámicamente.
+
+Pseudoclases:
+Las pseudoclases como :hover, :active, :focus, etc., se utilizan comúnmente para activar transiciones cuando el usuario interactúa con un elemento.
+    
+JavaScript:
+Puedes usar JavaScript para aplicar clases CSS que cambian los estilos de los elementos, lo que inicia la transición.
+
+Efecto de transición:
+Cuando se activa una transición (por ejemplo, al pasar el cursor sobre un elemento con :hover), la propiedad animada cambia gradualmente desde su valor inicial al valor final durante el tiempo especificado en la duración.
+
+Propiedades animables:
+Casi todas las propiedades CSS son animables con transiciones, pero algunas de las más comunes incluyen:
+    - Color (color)
+    - Ancho (width)
+    - Alto (height)
+    - Opacidad (opacity)
+    - Margen (margin)
+    - Relleno (padding)
+    - Fondo (background)
+    - Transformaciones (transform)
+    - Y muchas más!
+
+Transiciones múltiples:
+Puedes aplicar múltiples propiedades de transición separándolas con comas en la propiedad transition. Por ejemplo:
+
+elemento {
+  transition: propiedad-1 duración-1 tiempo-1, propiedad-2 duración-2 tiempo-2;
+}
+
+Esto permite animar varias propiedades al mismo tiempo.
+
+Transiciones personalizadas:
+Además de las funciones de temporización predeterminadas, puedes crear transiciones personalizadas utilizando cubic-bezier
+o incluso especificando funciones de tiempo personalizadas en tus transiciones.

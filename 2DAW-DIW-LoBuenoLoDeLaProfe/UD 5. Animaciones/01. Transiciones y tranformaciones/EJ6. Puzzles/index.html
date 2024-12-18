@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Puzzles</title>
+</head>
+<body>
+    <!-- La principal diferencia entre una imagen normal y una imagen codificada en base64 en
+     la web es cómo se almacenan y se entregan al navegador.
+     Imagen Normal:
+     Las imágenes normales se almacenan como archivos independientes en el servidor web,
+     generalmente en formatos como JPEG, PNG, GIF, o SVG.
+     Para mostrar una imagen normal en una página web, se debe incluir una etiqueta <img> en el HTML
+     que apunte a la ubicación del archivo de imagen en el servidor utilizando la URL de la imagen.
+
+    Cuando se carga una página que contiene imágenes normales, el navegador debe realizar una solicitud
+    HTTP adicional al servidor para recuperar cada archivo de imagen.
+
+    Las imágenes normales se almacenan en caché en el navegador, lo que significa que se pueden
+    reutilizar en otras páginas del mismo sitio sin necesidad de volver a cargarlas desde el servidor.
+
+    Las imágenes normales son más adecuadas para imágenes de gran tamaño, ya que el navegador solo
+    necesita cargar las imágenes que se muestran en la página.
+
+    Imagen Codificada en Base64:
+    Una imagen codificada en base64 se almacena directamente en el HTML o en una hoja de estilos CSS
+    como una cadena de texto codificada en base64.
+    Esta cadena incluye toda la información de la imagen, como su formato y datos binarios.
+
+    Para mostrar una imagen codificada en base64, se utiliza la propiedad CSS background-image o
+    el atributo src en la etiqueta <img>. La imagen se incrusta directamente en el código HTML o CSS.
+
+    Al cargar una página que contiene imágenes codificadas en base64, no se realiza una solicitud
+    adicional al servidor para recuperar las imágenes, ya que los datos de la imagen están incluidos
+    en el propio código de la página.
+
+    Las imágenes codificadas en base64 son adecuadas para imágenes pequeñas, íconos, o elementos
+    decorativos, ya que su inclusión directa en el HTML o CSS aumenta el tamaño de esos archivos.
+
+    Si se usan imágenes codificadas en base64 en múltiples lugares de un sitio web, se pueden
+    aumentar el tamaño de las páginas y hacer que el sitio sea menos eficiente, ya que los datos
+    de la imagen se repiten en cada página.
+
+    Transiciones:
+
+    Transición al Pasar el Cursor:
+    El selector .puzzle img:hover se activa cuando el cursor se coloca sobre una imagen dentro del
+    contenedor .puzzle.
+    opacity: 1; cambia la opacidad de la imagen a 1, lo que la hace completamente visible cuando
+    se pasa el cursor sobre ella.
+    -->
+    
+    <div class="original">
+        <img id="pieza1" src="media/pieza1.png">
+        <img id="pieza2" src="media/pieza2.png">
+        <img id="pieza3" src="media/pieza3.png">
+    </div>
+
+    <div class="puzzle">
+        <img id="pieza1" src="media/pieza1.png">
+        <img id="pieza2" src="media/pieza2.png">
+        <img id="pieza3" src="media/pieza3.png">
+    </div>
+
+    <div class="puzzle-caida">
+        <img id="pieza1-c" src="media/pieza1.png">
+        <img id="pieza2-c" src="media/pieza2.png">
+        <img id="pieza3-c" src="media/pieza3.png">
+    </div>
+
+</body>
+</html>
