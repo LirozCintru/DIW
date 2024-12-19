@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .pokeball {
+            position: relative;
+            width: 500px;
+            height: 600px;
+        }
+        .arriba {
+            position: absolute;
+            top: 90px;
+            left: 0px;
+            z-index: 1;
+            transition: all 1s;
+        }
+        .abajo {
+            position: absolute;
+            bottom: 90px;
+            left: 0px;
+            z-index: 0;
+            transition: all 1s;
+        }
+
+        .pokeball:hover .arriba {
+            transform: translateY(-100px);
+        }
+        .pokeball:hover .abajo {
+            transform: translateY(100px);
+        }
+
+        .pokeball:hover .primero,
+        .pokeball:hover .completo {
+            opacity: 1;
+            transform: scale(2);
+        }
+
+        .pokeball:hover .rayos {
+            opacity: 1;
+            transform: skew(360deg);
+        }
+
+        .rayos {
+            opacity: 0;
+            transition: all 1s ease 2s;
+        }
+
+        .primero {
+            position: absolute;
+            transform: scale(0);
+            top: 285px;
+            left: 230px;
+            opacity: 0;
+            transition: all 1s ease 2s;
+            z-index: 2;
+        }
+        .completo {
+            transform: scale(2);
+            position: absolute;
+            top: 285px;
+            left: 230px;
+            opacity: 0;
+            transition: all 1s ease 4s;
+            z-index: 3;
+        }
+
+
+    </style>
+
+    <div class="pokeball">
+        <div class="arriba">
+            <img src="arriba.png">
+        </div>
+        <div class="abajo">
+            <img src="abajo.png">
+        </div>
+        <div>
+            <img src="rayos.png" class="rayos">
+        </div>
+        <div>
+            <img src="frame-05.gif" class="primero">
+            <img src="frame-04.gif" class="completo">
+        </div>
+    </div>
+    
+</body>
+</html>

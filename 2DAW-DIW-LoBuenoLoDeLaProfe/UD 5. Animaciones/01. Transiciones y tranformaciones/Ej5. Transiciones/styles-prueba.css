@@ -1,0 +1,66 @@
+button {
+    color: magenta;
+    transition: color 200ms ease-in 50ms;
+    width: 10vw;
+    height: 10vh;
+    transition: width 1s ease-out 50ms;
+}
+button:hover {
+    color: rebeccapurple;
+    width: 40vw;
+    transition: width 5s ease-out 1s, color 5s ease-out 1s;
+}
+
+nav {
+    border: solid 1px red;
+}
+
+nav ul li {
+    border: solid 1px red;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 50ms;
+    transform: scale(1, 0);
+    transform-origin: top center;
+}
+nav ul:hover li {
+    transform: scale(1, 1);
+}
+
+nav li ul {
+    border: solid 1px red;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    transition-delay: 50ms;
+    transform: scale(1, 0);
+    transform-origin: top center;
+}
+nav li:hover ul {
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    transform: scale(1, 1);
+}
+
+
+div {
+    width: 10vw;
+    height: 10vh;
+    color: #ff0000;
+    border: 1px solid #00ff00;
+    border-radius: 0;
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    padding: 100px;
+    transition-property: color, border, border-radius,
+    transform, opacity,
+    box-shadow, width, padding;
+    transition-duration: 1s;
+    }
+    
