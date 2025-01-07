@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: red 3px solid;
+}
+
+.circuito {
+    background-image: url(circuito.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1048px;
+    height: 400px;
+}
+
+.coche {
+    position: absolute;
+    width: 18vh;
+    /* top: 10px;
+    left: 350px; */
+    animation: correr 5s infinite linear;
+    animation-play-state: paused;
+}
+
+.coche:hover {
+    animation-play-state: running;
+}
+
+@keyframes correr {
+    0% {
+        transform: translate(350px, 10px);
+    }
+
+    20% {
+        transform: translate(750px, 10px);
+    }
+
+    40% {
+        transform: translate(750px, 280px) rotate(180deg);
+    }
+
+    60% {
+        transform: translate(20px, 280px) rotate(180deg);
+    }
+
+    80% {
+        transform: translate(20px, 10px) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(350px, 10px) rotate(360deg);
+    }
+
+}

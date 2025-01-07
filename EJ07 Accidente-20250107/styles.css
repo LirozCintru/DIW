@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.contenedor {
+    width: 1085px;
+    height: 600px;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.coche_cont {
+    position: absolute;
+    top: 450px;
+    animation: mover 5s linear forwards;
+}
+
+.coche {
+    width: 28vh;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(200px);
+    }
+
+    98% {
+        transform: rotateY(0) translateX(calc(540*0.9));
+    }
+
+    100% {
+        transform: translateX(540px) rotateY(40deg);
+    }
+
+}
+
+.rueda {
+    animation: rodar 1s linear 0s backwards 5;
+}
+
+.rueda:nth-of-type(2) {
+    position: absolute;
+    left: 42px;
+    top: 80px;
+    width: 70px;
+    z-index: 1;
+}
+
+.rueda:nth-of-type(3) {
+    position: absolute;
+    left: 177px;
+    top: 80px;
+    width: 70px;
+    z-index: 1;
+}
+
+@keyframes rodar {
+    100% {
+        transform: rotate(360deg) ;
+    }
+
+}
+
+
+.arbol {
+    position: absolute;
+}
+
+@keyframes partir {
+    50% {
+        transform: rotate(-90deg) translate(-200px, -250px);
+    }
+
+    100% {
+        transform: rotate(-140deg) translate(240px, -500px);
+    }
+
+}
+
+.arbol_tronco,
+.arbol_copa {
+    position: absolute;
+    width: 50vh;
+    left: 600px;
+    top: 80px
+}
+
+.arbol_copa {
+    animation: partir 2s linear forwards 5s;
+}
+
+.fuego {
+    position: absolute;
+    width: 10vh;
+    top: 450px;
+    left: 750px;
+    opacity: 0;
+    animation: prender 1s linear forwards 5s;
+}
+
+@keyframes prender {
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.explosion {
+    position: absolute;
+    width: 10vh;
+    top: 450px;
+    left: 750px;
+    opacity: 0;
+    animation: explotar 2s linear backwards 5s;
+}
+
+@keyframes explotar {
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
