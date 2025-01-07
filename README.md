@@ -1,2 +1,4 @@
 #DIW
-Si lees esto desearte un ben día, buena semanda, buen mes, buen año y buena vida
+Si lees esto, quiero desearte un buen día, buena semana, buen mes, buen año y buena vida.
+Recuerda que siempre puedes apoyarme realizando un bizum.
+¡Saludos! :)
