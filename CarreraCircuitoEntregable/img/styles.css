@@ -42,7 +42,7 @@
     left: 400px;
     animation: correr 15s 2 forwards linear;
     animation-play-state: running;
-    /* transform: translate(-300px, -30px) rotate(-320deg); */
+    /* transform: translate(280px, -290px) rotate(-260deg); */
 }
 
 .coche3 {
@@ -97,6 +97,10 @@
 
     40% {
         transform: translate(250px, -380px) rotate(-300deg);
+    }
+
+    43% {
+        transform: translate(280px, -290px) rotate(-260deg);
     }
 
     45% {
