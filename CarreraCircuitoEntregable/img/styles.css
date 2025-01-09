@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+
+    --xDerec: 780px;
+    --XIzqui: 30px;
+    --yArriba: 10px;
+    --yAbajo: 280px;
+
+    --tiempo1: 10s;
+    --tiempo2: 10s;
+    --tiempo3: 10s;
+    --tiempoDelayCarrera: 6s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: red solid 2px;
+}
+
+.circuito {
+    background-image: url(circuito.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1248px;
+    height: 800px;
+}
+
+.bandera {
+    position: absolute;
+    width: 8vh;
+    animation: ganar 1s 31s forwards linear;
+    animation-play-state: running;
+    top: 665px;
+    left: 400px;
+    opacity: 0;
+}
+
+@keyframes ganar {
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.coche {
+    position: absolute;
+    width: 8vh;
+    animation-play-state: running;
+    top: 665px;
+    left: 400px;
+    animation: correr var(--tiempo1) 2 forwards linear var(--tiempoDelayCarrera);
+}
+
+.coche2 {
+    position: absolute;
+    width: 8vh;
+    top: 685px;
+    left: 400px;
+    animation: correr var(--tiempo2) 2 forwards linear var(--tiempoDelayCarrera);
+    animation-play-state: running;
+}
+
+.coche3 {
+    position: absolute;
+    width: 8vh;
+    top: 725px;
+    left: 400px;
+    animation: correr var(--tiempo3) 2 forwards linear var(--tiempoDelayCarrera);
+    animation-play-state: running;
+}
+
+@keyframes correr {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    8% {
+        transform: translate(300px, 0px);
+        /* Inicio curva1 */
+    }
+
+    15% {
+        transform: translate(390px, -80px) rotate(-60deg);
+        /*Curva 1*/
+    }
+
+    19% {
+        transform: translate(390px, -200px) rotate(-90deg);
+        /* fin curva1 */
+    }
+
+    25% {
+        transform: translate(390px, -550px) rotate(-90deg);
+        /* inicio cuerva2 */
+    }
+
+    30% {
+        transform: translate(380px, -680px) rotate(-150deg);
+        /* curva2 */
+    }
+
+    33% {
+        transform: translate(250px, -680px) rotate(-180deg);
+        /* fin curva2 */
+    }
+
+    35% {
+        transform: translate(130px, -680px) rotate(-180deg);
+        /* inicio curva3 */
+    }
+
+    41% {
+        transform: translate(-20px, -630px) rotate(-240deg);
+        /* curva3 */
+    }
+
+    44% {
+        transform: translate(20px, -500px) rotate(-330deg);
+        /* curva3.2 */
+    }
+
+    48% {
+        transform: translate(180px, -470px) rotate(-350deg);
+        /* curva3.3 */
+    }
+
+    53% {
+        transform: translate(280px, -380px) rotate(-290deg);
+        /* curva3.4 */
+    }
+
+    58% {
+        transform: translate(220px, -200px) rotate(-210deg);
+        /* fin curva 3 */
+    }
+
+    61% {
+        transform: translate(40px, -180px) rotate(-180deg);
+        /* centro/inicio cuerva 4 */
+    }
+
+    63% {
+        transform: translate(-80px, -220px) rotate(-120deg);
+        /* curva 4 */
+    }
+
+    66% {
+        transform: translate(-150px, -330px) rotate(-90deg);
+        /* fin curva4 */
+    }
+
+    70% {
+        transform: translate(-150px, -550px) rotate(-95deg);
+        /* incio curva5 */
+    }
+
+    73% {
+        transform: translate(-180px, -670px) rotate(-150deg);
+        /* curva5 */
+    }
+
+    76% {
+        transform: translate(-320px, -670px) rotate(-210deg);
+        /* curva5.2 */
+    }
+
+    80% {
+        transform: translate(-380px, -550px) rotate(-260deg);
+        /* fin curva5 */
+    }
+
+    87% {
+        transform: translate(-380px, -180px) rotate(-280deg);
+        /* inicio curva6 */
+    }
+
+    90% {
+        transform: translate(-320px, -80px) rotate(-320deg);
+        /* curva6 */
+
+    }
+
+    93% {
+        transform: translate(-250px, -30px) rotate(-350deg);
+        /* curva6 fin */
+
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(-360deg);
+    }
+
+}
+
+
+.contenedorSemaforo {
+    position: relative;
+    top: 605px;
+    left: 400px;
+    width: 100px;
+    animation: desaparecer 6s linear forwards;
+    z-index: 2;
+}
+
+@keyframes desaparecer {
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.semaforo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vh;
+    height: 20vh;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.luz {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: #111;
+    opacity: 0.3;
+    box-shadow: 0 0 10px #000;
+}
+
+.rojo {
+    animation: semaforo 2s linear forwards;
+}
+
+.amarillo {
+    animation: semaforo 2s linear forwards 2s;
+}
+
+.verde {
+    animation: semaforo 2s linear forwards 4s;
+}
+
+@keyframes semaforo {
+    0% {
+        background-color: red;
+        opacity: 1;
+    }
+
+    33% {
+        background-color: yellow;
+        opacity: 1;
+    }
+
+    66% {
+        background-color: green;
+        opacity: 1;
+    }
+
+    100% {
+        background-color: green;
+        opacity: 1;
+    }
+}
