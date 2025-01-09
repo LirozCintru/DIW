@@ -3,6 +3,11 @@
     --secondary-color: #f4f4f4;
     --text-color: #333;
     --font-family: Arial, sans-serif;
+
+    --xDerec: 780px;
+    --XIzqui: 30px;
+    --yArriba: 10px;
+    --yAbajo: 280px;
 }
 
 * {
@@ -24,11 +29,25 @@
 
 .coche {
     position: absolute;
-    width: 18vh;
+    width: 16vh;
     /* top: 10px;
     left: 350px; */
-    animation: correr 5s infinite linear;
-    animation-play-state: paused;
+    animation: correr 5s 1 forwards linear;
+    animation-play-state: running;
+    /* transform: translate(890px, 10px); */
+}
+
+.coche2 {
+    position: absolute;
+    width: 13vh;
+    /* top: 10px;
+    left: 350px; */
+    animation: correr 10s 1 forwards linear;
+    animation-play-state: running;
+}
+
+.coche2:hover {
+    animation-play-state: running;
 }
 
 .coche:hover {
@@ -37,27 +56,35 @@
 
 @keyframes correr {
     0% {
-        transform: translate(350px, 10px);
+        transform: translate(350px, var(--yArriba));
     }
 
     20% {
-        transform: translate(750px, 10px);
+        transform: translate(var(--xDerec), var(--yArriba));
+    }
+
+    30% {
+        transform: translate(800px, calc((var(--yArriba) + var(--yAbajo)) /2)) rotate(90deg);
     }
 
     40% {
-        transform: translate(750px, 280px) rotate(180deg);
+        transform: translate(var(--xDerec), var(--yAbajo)) rotate(180deg);
     }
 
     60% {
-        transform: translate(20px, 280px) rotate(180deg);
+        transform: translate(var(--XIzqui), var(--yAbajo)) rotate(180deg);
+    }
+
+    70% {
+        transform: translate(10px, calc((var(--yArriba) + var(--yAbajo)) /2)) rotate(270deg);
     }
 
     80% {
-        transform: translate(20px, 10px) rotate(360deg);
+        transform: translate(var(--XIzqui), var(--yArriba)) rotate(360deg);
     }
 
     100% {
-        transform: translate(350px, 10px) rotate(360deg);
+        transform: translate(350px, var(--yArriba)) rotate(360deg);
     }
 
 }
