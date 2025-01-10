@@ -24,7 +24,7 @@
 .bandera {
     position: absolute;
     width: 8vh;
-    animation: ganar 1s 35.4s forwards linear;
+    animation: ganar 1s 35s forwards linear;
     animation-play-state: running;
     top: 665px;
     left: 400px;
@@ -44,11 +44,11 @@
 
 .coche {
     position: absolute;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 8vh;
-    top: 665px;
     left: 400px;
+    top: 645px;
     animation: correr var(--tiempo1) 2 forwards linear var(--tiempoDelayCarrera);
 }
 
@@ -262,7 +262,7 @@
     }
 
     66% {
-        background-color: green;
+        background-color: orange;
         opacity: 1;
     }
 
