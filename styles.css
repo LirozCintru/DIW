@@ -26,7 +26,7 @@ header {
 
 main {
     display: flex;
-    padding-left: 1rem ;
+    padding-left: 1rem;
     width: 100%;
 }
 
@@ -38,12 +38,12 @@ main {
 
 .info-laboral,
 .info-academica {
-    margin-left:4vw;
+    margin-left: 4vw;
     flex: 1;
 }
 
-.info-academica li{
- margin-top: 1.5vh;
+.info-academica li {
+    margin-top: 1.5vh;
 }
 
 aside {
@@ -135,9 +135,9 @@ footer {
     justify-content: center;
     color: white;
     font-weight: bold;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     overflow: hidden;
     transition: all 0.6s ease-in-out 0.6s;
     transform-origin: bottom;
@@ -150,7 +150,7 @@ footer {
         8px 8px rgb(0, 255, 0);
     transform: scale(1.5);
     border-radius: 5%;
-    margin:9vh 0 2vh 0;
+    margin: 9vh 0 2vh 0;
 }
 
 
@@ -191,6 +191,17 @@ footer {
     background-image: url("imgs/carrera.png");
 }
 
+.practica7 {
+    background-image: url("imgs/proximamente.jpg");
+}
+
+.practica8 {
+    background-image: url("imgs/proximamente.png");
+}
+
+.practica9 {
+    background-image: url("imgs/proximamente.png");
+}
 
 
 
