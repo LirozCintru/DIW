@@ -1,0 +1,54 @@
+/* Estilo general */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor Parallax */
+.parallax {
+    width: 500px;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div1 {
+    height: 800px;
+    background-image: url('fondo1.jpg');
+}
+
+.div2 {
+    height: 800px;
+    background-image: url('fondo2.jpg');
+}
+
+.div3 {
+    height: 800px;
+    background-image: url('fondo3.jpg');
+}
+
+.content {
+    width: 500px;
+    height: auto;
+}
+
+/* Contenido estático
+    .content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    text-align: center;
+    } */
