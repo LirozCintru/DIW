@@ -1,10 +1,14 @@
 /* Estilo general */
-body,
-html {
+
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100vw;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: black;
 }
@@ -26,6 +30,15 @@ html {
     background-size: cover;
 }
 
+.parallaxC {
+    height: auto;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .div1 {
     background-image: url('1.webp');
 }
@@ -34,16 +47,26 @@ html {
     background-image: url('2.webp');
 }
 
-.content {
-    padding: 2rem;
+.contenido {
     text-align: center;
     background: #f9f9f9;
-    height: auto; 
+    height: auto;
     width: 100vw;
+    padding: 2rem 13rem;
+    margin: auto;
 }
 
-.content h2 {
-    margin-top: 0;
+.contenidoP {
+    text-align: center;
+    background: #f9f9f9;
+    height: auto;
+    width: 65vw;
+    padding: 2rem 13rem;
+    margin: auto;
+}
+
+.contenido h2 {
+    margin-bottom: 1rem;
 }
 
 .titulo {
@@ -62,11 +85,18 @@ html {
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 10px;
+    margin-top: 8vw;
 }
 
-/* Diseño responsivo */
 @media (max-width: 768px) {
     .content-title h1 {
         font-size: 2rem;
+    }
+
+    .contenido {
+        padding: 2rem;
+    }
+    .contenidoP {
+        padding: 2rem 4rem;
     }
 }
