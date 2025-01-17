@@ -1,10 +1,9 @@
-/* Estilo general */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    line-height: 1.5;
 }
 
 html {
@@ -49,19 +48,19 @@ html {
 
 .contenido {
     text-align: center;
-    background: #f9f9f9;
+    background-color: #f9f9f9;
     height: auto;
     width: 100vw;
-    padding: 2rem 13rem;
+    padding: 2vh 20vw;
     margin: auto;
 }
 
 .contenidoP {
     text-align: center;
-    background: #f9f9f9;
+    background-color: #f9f9f9;
     height: auto;
     width: 65vw;
-    padding: 2rem 13rem;
+    padding: 2vh 10vw;
     margin: auto;
 }
 
@@ -73,7 +72,7 @@ html {
     position: relative;
     text-align: center;
     color: white;
-    margin: 5vw;
+    margin: 8vh;
 }
 
 .titulo h1 {
@@ -81,22 +80,9 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
+    font-size: 5rem;
+    background-color: #000000c5;
+    padding: 1vh 3vw;
     border-radius: 10px;
-    margin-top: 8vw;
-}
-
-@media (max-width: 768px) {
-    .content-title h1 {
-        font-size: 2rem;
-    }
-
-    .contenido {
-        padding: 2rem;
-    }
-    .contenidoP {
-        padding: 2rem 4rem;
-    }
+    margin-top: 15vh;
 }
