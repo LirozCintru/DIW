@@ -196,10 +196,13 @@ footer {
 }
 
 .practica8 {
-    background-image: url("imgs/proximamente.jpg");
+    background-image: url("imgs/parallax.png");
 }
 
 .practica9 {
+    background-image: url("imgs/proximamente.jpg");
+}
+.practica10 {
     background-image: url("imgs/proximamente.jpg");
 }
 
