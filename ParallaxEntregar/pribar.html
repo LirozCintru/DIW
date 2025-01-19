@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Tijuana, México</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
+
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .parallax1 {
+            background-image: url('/mnt/data/A_realistic_view_of_Tijuana,_Mexico,_featuring_its.png');
+        }
+
+        .parallax2 {
+            background-image: url('/mnt/data/A_panoramic_view_of_Tijuana,_Mexico,_showing_the_b.png');
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background: #f9f9f9;
+            width: 100%; /* Asegura que el contenido no exceda el ancho de la pantalla */
+            box-sizing: border-box; /* Incluye padding en el ancho total */
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .content-title {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .content-title h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            .content-title h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal sobre un div parallax -->
+    <div class="parallax parallax1">
+        <div class="content-title">
+            <h1>Descubre Tijuana</h1>
+        </div>
+    </div>
+
+    <!-- Primer bloque de texto -->
+    <div class="content">
+        <h2>Una ciudad vibrante y compleja</h2>
+        <p>Tijuana, conocida por su proximidad a la frontera con Estados Unidos, es una ciudad llena de contrastes. Desde su bullicioso centro urbano hasta las áreas más tranquilas, cada rincón tiene su historia.</p>
+    </div>
+
+    <!-- Segundo bloque parallax -->
+    <div class="parallax parallax2"></div>
+
+    <!-- Segundo bloque de texto -->
+    <div class="content">
+        <h2>La vida en la frontera</h2>
+        <p>El icónico muro fronterizo no solo divide geografías, sino que también representa las historias y sueños de quienes buscan cruzarlo. Tijuana es el epicentro de esta dinámica cultural.</p>
+    </div>
+
+    <!-- Tercer bloque parallax -->
+    <div class="parallax parallax1"></div>
+
+    <!-- Tercer bloque de texto -->
+    <div class="content">
+        <h2>Un destino multicultural</h2>
+        <p>Desde su deliciosa gastronomía hasta su arte callejero, Tijuana es una ciudad donde convergen culturas, creando un ambiente único y auténtico.</p>
+    </div>
+
+    <!-- Cuarto bloque parallax -->
+    <div class="parallax parallax2"></div>
+
+    <!-- Quinto bloque parallax -->
+    <div class="parallax parallax1"></div>
+
+</body>
+</html>
