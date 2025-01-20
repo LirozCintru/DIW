@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+div{
+    height: auto;
+    color: purple;
+    background-color: aquamarine;
+    font-size: 1rem;
+}
+
+.col, .col-4,.col-8{
+    background-color: rgb(0, 115, 192);
+    border: 5px inset yellow;
+}
+.container{
+    margin-top: 50px;
+}
