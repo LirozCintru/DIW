@@ -18,7 +18,7 @@
     width: 100%;
     height: 500px;
     z-index: 1;
-    animation: cielo 8s 2 linear forwards alternate;
+    animation: cielo 12s 2 linear forwards alternate;
     overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
     border-radius: 50%;
     left: 98%;
     top: 430px;
-    animation: sol 8s 2 linear forwards alternate;
+    animation: sol 12s 2 linear forwards alternate;
 }
 
 .cloud {
@@ -40,7 +40,7 @@
     height: 40px;
     background-color: #ffffff88;
     top: 60px;
-    animation: movernube 10s 2 linear backwards;
+    animation: movernube 15s 2 linear backwards;
 }
 
 .cloud::before {
@@ -90,7 +90,7 @@
     }
 
     100% {
-        transform: translateX(150vw);
+        transform: translateX(120vw);
     }
 
 }
@@ -102,7 +102,7 @@
         opacity: 0;
     }
 
-    40% {
+    50% {
         transform: translateX(-55vw) translateY(-50vh) scale(1);
         opacity: 1;
     }
@@ -126,7 +126,7 @@
 @keyframes cielo {
 
     0% {
-        background-color: #004b69b7;
+        background-color: #00090cb7;
     }
 
     40% {
@@ -143,7 +143,7 @@
     }
 
     100% {
-        background-color: #103f52;
+        background-color: #011117;
     }
 
 }
