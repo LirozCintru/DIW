@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#sky {
+    position: relative;
+    background-color: skyblue;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    animation: cielo 8s 2 linear forwards alternate;
+    overflow: hidden;
+}
+
+#sun {
+    position: absolute;
+    background-color: yellow;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    left: 98%;
+    top: 430px;
+    animation: sol 8s 2 linear forwards alternate;
+}
+
+.cloud {
+    position: absolute;
+    border-radius: 100px;
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff88;
+    top: 60px;
+    animation: movernube 10s 2 linear backwards;
+}
+
+.cloud::before {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    content: "";
+    background-color: #ffffff76;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.cloud::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 50px;
+    background-color: #d6d6d671;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.cloud-1 {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+}
+
+.cloud-2 {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.cloud-3 {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+@keyframes movernube {
+
+    0% {
+        transform: translateX(-50vw);
+    }
+
+    100% {
+        transform: translateX(150vw);
+    }
+
+}
+
+@keyframes sol {
+
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateX(-55vw) translateY(-50vh) scale(1);
+        opacity: 1;
+    }
+
+    60% { opacity: 1;
+        transform: translateX(-55vw) translateY(-50vh);
+    }
+
+
+    90% {
+        transform: translateX(-110vw) translateY(7vh) scale(0.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-110vw) translateY(7vh);
+    }
+
+}
+
+@keyframes cielo {
+
+    0% {
+        background-color: #004b69b7;
+    }
+
+    40% {
+        background-color: skyblue;
+    }
+
+    60% {
+        background-color: skyblue;
+    }
+
+
+    90% {
+        background-color: #103f52;
+    }
+
+    100% {
+        background-color: #103f52;
+    }
+
+}
