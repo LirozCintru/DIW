@@ -1,0 +1,13 @@
+animation: trasladar 15s linear infinite backwards;
+animation: sol 12s 2 linear forwards alternate;
+none (por defecto): No aplica estilos fuera del intervalo activo.
+● forwards: Mantiene los estilos del último fotograma después de la animación.
+● backwards: Aplica los estilos del primer fotograma antes de comenzar.
+● both: Combina forwards y backwards.
+animation-play-state: :paused;
+
+direction:normal,reverse,alternate,alternate-Reverse
+}
+
+animation: [name] [duration] [timing-function] [delay] [iteration-count]
+[direction] [fill-mode] [play-state];
