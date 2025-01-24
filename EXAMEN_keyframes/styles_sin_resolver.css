@@ -92,10 +92,8 @@ section {
 
 @keyframes menus {
     0% {
-        opacity: 0
+        opacity: 0;
     }
-
-    ;
 
     100% {
         transform: translateX(0);
@@ -177,11 +175,12 @@ figcaption {
     justify-content: space-around;
     align-items: center;
 
+    border: 5px solid transparent;
     transform: rotateY(90deg);
 }
 
 figure:hover figcaption {
-    animation: platos var(--t-info);
+    animation: platos var(--t-info) forwards;
 }
 
 figure:hover img {
@@ -191,7 +190,6 @@ figure:hover img {
 
 @keyframes platos {
     0% {
-        border: 5px solid transparent;
         transform: rotateX(0deg);
     }
 
@@ -202,6 +200,18 @@ figure:hover img {
 
     30% {
         border-top-color: var(--rojo-oscuro);
+    }
+
+    45% {
+        border-right-color: var(--rojo-oscuro);
+    }
+
+    60% {
+        border-bottom-color: var(--rojo-oscuro);
+    }
+
+    75% {
+        border-left-color: var(--rojo-oscuro);
     }
 
     85% {
