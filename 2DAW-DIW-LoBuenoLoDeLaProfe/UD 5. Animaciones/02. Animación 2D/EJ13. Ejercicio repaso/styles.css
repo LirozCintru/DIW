@@ -1,0 +1,142 @@
+HTML SCSSResult Skip Results Iframe
+html{
+  background: #d29b62;
+}
+
+#sky{
+  animation-name: skyfall;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  background:skyblue;
+  height: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  overflow: hidden;
+}
+
+.cloud-1{
+}
+.cloud-2{
+  margin-top:-100px;
+  margin-left:-500px;
+}
+.cloud-3{
+  margin-top:-180px;
+  margin-left:-170px;
+}
+
+.cloud{
+  z-index:1000;
+  background: white;
+  opacity: 0.5;
+  width:100px;
+  height:40px;
+  border-radius: 100px;
+  position:absolute;
+  animation-name: wind;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.cloud::after {
+  background: white;
+  border-radius: 100px;
+  position:absolute;
+  opacity: 0.8;
+  top:-10px;
+  left:-10px;
+  width:60px;
+  height:40px;
+  content:"";
+}
+
+.cloud::before {
+  background: white;
+  border-radius: 100px;
+  position:absolute;
+  opacity: 0.9;
+  top:10px;
+  left:30px;
+  width:80px;
+  height:40px;
+  content:"";
+}
+
+#sun {
+  border-radius:100px;
+  background:blue;
+  width:100px;
+  height:100px;
+  position:absolute;
+  animation-name: sunrise;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wind{
+  0% {
+   left:-40px;
+  }
+  
+  100% {
+    left:120%;
+  }
+}
+
+@keyframes skyfall{
+  0% {
+    background: #233d48;
+  }
+  
+  50% {
+    background: skyblue;
+  }
+  
+  100% {
+    background: #233d48;
+  }
+}
+
+@keyframes sunrise {
+  0% {
+    bottom: 0;
+    left: 100%;
+    background:#d29b62;
+    width:20px;
+    height:20px;
+  }
+  
+  50% {
+    bottom: 70%;
+    left: 45%;
+    width:120px;
+    height:120px;
+    background: #ffd630;
+  }
+
+  100%{
+    bottom: -40px;
+    left: -20px;
+    background: #d29b62;
+    width:20px;
+    height:20px;
+    border-radius:90px;
+  }
+}

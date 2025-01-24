@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+p, h1, h3, ul{
+    color: #fff;
+    line-height: 2rem;
+}
+
+h1, h3 {
+    margin: 2vh 0;
+}
+
+ul {
+    
+}
+
+.div_dos {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 2vh;
+    padding: 5px;
+}
+
+.container-fluid{
+    width: 100%;
+}
+    
+.container{
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
+    padding: 32px;
+}
+    
+.center{
+    text-align: center;
+}
+
+.black{
+    background-color: #252525;
+}
+    
+.parallax{
+    height: 500px;
+    background-image: url('media/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}

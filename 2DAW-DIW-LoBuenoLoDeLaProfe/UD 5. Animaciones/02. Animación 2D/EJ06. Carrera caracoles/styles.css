@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 2vh 0;
+}
+
+.camino {
+    position: relative;
+    width: 80vw;
+    height: 50px;
+    /*background-color: #CB8665;*/
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-image: url('media/fondo_camino.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.camino h2 {
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.caracol {
+    position: absolute;
+    width: 100px;
+    left: 0px;
+    top: -30px;
+    transition: left 1s;
+}
+
+.camino:nth-of-type(1) {
+    top: 100px;
+}
+
+.camino:nth-of-type(2)  {
+    top: 200px;
+}
+
+.camino:nth-of-type(3) {
+    top: 300px;
+}
