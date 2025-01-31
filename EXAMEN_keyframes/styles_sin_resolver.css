@@ -1,0 +1,245 @@
+:root {
+    /* tiempos */
+    --t-fade-tit: 4s;
+    --delay-fade-tit: 1s;
+    --t-slide: 3s;
+    --delay-slide: 1.5s;
+    --t-skew: 2s;
+    --delay-skew: calc(var(--delay-slide) + var(--t-slide));
+    /* DEBES CALCULARLO CON CALC Y VARIABLES */
+    --t-info: 10s;
+
+    /* colores */
+    --fondo: rgb(4, 4, 43);
+    --rojo-oscuro: rgb(81, 12, 12);
+    --rojo-intenso: rgb(148, 22, 22);
+    --letras: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--fondo);
+}
+
+main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    color: var(--letras);
+    margin-bottom: 50px;
+}
+
+h1 {
+    padding: 20px 0px;
+    animation: header var(--t-fade-tit) var(--delay-fade-tit) forwards linear;
+}
+
+@keyframes header {
+    0% {
+        background-color: var(--fondo);
+    }
+
+    50% {
+        background-color: var(--rojo-oscuro);
+    }
+
+    100% {
+        background-color: var(--rojo-intenso);
+        box-shadow: 0px 4px 10px red;
+    }
+
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: 50%;
+    height: auto;
+    animation: menus var(--t-slide) var(--delay-slide) forwards;
+    opacity: 0;
+}
+
+.principal section:nth-child(1) {
+    transform: translatex(-101vw);
+}
+
+.principal section:nth-child(2) {
+    transform: translatex(101vw);
+}
+
+@keyframes menus {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.comida {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-shadow: 0px 4px 10px white;
+    animation: titulos linear var(--t-skew) var(--delay-skew) infinite backwards;
+}
+
+@keyframes titulos {
+    0% {
+        transform: scale(120%) skew(0deg);
+    }
+
+    25% {
+        transform: scale(90%) skew(5deg);
+    }
+
+    50% {
+        transform: scale(120%) skew(0deg);
+    }
+
+    75% {
+        transform: scale(90%) skew(-5deg);
+    }
+
+    100% {
+        transform: scale(120%) skew(0deg);
+    }
+}
+
+figure {
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+figcaption {
+    padding: 20px;
+    word-wrap: break-word;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-color: var(--rojo-intenso);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 5px solid transparent;
+    transform: rotateY(90deg);
+}
+
+figure:hover figcaption {
+    animation: platos var(--t-info) forwards;
+}
+
+figure:hover img {
+    animation: img var(--t-info) reverse;
+}
+
+
+@keyframes platos {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    15% {
+        opacity: 1;
+        transform: rotateX(90deg);
+    }
+
+    30% {
+        border-top-color: var(--rojo-oscuro);
+    }
+
+    45% {
+        border-right-color: var(--rojo-oscuro);
+    }
+
+    60% {
+        border-bottom-color: var(--rojo-oscuro);
+    }
+
+    75% {
+        border-left-color: var(--rojo-oscuro);
+    }
+
+    85% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(90deg)
+    }
+
+}
+
+@keyframes img {
+    0% {
+        transform: rotateX(-180deg);
+    }
+
+    15% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    85% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg)
+    }
+
+}

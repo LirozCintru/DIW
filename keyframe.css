@@ -11,3 +11,17 @@ direction:normal,reverse,alternate,alternate-Reverse
 
 animation: [name] [duration] [timing-function] [delay] [iteration-count]
 [direction] [fill-mode] [play-state];
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
