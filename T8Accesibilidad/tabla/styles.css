@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container{
+    line-height:1.8rem
+}
+
+table {
+    width: 70%;
+    margin: 0 15% 25px 15%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr,td,th{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+ td:hover{
+    background-color: rgb(255, 236, 236);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(255, 244, 244);
+}
+
+th {
+    background-color: rgb(220, 220, 220);
+    text-align: center;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation a{
+   font-size: 20px;
+   color: #0022ff;
+}
+
+.navigation a:hover{
+    font-size: 20px;
+    color: #000000;
+    
+ }

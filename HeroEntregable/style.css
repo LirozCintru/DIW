@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+main {
+    display: flex; 
+}
+
+.negro{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 50vh;
+    transform: translateX(-100vw);
+    transition: all 5s ease;
+}
+
+.izquierda:hover .negro{
+    transform: translateX(-50vw);
+}
+.primero{
+    display: flex;  
+    background-color: rgb(0, 132, 255);
+    width: 100vw;
+    height: 50vh;
+}
+
+.izquierda{
+    background-color: rgb(38, 190, 0);
+    width: 60vw;
+    height: 50vh;
+}
+
+.derecha{
+    background-color: rgb(190, 0, 0);
+    width: 40vw;
+    height: 50vh;
+}
