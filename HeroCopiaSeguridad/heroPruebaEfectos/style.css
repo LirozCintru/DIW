@@ -1,3 +1,4 @@
+/* Reinicio */
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +10,15 @@ body {
 }
 
 /* Contenedor del carrusel */
-.carrusel {
+.carousel {
     position: relative;
     width: 100vw;
     height: 50vh;
     overflow: hidden;
 }
 
-/* diapositiva */
-.diapositiva {
+/* Cada diapositiva */
+.slide {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -31,44 +32,45 @@ body {
 }
 
 /* Diapositiva activa */
-.diapositiva.activa {
+.slide.active {
     opacity: 1;
 }
 
-/* Fondo diapositiva */
-.diapositiva.paquita {
+/* Fondos de cada diapositiva */
+.slide.paquita {
     background: linear-gradient(to right, #E44D4D, #8B0000);
 }
 
-.diapositiva.magui {
+.slide.magui {
     background: linear-gradient(to right, #D94ED9, #6A0572);
 }
 
-.diapositiva.noemi {
+.slide.noemi {
     background: linear-gradient(to right, #32CD99, #008B45);
 }
 
-.diapositiva.mariona {
+.slide.mariona {
     background: linear-gradient(to right, #FF1493, #C71585);
 }
 
 /* Imagen */
-.diapositiva img {
+.slide img {
     width: 500px;
     height: 500px;
     object-fit: cover;
     margin-right: 10vh;
     opacity: 0;
+    transform: scale(0.9) translateY(100px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* Imagen cuando la diapositiva está activa */
-.diapositiva.activa img {
+/* Establecer posición inicial para la animación */
+.slide.active img {
     opacity: 1;
     transform: scale(1) translateY(0);
 }
 
-/* Contenedor texto */
+/* Contenedor del texto */
 .izquierda {
     position: relative;
     display: flex;
@@ -77,8 +79,8 @@ body {
     width: 100vw;
 }
 
-/* texto */
-.texto {
+/* Estilo del texto */
+.text {
     color: white;
     font-size: 1.8rem;
     width: 50vw;
@@ -91,19 +93,19 @@ body {
     margin-left: 5vw;
 }
 
-/* texto activo */
-.diapositiva.activa .texto {
+/* Hacer que el texto entre con la animación */
+.slide.active .text {
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Ocultar elementos antes de la animación */
-.oculto {
+.hidden {
     opacity: 0 !important;
     transform: translateY(-100px) !important;
 }
 
-/*"PS Management" */
+/* Estilo del pseudo-elemento "PS Management" */
 .izquierda::after {
     content: "PS Management";
     position: absolute;
@@ -118,12 +120,12 @@ body {
     transition: color 1s ease-in-out;
 }
 
-.diapositiva.activa .izquierda::after {
+.slide.active .izquierda::after {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* Botones contenedor*/
-.botones {
+/* Botones de navegación */
+.buttons {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -133,7 +135,7 @@ body {
     z-index: 5;
 }
 
-.botones button {
+.buttons button {
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -143,13 +145,14 @@ body {
     transition: background-color 0.1s;
 }
 
-.botones button.activo {
+.buttons button.active {
     background: black;
 }
 
-/* Animaciones texto e imagen */
-
-@keyframes desaparecer {
+/* ============================= */
+/* Animaciones mejoradas */
+/* ============================= */
+@keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -159,7 +162,7 @@ body {
     }
 }
 
-@keyframes aparecer {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -169,7 +172,7 @@ body {
     }
 }
 
-@keyframes deslizarIzquierda {
+@keyframes slideLeft {
     from {
         transform: translateX(0);
         opacity: 1;
@@ -181,7 +184,7 @@ body {
     }
 }
 
-@keyframes deslizarDerecha {
+@keyframes slideRight {
     from {
         transform: translateX(0);
         opacity: 1;
@@ -193,7 +196,7 @@ body {
     }
 }
 
-@keyframes textoDesdeArriba {
+@keyframes textEnterTop {
     from {
         transform: translateY(-100px);
         opacity: 0;
@@ -205,7 +208,7 @@ body {
     }
 }
 
-@keyframes imagenDesdeAbajo {
+@keyframes imageEnterBottom {
     from {
         transform: translateY(100px);
         opacity: 0;
@@ -217,105 +220,61 @@ body {
     }
 }
 
-/* Clases para las animaciones */
-.desaparece {
-    animation: desaparecer 0.5s forwards;
+/* Clases de animación */
+.fade-out-strong {
+    animation: fadeOut 0.5s forwards;
 }
 
-.aparece {
-    animation: aparecer 0.5s forwards;
+.fade-in-strong {
+    animation: fadeIn 0.5s forwards;
 }
 
-.texto-sale-izquierda {
-    animation: deslizarIzquierda 0.5s forwards;
+.text-exit-left-strong {
+    animation: slideLeft 0.5s forwards;
 }
 
-.imagen-sale-derecha {
-    animation: deslizarDerecha 0.5s forwards;
+.image-exit-right-strong {
+    animation: slideRight 0.5s forwards;
 }
 
-.texto-entra-arriba {
-    animation: textoDesdeArriba 0.5s forwards;
+.text-enter-top-strong {
+    animation: textEnterTop 0.5s forwards;
 }
 
-.imagen-entra-abajo {
-    animation: imagenDesdeAbajo 0.5s forwards;
+.image-enter-bottom-strong {
+    animation: imageEnterBottom 0.5s forwards;
 }
 
-/* Animaciones imágenes random */
-@keyframes imagenFlotanteSale {
-    from {
-        transform: scale(1) rotate(0deg);
-        opacity: 1;
-    }
-
-    to {
-        transform: scale(0.7) rotate(200deg);
-        opacity: 0;
-    }
-}
-
-@keyframes imagenFlotanteEntra {
-    from {
-        transform: scale(0.7) rotate(-200deg);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.flotante.sale {
-    animation: imagenFlotanteSale 1s ease-in-out forwards;
-}
-
-.flotante.entra {
-    animation: imagenFlotanteEntra 1s ease-in-out forwards;
-}
-
-
-.flotante {
+.imgGira {
+    background-image: url("img/torrezno.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    width: 20px;
-    transition: transform 2s ease, opacity 1s ease;
-    opacity: 0;
-    border: #008B45 solid 1px;
-}
-
-.imagenes-flotantes img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     width: 150px;
     height: 150px;
-    object-fit: contain;
 }
 
-/* Posiciones de las imágenes flotantes */
-.flotante.uno {
-    top: 35vh;
+.imgGira.uno{
+    top: 40vh;
     left: 0;
 }
 
-.flotante.dos {
-    top: 0vh;
+.imgGira.cuatro{
+    top:0;
     left: 90vw;
 }
 
-.flotante.tres {
-    top: 35vh;
+.imgGira.dos{
+    top:40vh;
     left: 90vw;
 }
 
-.flotante.cuatro {
-    top: 35vh;
-    left: 58vw;
+.imgGira.tres{
+    top:40vh;
+    left: 60vw;
 }
 
-.flotante.cinco {
-    top: 5vh;
-    left: 55vw;
+.imgGira.cinco{
+    top: 15vh;
+    left: 65vw;
 }

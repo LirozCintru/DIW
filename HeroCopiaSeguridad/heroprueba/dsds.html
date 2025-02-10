@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paquita Salas Hero Carousel</title>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="slide active paquita">
+            <div class="text izquierda">
+                <h1>Paquita Salas</h1>
+                <p>"Lo más importante en la vida es tener contactos."</p>
+            </div>
+            <img src="img/paquitaSinFondo.png" alt="Paquita Salas">
+        </div>
+        <div class="slide magui">
+            <div class="text izquierda">
+                <h1>Magüi</h1>
+                <p>"Yo soy community manager."</p>
+            </div>
+            <img src="img/maguiSinFondo.png" alt="Magüi">
+        </div>
+        <div class="slide noemi">
+            <div class="text izquierda">
+                <h1>Noemí</h1>
+                <p>"Siempre hay que tener un plan B."</p>
+            </div>
+            <img src="img/YolandaSinFondo.png" alt="Noemí">
+        </div>
+        <div class="slide mariona">
+            <div class="text izquierda">
+                <h1>Mariona Terés</h1>
+                <p>"No puedo ni ir a comprar, me conocen en todos los sitios."</p>
+            </div>
+            <img src="img/marionaSinFondo.png" alt="Mariona Terés">
+        </div>
+        <div class="buttons">
+            <button onclick="changeSlide(0)"></button>
+            <button onclick="changeSlide(1)"></button>
+            <button onclick="changeSlide(2)"></button>
+            <button onclick="changeSlide(3)"></button>
+        </div>
+    </div>
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let buttons = document.querySelectorAll('.buttons button');
+        function changeSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                buttons[i].classList.remove('active');
+            });
+            slides[index].classList.add('active');
+            buttons[index].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

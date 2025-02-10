@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -59,6 +60,7 @@ body {
     object-fit: cover;
     margin-right: 10vh;
     opacity: 0;
+    transform: scale(0.9) translateY(100px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -68,7 +70,7 @@ body {
     transform: scale(1) translateY(0);
 }
 
-/* Contenedor texto */
+/* Contenedor del texto */
 .izquierda {
     position: relative;
     display: flex;
@@ -77,7 +79,7 @@ body {
     width: 100vw;
 }
 
-/* texto */
+/* Estilo del texto */
 .texto {
     color: white;
     font-size: 1.8rem;
@@ -91,7 +93,7 @@ body {
     margin-left: 5vw;
 }
 
-/* texto activo */
+/* Animación del texto cuando la diapositiva está activa */
 .diapositiva.activa .texto {
     opacity: 1;
     transform: translateY(0);
@@ -103,7 +105,7 @@ body {
     transform: translateY(-100px) !important;
 }
 
-/*"PS Management" */
+/* Estilo del pseudo-elemento "PS Management" */
 .izquierda::after {
     content: "PS Management";
     position: absolute;
@@ -122,7 +124,7 @@ body {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* Botones contenedor*/
+/* Botones de navegación */
 .botones {
     position: absolute;
     bottom: 20px;
@@ -147,8 +149,9 @@ body {
     background: black;
 }
 
-/* Animaciones texto e imagen */
-
+/* ============================= */
+/* Animaciones mejoradas */
+/* ============================= */
 @keyframes desaparecer {
     from {
         opacity: 1;
@@ -217,7 +220,7 @@ body {
     }
 }
 
-/* Clases para las animaciones */
+/* Clases de animación */
 .desaparece {
     animation: desaparecer 0.5s forwards;
 }
@@ -242,7 +245,9 @@ body {
     animation: imagenDesdeAbajo 0.5s forwards;
 }
 
-/* Animaciones imágenes random */
+/* ============================= */
+/* Animaciones de las imágenes flotantes */
+/* ============================= */
 @keyframes imagenFlotanteSale {
     from {
         transform: scale(1) rotate(0deg);
@@ -275,7 +280,7 @@ body {
     animation: imagenFlotanteEntra 1s ease-in-out forwards;
 }
 
-
+/* Posiciones de las imágenes flotantes */
 .flotante {
     position: absolute;
     width: 20px;
@@ -291,10 +296,9 @@ body {
     z-index: -1;
     width: 150px;
     height: 150px;
-    object-fit: contain;
+    object-fit:contain;
 }
 
-/* Posiciones de las imágenes flotantes */
 .flotante.uno {
     top: 35vh;
     left: 0;

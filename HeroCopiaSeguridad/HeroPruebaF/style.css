@@ -1,0 +1,243 @@
+/* Reinicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del carrusel */
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+/* Cada diapositiva */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* Diapositiva activa */
+.slide.active {
+    opacity: 1;
+}
+
+/* Fondos de cada diapositiva */
+.slide.paquita {
+    background: linear-gradient(to right, #E44D4D, #8B0000);
+}
+
+.slide.magui {
+    background: linear-gradient(to right, #D94ED9, #6A0572);
+}
+
+.slide.noemi {
+    background: linear-gradient(to right, #32CD99, #008B45);
+}
+
+.slide.mariona {
+    background: linear-gradient(to right, #FF1493, #C71585);
+}
+
+/* Imagen */
+.slide img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 10vh;
+    opacity: 0;
+    transform: scale(0.9) translateY(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Establecer posición inicial para la animación */
+.slide.active img {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Contenedor del texto */
+.izquierda {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* Estilo del texto */
+.text {
+    color: white;
+    font-size: 1.8rem;
+    width: 50vw;
+    height: 25vh;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 2;
+    text-align: justify;
+    margin-left: 5vw;
+}
+
+/* Hacer que el texto entre con la animación */
+.slide.active .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ocultar elementos antes de la animación */
+.hidden {
+    opacity: 0 !important;
+    transform: translateY(-100px) !important;
+}
+
+/* Botones de navegación */
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+
+.buttons button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.buttons button.active {
+    background: black;
+}
+
+/* Imágenes flotantes */
+.imgGira {
+    background-image: url("img/torrezno.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+/* Posiciones de imágenes flotantes */
+.imgGira.uno {
+    top: 40vh;
+    left: 0;
+}
+
+.imgGira.dos {
+    top: 40vh;
+    left: 90vw;
+}
+
+.imgGira.tres {
+    top: 40vh;
+    left: 60vw;
+}
+
+.imgGira.cuatro {
+    top: 0;
+    left: 90vw;
+}
+
+.imgGira.cinco {
+    top: 15vh;
+    left: 65vw;
+}
+
+/* Animaciones */
+.floating-exit {
+    transform: scale(0.5) rotate(-180deg);
+    opacity: 0;
+}
+
+.floating-enter {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicar animación de salida */
+.imgGira.spin-out {
+    animation: spin 0.7s ease-in-out;
+}
+
+/* Aplicar animación de entrada */
+.imgGira.spin-in {
+    animation: spin 0.7s ease-in-out reverse;
+}
+
+
+/* Imágenes flotantes */
+.floating-images {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.floating {
+    position: absolute;
+    width: 20px;
+    opacity: 0.6;
+    transition: transform 2s ease, opacity 1s ease;
+}
+
+/* Posiciones */
+.floating.uno { top: 40vh; left: 0; }
+.floating.dos { top: 30vh; left: 80vw; }
+.floating.tres { top: 40vh; left: 60vw; }
+.floating.cuatro { top: 0; left: 40vw; }
+.floating.cinco { top: 15vh; left: 65vw; }
+
+/* 🔄 Animaciones de Salida y Entrada */
+.floating.exit {
+    transform: scale(0.3) rotate(200deg); /* Se hace más pequeña y gira más */
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s ease-in-out;
+}
+
+.floating.enter {
+    transform: scale(1.2) rotate(-200deg); /* Aparece más grande y gira más */
+    opacity: 1;
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.2s ease-in-out;
+}
