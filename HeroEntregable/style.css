@@ -250,7 +250,7 @@ body {
     }
 
     to {
-        transform: scale(0.7) rotate(200deg);
+        transform: scale(0.5) rotate(200deg);
         opacity: 0;
     }
 }
@@ -268,7 +268,7 @@ body {
 }
 
 .flotante.sale {
-    animation: imagenFlotanteSale 1s ease-in-out forwards;
+    animation: imagenFlotanteSale 0.5s ease-in-out forwards;
 }
 
 .flotante.entra {
