@@ -8,7 +8,7 @@ function cambiarDiapositiva(indice) {
         return;
     }
 
-    // Animaciones de salida
+    // ani salida
     const imagenActual = diapositivaActual.querySelector('img');
     const nuevaImagen = nuevaDiapositiva.querySelector('img');
     const textoActual = diapositivaActual.querySelector('.texto');
@@ -16,7 +16,7 @@ function cambiarDiapositiva(indice) {
     const fondoActual = diapositivaActual;
     const nuevoFondo = nuevaDiapositiva;
 
-    //  imágenes random oculatas la primera vez
+    //  imagenes random ocultas la primera vez
     const imagenesFlotantes = nuevaDiapositiva.querySelectorAll('.flotante');
     imagenesFlotantes.forEach(img => {
         if (!img.classList.contains('oculto')) {
@@ -26,7 +26,7 @@ function cambiarDiapositiva(indice) {
 
     animarImagenesFlotantesSalida(diapositivaActual);
 
-    // Resetear clases previas para asegurar que siempre se ejecuten las animaciones
+    // Resetear clases previas
     textoActual.classList.remove('texto-entra-arriba', 'texto-sale-izquierda', 'oculto');
     imagenActual.classList.remove('imagen-entra-abajo', 'imagen-sale-derecha', 'oculto');
     nuevoTexto.classList.remove('texto-entra-arriba', 'texto-sale-izquierda', 'oculto');
@@ -42,21 +42,21 @@ function cambiarDiapositiva(indice) {
     nuevoFondo.style.zIndex = "2";
 
     setTimeout(() => {
-        // Resetear el estado de la diapositiva actual
+        // Resetear estado diapositiva actual
         diapositivaActual.classList.remove('activa', 'desaparece');
         fondoActual.style.opacity = "0";
         fondoActual.style.zIndex = "0";
 
-        // Ocultar el texto e imagen completamente antes de la animación de entrada
+        // Ocultar el texto e imagen
         textoActual.classList.add('oculto');
         imagenActual.classList.add('oculto');
 
-        // Resetear la nueva diapositiva a su estado original antes de la animación
+        // Resetear nueva diapositiva 
         nuevaDiapositiva.classList.remove('aparece');
         nuevoTexto.classList.add('oculto');
         nuevaImagen.classList.add('oculto');
 
-        // Activar la nueva diapositiva y aplicar la animación de entrada
+        // nueva diapositiva y aplicar la animación de entrada
         nuevaDiapositiva.classList.add('activa');
         setTimeout(() => {
             nuevoTexto.classList.remove('oculto');
@@ -71,7 +71,7 @@ function cambiarDiapositiva(indice) {
         animarImagenesFlotantesEntrada(nuevaDiapositiva);
     }, 500);
 
-    // Actualizar botones
+    // botones
     botones.forEach((btn, i) => {
         btn.classList.toggle('activo', i === indice);
     });
@@ -88,7 +88,7 @@ function animarImagenesFlotantesSalida(diapositiva) {
             img.classList.remove('sale');
             img.classList.add('oculto');
         });
-    }, 1000); // imágenes se reseteen después de la animación
+    }, 1000); // imágenes reseteo
 }
 
 function animarImagenesFlotantesEntrada(diapositiva) {

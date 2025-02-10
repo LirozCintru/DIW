@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Contenedor del carrusel */
+/* carrusel */
 .carrusel {
     position: relative;
     width: 100vw;
@@ -30,12 +30,12 @@ body {
     z-index: 1;
 }
 
-/* Diapositiva activa */
+/* diapositiva activa */
 .diapositiva.activa {
     opacity: 1;
 }
 
-/* Fondo diapositiva */
+/* fondo diapositiva */
 .diapositiva.paquita {
     background: linear-gradient(to right, #E44D4D, #8B0000);
 }
@@ -52,7 +52,7 @@ body {
     background: linear-gradient(to right, #FF1493, #C71585);
 }
 
-/* Imagen */
+/* imagen */
 .diapositiva img {
     width: 500px;
     height: 500px;
@@ -62,7 +62,7 @@ body {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* Imagen cuando la diapositiva está activa */
+/* imagen activa */
 .diapositiva.activa img {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -97,7 +97,7 @@ body {
     transform: translateY(0);
 }
 
-/* Ocultar elementos antes de la animación */
+/* ocultar elementos antes de la animación */
 .oculto {
     opacity: 0 !important;
     transform: translateY(-100px) !important;
@@ -122,7 +122,7 @@ body {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* Botones contenedor*/
+/* botones contenedor*/
 .botones {
     position: absolute;
     bottom: 20px;
@@ -275,13 +275,11 @@ body {
     animation: imagenFlotanteEntra 1s ease-in-out forwards;
 }
 
-
 .flotante {
     position: absolute;
     width: 20px;
     transition: transform 2s ease, opacity 1s ease;
     opacity: 0;
-    border: #008B45 solid 1px;
 }
 
 .imagenes-flotantes img {
@@ -294,7 +292,7 @@ body {
     object-fit: contain;
 }
 
-/* Posiciones de las imágenes flotantes */
+/* imagenes random*/
 .flotante.uno {
     top: 35vh;
     left: 0;
