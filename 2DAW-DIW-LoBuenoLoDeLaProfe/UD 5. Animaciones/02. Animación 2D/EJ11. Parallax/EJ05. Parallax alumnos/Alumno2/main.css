@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: large;
+}
+
+body{
+    background-color: burlywood;
+}
+
+h1,h2,p{
+    text-align: center;
+    width: 40vw;
+}
+
+h1{
+    padding: 10vh;
+    font-size: 40px; 
+}
+
+h2{
+    padding-top: 2vh;
+    margin: 0 30vw;
+    font-size: 30px;
+    color: green;
+}
+
+p{
+    padding: 5vh;
+    margin: 0 30vw;
+}
+
+.parallax{
+    width: 40vw;
+    height: 50vh;
+    margin: 0 30vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.parallax:nth-of-type(1){
+    background-image: url('imgs/larioja1.jpg');
+}
+
+.parallax:nth-of-type(3){
+    background-image: url('imgs/larioja1.jpg');
+}
+
+.parallax:nth-of-type(5){
+    background-image: url('imgs/larioja1.jpg');
+}
+
+.parallax:nth-of-type(7){
+    background-image: url('imgs/larioja2.avif');
+}
+
+.parallax:nth-of-type(9){
+    background-image: url('imgs/larioja2.avif');
+}

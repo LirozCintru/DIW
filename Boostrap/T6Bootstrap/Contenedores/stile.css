@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+div{
+    height: 250px;
+    color: purple;
+    background-color: aquamarine;
+    font-size: 5rem;
+    margin: 20px 0;
+}

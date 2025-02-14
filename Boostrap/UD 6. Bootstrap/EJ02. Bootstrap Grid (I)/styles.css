@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+.col, .col-4, .col-8 {
+    color: white;
+    background-color: gray;
+    border: 1px solid black;
+    margin: 20px 0;
+    height: 50px;
+}
+
+.align-items-start{
+    height: 200px;
+    background-color: green;
+}
+
+.align-items-center{
+    height: 200px;
+    background-color: blue;
+}
+
+.align-items-end{
+    height: 200px;
+    background-color: red;
+}
+
+.individual{
+    height: 200px;
+    background-color: fuchsia;
+}

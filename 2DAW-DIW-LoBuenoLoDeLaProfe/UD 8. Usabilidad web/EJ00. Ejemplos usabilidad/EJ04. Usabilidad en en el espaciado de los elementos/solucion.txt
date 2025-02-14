@@ -1,0 +1,16 @@
+1. Texto y jerarquía visual:
+    Se ha aumentado el margen superior de los títulos (h1, h2, h3) a 40px para mejorar la jerarquía visual.
+    Se han añadido márgenes entre los párrafos para evitar un diseño sobrecargado y mejorar la legibilidad.
+    Se ha limitado la longitud de los párrafos a tres o cuatro líneas de texto.
+
+2. Menú de navegación:
+    Se ha asegurado que haya suficiente espacio entre los enlaces de navegación, con margin-right: 10px y
+        padding: 10px 15px para que los botones sean más grandes y pulsables cómodamente.
+    Se ha cambiado el color de fondo de los enlaces de navegación a un verde más contrastante (#4CAF50) y
+        el color de texto a blanco (#ffffff).
+    Se ha añadido un efecto hover para cambiar el color de fondo a un verde más claro (#45a049).
+
+3. Tabla:
+    Se ha aumentado el tamaño de la tabla al 100% del ancho disponible.
+    Se han aplicado colores de fondo distintos en filas alternas para mejorar la legibilidad.
+    Se ha añadido un efecto hover a las filas de la tabla para mejorar la interacción del usuario.

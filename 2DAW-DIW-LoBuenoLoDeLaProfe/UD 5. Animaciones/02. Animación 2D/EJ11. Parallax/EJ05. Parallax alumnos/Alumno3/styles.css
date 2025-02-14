@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Contenedor Parallax */
+.parallax {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    height: auto;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div1 {
+    background-image: url('media/cenote1.webp');
+}
+
+.div2 {
+    background-image: url('media/cenote2.jpg');
+}
+
+.contenido {
+    text-align: center;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 100vw;
+    padding: 2vh 20vw;
+    margin: auto;
+}
+
+.parallaxContenido {
+    text-align: center;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 65vw;
+    padding: 2vh 15vw;
+    margin: auto;
+}
+
+.contenido h2 {
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 8vh;
+}
+
+.titulo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    background-color: #554b4bc5;
+    padding: 1vh 3vw;
+    border-radius: 10px;
+    margin-top: 15vh;
+}
