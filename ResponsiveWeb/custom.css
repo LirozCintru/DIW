@@ -1,0 +1,27 @@
+.imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.borde{
+    border: 5px solid red;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/* Hace que el footer siempre esté pegado abajo */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #212529; /* Color oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+

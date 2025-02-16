@@ -1,0 +1,16 @@
+.imagen{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.borde{
+    border: 5px solid red;
+}
+
+
+#carouselTajMahal .carousel-item img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover; 
+}
