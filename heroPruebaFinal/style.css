@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del carrusel */
+.carrusel {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+/* diapositiva */
+.diapositiva {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* Diapositiva activa */
+.diapositiva.activa {
+    opacity: 1;
+}
+
+/* Fondo diapositiva */
+.diapositiva.paquita {
+    background: linear-gradient(to right, #E44D4D, #8B0000);
+}
+
+.diapositiva.magui {
+    background: linear-gradient(to right, #D94ED9, #6A0572);
+}
+
+.diapositiva.noemi {
+    background: linear-gradient(to right, #32CD99, #008B45);
+}
+
+.diapositiva.mariona {
+    background: linear-gradient(to right, #FF1493, #C71585);
+}
+
+/* Imagen */
+.diapositiva img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 10vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Imagen cuando la diapositiva está activa */
+.diapositiva.activa img {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Contenedor texto */
+.izquierda {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* texto */
+.texto {
+    color: white;
+    font-size: 1.8rem;
+    width: 50vw;
+    height: 25vh;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    z-index: 2;
+    text-align: justify;
+    margin-left: 5vw;
+}
+
+/* texto activo */
+.diapositiva.activa .texto {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ocultar elementos antes de la animación */
+.oculto {
+    opacity: 0 !important;
+    transform: translateY(-100px) !important;
+}
+
+/*"PS Management" */
+.izquierda::after {
+    content: "PS Management";
+    position: absolute;
+    top: -12vh;
+    left: -7vw;
+    white-space: nowrap;
+    font-size: 8rem;
+    font-style: italic;
+    color: rgba(255, 192, 203, 0.15);
+    z-index: -1;
+    letter-spacing: 5px;
+    transition: color 1s ease-in-out;
+}
+
+.diapositiva.activa .izquierda::after {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botones contenedor*/
+.botones {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+
+.botones button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.botones button.activo {
+    background: black;
+}
+
+/* Animaciones texto e imagen */
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes deslizarIzquierda {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+}
+
+@keyframes deslizarDerecha {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+}
+
+@keyframes textoDesdeArriba {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imagenDesdeAbajo {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Clases para las animaciones */
+.desaparece {
+    animation: desaparecer 0.5s forwards;
+}
+
+.aparece {
+    animation: aparecer 0.5s forwards;
+}
+
+.texto-sale-izquierda {
+    animation: deslizarIzquierda 0.5s forwards;
+}
+
+.imagen-sale-derecha {
+    animation: deslizarDerecha 0.5s forwards;
+}
+
+.texto-entra-arriba {
+    animation: textoDesdeArriba 0.5s forwards;
+}
+
+.imagen-entra-abajo {
+    animation: imagenDesdeAbajo 0.5s forwards;
+}
+
+/* Animaciones imágenes random */
+@keyframes imagenFlotanteSale {
+    from {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0.7) rotate(200deg);
+        opacity: 0;
+    }
+}
+
+@keyframes imagenFlotanteEntra {
+    from {
+        transform: scale(0.7) rotate(-200deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.flotante.sale {
+    animation: imagenFlotanteSale 1s ease-in-out forwards;
+}
+
+.flotante.entra {
+    animation: imagenFlotanteEntra 1s ease-in-out forwards;
+}
+
+
+.flotante {
+    position: absolute;
+    width: 20px;
+    transition: transform 2s ease, opacity 1s ease;
+    opacity: 0;
+    border: #008B45 solid 1px;
+}
+
+.imagenes-flotantes img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Posiciones de las imágenes flotantes */
+.flotante.uno {
+    top: 35vh;
+    left: 0;
+}
+
+.flotante.dos {
+    top: 0vh;
+    left: 90vw;
+}
+
+.flotante.tres {
+    top: 35vh;
+    left: 90vw;
+}
+
+.flotante.cuatro {
+    top: 35vh;
+    left: 58vw;
+}
+
+.flotante.cinco {
+    top: 5vh;
+    left: 55vw;
+}
