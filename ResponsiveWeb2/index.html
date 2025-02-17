@@ -60,10 +60,9 @@
     </div>
 
 
-    <!-- Sección de Descubrimiento con Botones Responsivos -->
-    <!-- Sección de Descubrimiento con Botones Responsivos -->
+
     <div class="container mt-5">
-        <div class="row align-items-center"> <!-- Asegura que el contenido y la imagen se alineen bien -->
+        <div class="row align-items-center">
             <div class="col-lg-6 text-center text-lg-start">
                 <h2>Descubre el Taj Mahal</h2>
                 <p>
@@ -76,19 +75,37 @@
                     atracción turística de fama mundial.
                 </p>
 
-                <!-- Botones responsivos con mejor alineación -->
                 <div class="d-flex flex-column flex-md-row gap-3">
                     <a href="historia.html" class="btn btn-primary btn-lg d-none d-lg-inline">Ver Historia</a>
-                    <a href="visitas.html"
-                        class="btn btn-outline-success btn-md d-none d-md-inline d-lg-none">Planificar Visita</a>
-                    <a href="contacto.html" class="btn btn-warning btn-sm d-md-none">Contáctanos</a>
+                    <a href="contacto.html" class="btn btn-warning btn-sm d-md-inline d-lg-none w-100">Contáctanos</a>
                 </div>
+
             </div>
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 text-center d-none d-md-inline">
                 <img src="media/contenido.jpeg" class="img-fluid rounded" alt="Taj Mahal">
             </div>
         </div>
     </div>
+
+    <div class="container mt-5 d-none d-lg-block">
+        <h2>Información Adicional</h2>
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="p-3 border bg-light">📍 Ubicación: Agra, India</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border bg-light">🏛️ Material: Mármol Blanco</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border bg-light">📅 Año de Construcción: 1632-1653</div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-3 border bg-light">🌍 Patrimonio de la UNESCO: Desde 1983</div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <div class="container mt-5">
@@ -129,9 +146,22 @@
     </div>
 
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
+    
+    <footer class="bg-dark text-white text-center py-3 mt-5 d-lg-none">
         <p>&copy; 2025 Taj Mahal | Desarrollado por Javier Liroz Trincado</p>
     </footer>
+
+
+    <footer class="bg-dark text-white text-center py-5 d-none d-lg-block">
+        <p class="mb-1">&copy; 2025 Taj Mahal | Desarrollado por Javier Liroz Trincado</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div>
+            <i class="fab fa-facebook fa-2x me-3"></i>
+            <i class="fab fa-instagram fa-2x me-3"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+        </div>
+    </footer>
+
 
 
 

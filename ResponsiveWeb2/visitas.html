@@ -12,7 +12,7 @@
     <title>Responsive web</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -41,11 +41,21 @@
     </nav>
 
 
-    <div class="container mt-5">
-        <h2><i class="fas fa-map-marker-alt text-primary"></i> Información sobre Visitas</h2>
-        <p>El Taj Mahal está abierto para visitas durante todo el año, excepto los viernes. Puedes elegir entre visitas
-            guiadas, recorridos individuales o experiencias especiales como la visita nocturna.</p>
+    <div class="container mt-5 main-content d-none d-md-inline">
+        <div class="card shadow-lg border-0 custom-card">
+            <div class="card-body">
+                <h2 class="card-title text-primary">
+                    <i class="fas fa-map-marker-alt"></i> Información sobre Visitas
+                </h2>
+                <p class="card-text">
+                    El Taj Mahal está abierto para visitas durante todo el año, excepto los viernes. Puedes elegir entre
+                    visitas guiadas, recorridos individuales o experiencias especiales como la visita nocturna.
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="container main-content mt-4">
 
         <h3 class="mt-4"><i class="fas fa-clock text-success"></i> Horarios y Precios</h3>
         <div class="table-responsive">
@@ -81,74 +91,85 @@
                 </tbody>
             </table>
         </div>
-
-
-        <h3 class="mt-5"><i class="fas fa-calendar-check text-danger"></i> Reserva tu Visita</h3>
-        <form class="row g-4 align-items-center">
-
-            <div class="col-md-3">
-                <label class="form-label fw-bold">Nombre Completo</label>
-                <input type="text" class="form-control rounded" placeholder="Ejemplo: Juan Pérez" required>
-            </div>
-
-
-            <div class="col-md-3">
-                <label class="form-label fw-bold">Correo Electrónico</label>
-                <input type="email" class="form-control rounded" placeholder="Ejemplo: juan@example.com" required>
-            </div>
-
-
-            <div class="col-md-2">
-                <label class="form-label fw-bold">Fecha</label>
-                <input type="date" class="form-control rounded" required>
-            </div>
-
-
-            <div class="col-md-2">
-                <label class="form-label fw-bold">Personas</label>
-                <input type="number" class="form-control rounded" min="1" required>
-            </div>
-
-
-            <div class="col-md-2">
-                <label class="form-label fw-bold">Tipo de Entrada</label>
-                <select class="form-select rounded" required>
-                    <option value="internacional">Turistas Internacionales - 1100 INR</option>
-                    <option value="indio">Ciudadanos Indios - 50 INR</option>
-                    <option value="nocturna">Entrada Nocturna - 750 INR</option>
-                    <option value="ninos">Niños menores de 15 años - Gratis</option>
-                </select>
-            </div>
-
-
-            <div class="col-md-3">
-                <label class="form-label fw-bold">Método de Pago</label>
-                <select class="form-select rounded" required>
-                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
-                    <option value="paypal">PayPal</option>
-                    <option value="efectivo">Efectivo en la Entrada</option>
-                </select>
-            </div>
-
-
-            <div class="col-md-6">
-                <label class="form-label fw-bold">Comentarios o Solicitudes Especiales</label>
-                <textarea class="form-control rounded" rows="2"
-                    placeholder="Ejemplo: Necesito acceso para silla de ruedas"></textarea>
-            </div>
-
-
-            <div class="col-md-3 d-grid">
-                <button type="submit" class="btn btn-primary btn-lg rounded">Reservar Ahora</button>
-            </div>
-        </form>
-
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container mt-4 mb-5">
+        <div class="card shadow-lg p-4 border-0 custom-form-card">
+            <div class="card-body">
+                <h3 class="mb-4 text-danger">
+                    <i class="fas fa-calendar-check"></i> Reserva tu Visita
+                </h3>
+                <form class="row g-4 align-items-center">
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Nombre Completo</label>
+                        <input type="text" class="form-control rounded" placeholder="Ejemplo: Juan Pérez" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Correo Electrónico</label>
+                        <input type="email" class="form-control rounded" placeholder="Ejemplo: juan@example.com"
+                            required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold">Fecha</label>
+                        <input type="date" class="form-control rounded" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold">Personas</label>
+                        <input type="number" class="form-control rounded" min="1" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label fw-bold">Tipo de Entrada</label>
+                        <select class="form-select rounded" required>
+                            <option value="internacional">Turistas Internacionales - 1100 INR</option>
+                            <option value="indio">Ciudadanos Indios - 50 INR</option>
+                            <option value="nocturna">Entrada Nocturna - 750 INR</option>
+                            <option value="ninos">Niños menores de 15 años - Gratis</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Método de Pago</label>
+                        <select class="form-select rounded" required>
+                            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="efectivo">Efectivo en la Entrada</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Comentarios o Solicitudes Especiales</label>
+                        <textarea class="form-control rounded" rows="2"
+                            placeholder="Ejemplo: Necesito acceso para silla de ruedas"></textarea>
+                    </div>
+
+                    <div class="col-md-12 d-grid">
+                        <button type="submit" class="btn btn-danger btn-lg rounded">Reservar Ahora</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-3 mt-5 d-lg-none">
         <p>&copy; 2025 Taj Mahal | Desarrollado por Javier Liroz Trincado</p>
     </footer>
 
+
+    <footer class="bg-dark text-white text-center py-5 d-none d-lg-block">
+        <p class="mb-1">&copy; 2025 Taj Mahal | Desarrollado por Javier Liroz Trincado</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div>
+            <i class="fab fa-facebook fa-2x me-3"></i>
+            <i class="fab fa-instagram fa-2x me-3"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+        </div>
+    </footer>
 
 
 
