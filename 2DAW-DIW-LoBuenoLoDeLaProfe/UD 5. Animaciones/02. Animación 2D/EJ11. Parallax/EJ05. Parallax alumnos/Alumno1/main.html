@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje a Kioto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .parallax1 {
+            background-image: url('https://example.com/imagen1.jpg'); /* Sustituir con URL real */
+        }
+
+        .parallax2 {
+            background-image: url('https://example.com/imagen2.jpg'); /* Sustituir con URL real */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .content-title {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .content-title h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 768px) {
+            .content-title h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal sobre un div parallax -->
+    <div class="parallax parallax1">
+        <div class="content-title">
+            <h1>Explora la belleza de Kioto</h1>
+        </div>
+    </div>
+
+    <!-- Primer bloque de texto -->
+    <div class="content">
+        <h2>El encanto de los templos</h2>
+        <p>Kioto alberga algunos de los templos más icónicos de Japón, como el Kinkaku-ji, el famoso Pabellón Dorado. Sumérgete en su serenidad y admira su arquitectura única.</p>
+    </div>
+
+    <!-- Segundo bloque parallax -->
+    <div class="parallax parallax2"></div>
+
+    <!-- Segundo bloque de texto -->
+    <div class="content">
+        <h2>El bosque de bambú de Arashiyama</h2>
+        <p>Camina entre los imponentes tallos de bambú en el bosque de Arashiyama, una experiencia mágica que conecta con la naturaleza.</p>
+    </div>
+
+    <!-- Tercer bloque parallax -->
+    <div class="parallax parallax1"></div>
+
+    <!-- Tercer bloque de texto -->
+    <div class="content">
+        <h2>La gastronomía de Kioto</h2>
+        <p>Descubre la cocina tradicional de Kioto, desde el kaiseki hasta los dulces wagashi. Cada bocado es un viaje a través de los sabores japoneses.</p>
+    </div>
+
+    <!-- Cuarto bloque parallax -->
+    <div class="parallax parallax2"></div>
+
+    <!-- Quinto bloque parallax -->
+    <div class="parallax parallax1"></div>
+
+</body>
+</html>

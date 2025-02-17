@@ -1,0 +1,26 @@
+1. Claridad, concisión y sencillez: El texto inicial se ha simplificado para eliminar jergas innecesarias y
+se ha estructurado para mejorar la claridad y comprensión.
+
+2. Escritura legible: Se ha cambiado la fuente a Arial. El tamaño de la fuente se ha aumentado a 16px para
+mejorar la legibilidad.
+
+3. Jerarquía de la información: Se ha utilizado correctamente los encabezados para dividir el contenido en
+secciones claras y fáciles de escanear.
+
+4. Uso de viñetas y listas: La información relevante se ha presentado en una lista con viñetas para facilitar
+la lectura y comprensión.
+
+5. Enlaces descriptivos: El enlace «pinche aquí» se ha cambiado para que sea más descriptivo.
+
+6. Evitar eso excesivo de mayúsculas: Se han eliminado las mayúsculas innecesarias para mejorar la legibilidad del texto.
+
+7. Prueba de legibilidad: El texto y el fondo tienen suficiente contraste para asegurar la legibilidad en diferentes
+dispositivos y tamaños de pantalla.
+
+8. Evitar errores ortográficos y gramaticales: Se ha revisado el texto para corregir errores ortográficos y gramaticales.
+
+9. Considerar la accesibilidad: Se ha asegurado que el texto sea accesible para personas con discapacidades visuales
+mediante un buen contraste entre el texto y el fondo.
+
+10. Tamaño de los párrafos: Los párrafos se han ajustado para que no sean demasiado largos, facilitando la lectura y
+comprensión del contenido. Además, se ha incluido algo de margen entre párrafos.

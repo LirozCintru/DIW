@@ -1,0 +1,29 @@
+1. Simplificación del diseño: Se ha limpiado el diseño con un fondo claro, bordes redondeados y un estilo
+moderno para facilitar la visualización.
+
+2. Etiquetas descriptivas: Las etiquetas ahora son más descriptivas y se utilizan atributos for e id para mejorar
+la accesibilidad.
+
+3. Campos obligatorios: Los campos obligatorios están claramente marcados con un asterisco rojo.
+
+4. Ayuda contextual: Se ha añadido ayuda contextual utilizando placeholder dentro de los campos y span con
+clase help-text para guiar al usuario sobre el formato de la información requerida.
+
+5. Validación en tiempo real: Los campos de entrada tienen tipos de entrada (type="email", type="tel") que
+proporcionan una validación básica en tiempo real.
+
+6. Formato claro y orden lógico: Los campos están organizados en un orden lógico con suficiente espacio entre
+ellos para mejorar la navegación.
+
+7. Botón de envío destacado: El botón de envío es grande, de un color llamativo y se vuelve más oscuro al pasar
+el cursor por encima, lo que mejora su visibilidad.
+
+8. Feedback después del envío: Aunque no está implementado en el ejemplo de HTML y CSS, se sugiere proporcionar
+un mensaje de confirmación después del envío del formulario.
+
+9. Optimización para dispositivos móviles: El formulario está diseñado para ser responsive, ajustándose bien a
+pantallas de diferentes tamaños, y los elementos son lo suficientemente grandes para ser fácilmente seleccionables
+en dispositivos móviles.
+
+10. Accesibilidad: Se han añadido atributos for en las etiquetas y id en los campos de entrada para mejorar la
+accesibilidad y la navegación con lectores de pantalla.

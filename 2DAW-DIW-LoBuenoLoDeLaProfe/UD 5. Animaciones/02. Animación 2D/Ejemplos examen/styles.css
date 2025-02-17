@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid red;
+}
+
+main {
+  overflow: hidden;
+}
+
+section {
+  color: white;
+  animation: aparecer_seccion 2s paused forwards;
+}
+
+.titulo {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  animation: color_tiutlo 2s paused;
+}
+
+p, ul {
+  margin-bottom: 20px;
+}
+
+figure {
+  width: 20%;
+}
+
+.content {
+  margin-top: 20px;
+  padding: 50px;
+  font-size: 1.5rem;
+  animation: aparecer_texto 3s paused;
+}
+
+ul {
+  padding-left: 50px;
+}
+
+.content.fotos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.content.fotos figure {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.content.fotos img {
+  width: 100%;
+  height: 80%;
+  animation: rotar 10s pausedws;
+}
+
+.content.fotos p {
+  position: absolute;
+  padding: 1%;
+  font-size: 1rem;
+  width: 100%;
+  top: 20%;
+  animation: opacidad 10s paused;
+}
+
+section:hover {
+  animation-play-state: running;
+}
+
+section:hover .titulo {
+  animation-play-state: running;
+}
+
+section:hover .content {
+  animation-play-state: running;
+}
+
+.content.fotos figure:hover img {
+  animation-play-state: running;
+}
+
+.content.fotos figure:hover p {
+  animation-play-state: running;
+}
+
+
+@keyframes color_tiutlo {
+  0% {
+    background-color: rgb(92, 92, 92);;
+    color: rgb(235, 232, 232);;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes aparecer_seccion {
+  0% {
+    background-color: rgb(235, 232, 232);
+  }
+  100% {
+    background-color: rgb(92, 92, 92);
+  }
+}
+
+@keyframes aparecer_texto {
+    0% {
+      transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  /* 75% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  } */
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

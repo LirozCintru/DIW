@@ -1,0 +1,48 @@
+* {
+  font-family: Arial;
+  color: black;
+}
+body {
+  background-color: #635b5b;
+}
+.parallax {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  text-align: center;
+  padding: 60px;
+  height: 400px;
+}
+.div0{
+  height: 160px !important;
+}
+.div0,.div1,.div2{
+  background-image: url("torre.jpg");
+}
+.div3,.div4{
+  background-image: url("paris.jpg");
+}
+.div5{
+  background-image: url("croissant.jpg");
+}
+.contenedor {
+  width: 50%;
+  margin-left: 25%;
+}
+.contexto {
+  width: 70%;
+  margin-left: 15%;
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+h1{
+    text-align: center;
+}
+.parallax h1{
+  color: white;
+  font-size: 54px;
+}

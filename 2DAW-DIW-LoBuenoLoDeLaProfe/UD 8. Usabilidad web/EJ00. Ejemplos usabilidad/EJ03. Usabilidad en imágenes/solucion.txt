@@ -1,0 +1,5 @@
+1. Tamaño y resolución de la imagen: La imagen no está optimizada para el tamaño del contenedor.
+
+2. Etiqueta alt descriptiva: La primera imagen no tiene una etiqueta alt descriptiva.
+
+3. Contraste entre texto y fondo: El texto sobre la imagen de fondo tiene poco contraste, lo que dificulta la lectura.

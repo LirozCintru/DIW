@@ -1,0 +1,47 @@
+body, html {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: brown;
+    font-size: 20px;
+}
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    background-image: url('img/kioto1.jpg'); /* Sustituir con una imagen real */
+}
+.parallax2 {
+    background-image: url('img/kioto2.webp'); /* Sustituir con una imagen real */
+}
+.contenido {
+    padding: 50px;
+    text-align: center;
+    background: brown;
+}
+
+.contenido p{
+    color: whitesmoke;
+}
+
+.contenido h2{
+    color: yellow;
+}
+.titulo {
+    position: relative;
+    text-align: center;
+    color: yellow;
+}
+.titulo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}

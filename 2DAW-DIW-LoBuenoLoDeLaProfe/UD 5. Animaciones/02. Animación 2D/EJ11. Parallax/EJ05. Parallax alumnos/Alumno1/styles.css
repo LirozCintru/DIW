@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Contenedor Parallax */
+.parallax {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxC {
+    height: auto;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div1 {
+    background-image: url('1.webp');
+}
+
+.div2 {
+    background-image: url('2.webp');
+}
+
+.contenido {
+    text-align: center;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 100vw;
+    padding: 2vh 25vw;
+    margin: auto;
+}
+
+.contenidoP {
+    text-align: center;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 65vw;
+    padding: 2vh 10vw;
+    margin: auto;
+}
+
+.contenido h2 {
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 8vh;
+}
+
+.titulo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    background-color: #000000c5;
+    padding: 1vh 3vw;
+    border-radius: 10px;
+    margin-top: 15vh;
+}
