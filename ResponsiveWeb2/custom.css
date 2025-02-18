@@ -53,14 +53,8 @@ footer {
 }
 
 .text-crema {
-    color: #D4C38A !important; /* Hueso ligeramente más oscuro para más contraste */
+    color: #D4C38A 
 }
-
-.text-crema-shadow {
-    color: #EEE8AA !important; /* Mantiene el color original */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Pequeña sombra para mejorar visibilidad */
-}
-
 
 
 
