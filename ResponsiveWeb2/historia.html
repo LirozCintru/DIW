@@ -61,35 +61,54 @@
                 </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTajMahal" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTajMahal" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselTajMahal" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselTajMahal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselTajMahal" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselTajMahal" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselTajMahal" data-bs-slide-to="4"></button>
+            </div>
         </div>
     </div>
 
-    <div class="container mt-5">
-        <h2>Historia del Taj Mahal</h2>
-        <p>
-            El Taj Mahal fue construido en el siglo XVII por el emperador mogol Shah Jahan en memoria de su esposa
-            Mumtaz Mahal.
-            Esta obra maestra de la arquitectura islámica combina elementos persas, turcos e indios, y es considerada un
-            símbolo del amor eterno.
-        </p>
-        <p>
-            Su construcción comenzó en 1632 y tomó aproximadamente 22 años completarlo. Se usaron materiales traídos de
-            todo el mundo, incluyendo mármol blanco de Rajastán,
-            jade y cristal de China, y zafiros de Sri Lanka. Su impresionante cúpula y simetría perfecta lo han
-            convertido en una de las Siete Maravillas del Mundo Moderno.
-        </p>
+    <div class="container mt-3">
+
+        <div class="d-none d-lg-block bg-light p-5 rounded shadow-lg border">
+            <h2 class="fw-bold text-center text-dark">Historia del Taj Mahal</h2>
+            <p>
+                El Taj Mahal fue construido en el siglo XVII por el emperador mogol Shah Jahan en memoria de su esposa
+                Mumtaz Mahal. Esta obra maestra de la arquitectura islámica combina elementos persas, turcos e indios,
+                y es considerada un símbolo del amor eterno.
+            </p>
+            <p>
+                Su construcción comenzó en 1632 y tomó aproximadamente 22 años en completarse. Se usaron materiales
+                traídos de
+                todo el mundo, incluyendo mármol blanco de Rajastán, jade y cristal de China, y zafiros de Sri Lanka.
+                Su impresionante cúpula y simetría perfecta lo han convertido en una de las Siete Maravillas del Mundo
+                Moderno.
+            </p>
+        </div>
+
+
+        <div class="d-none d-md-block d-lg-none bg-white p-4 rounded shadow border">
+            <h2 class="fw-bold text-center text-dark">Historia del Taj Mahal</h2>
+            <p>
+                Construido en el siglo XVII por Shah Jahan en honor a Mumtaz Mahal, es una joya arquitectónica
+                de la cultura islámica.
+            </p>
+            <p>
+                La construcción tomó 22 años, con materiales como mármol blanco de Rajastán y gemas preciosas de
+                diferentes partes del mundo.
+                Hoy es una de las Siete Maravillas del Mundo Moderno.
+            </p>
+        </div>
     </div>
 
-    <div class="container mt-5">
 
+
+
+    <div class="container ">
         <div class="accordion mt-4" id="tajMahalAccordion">
-
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -172,9 +191,10 @@
     </div>
 
 
-    <footer class="bg-dark text-white text-center py-3 mt-5 d-lg-none">
+    <footer class="bg-dark text-white text-center py-3 mt-5 d-lg-none fixed-footer">
         <p>&copy; 2025 Taj Mahal | Desarrollado por Javier Liroz Trincado</p>
     </footer>
+    
 
 
     <footer class="bg-dark text-white text-center py-5 d-none d-lg-block">

@@ -14,6 +14,8 @@
 
 <body>
 
+    
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -41,13 +43,15 @@
     </nav>
 
 
-    <div class="container mt-5 main-content d-none d-md-inline ">
-        <div class="card shadow-lg border-0 custom-card bg-light">
-            <div class="card-body bg-light">
-                <h2 class="card-title text-primary">
+    
+
+    <div class="container mt-5 main-content d-none d-md-inline custom-card">
+        <div class="card shadow-lg border-0 custom-card">
+            <div class="card-body bg-light custom-card bg-light">
+                <h2 class="card-title text-primary ">
                     <i class="fas fa-map-marker-alt"></i> Información sobre Visitas
                 </h2>
-                <p class="card-text">
+                <p class="card-text ">
                     El Taj Mahal está abierto para visitas durante todo el año, excepto los viernes. Puedes elegir entre
                     visitas guiadas, recorridos individuales o experiencias especiales como la visita nocturna.
                 </p>
@@ -55,9 +59,42 @@
         </div>
     </div>
 
-    <div class="container main-content mt-4">
+    <div class="container mt-5 d-none d-lg-block">
+        <div class="row">
+            <!-- 📍 Mapa Interactivo -->
+            <div class="col-lg-6">
+                <div class="card shadow-lg border-0 bg-white p-4">
+                    <h3 class="text-crema"><i class="fas fa-map-marked-alt"></i> Ubicación</h3>
+                    <p>
+                        El Taj Mahal se encuentra en Agra, India. A continuación, puedes ver su ubicación exacta en el mapa.
+                    </p>
+                    <div class="ratio ratio-16x9">
+                        <iframe class="rounded" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4683298056845!2d78.04215531540258!3d27.17514498300364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397477c9c9ff5b7b%3A0xdbc681109f1e8e7b!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1631473514975!5m2!1sen!2sin" 
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 🏨 Recomendaciones de Viaje -->
+            <div class="col-lg-6">
+                <div class="card shadow-lg border-0 bg-light p-4">
+                    <h3 class="text-info"><i class="fas fa-plane"></i> Recomendaciones de Viaje</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-bed text-warning"></i> Mejores hoteles en Agra: Oberoi Amarvilas, ITC Mughal</li>
+                        <li class="list-group-item"><i class="fas fa-utensils text-danger"></i> Restaurantes recomendados: Esphahan, Peshawri</li>
+                        <li class="list-group-item"><i class="fas fa-bus text-info"></i> Transporte: Tuk-tuks, taxis y alquiler de coches disponibles</li>
+                        <li class="list-group-item"><i class="fas fa-lightbulb text-secondary"></i> Mejor horario: Amanecer o atardecer para evitar multitudes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
-        <h3 class="mt-4"><i class="fas fa-clock text-success"></i> Horarios y Precios</h3>
+    <div class="container main-content mt-4 d-none d-md-inline">
+
+        <h3 class="mt-4 text-success"><i class="fas fa-clock "></i> Horarios y Precios</h3>
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
                 <thead class="table-dark">
@@ -96,7 +133,7 @@
     <div class="container mt-4 mb-5">
         <div class="card shadow-lg p-4 border-0 custom-form-card bg-light">
             <div class="card-body bg-light">
-                <h3 class="mb-4 text-danger">
+                <h3 class="mb-4 text-danger ">
                     <i class="fas fa-calendar-check"></i> Reserva tu Visita
                 </h3>
                 <form class="row g-4 align-items-center">
